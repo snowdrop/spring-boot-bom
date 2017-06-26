@@ -50,11 +50,11 @@
     <version.javax.servlet.jstl>1.2</version.javax.servlet.jstl>
     <version.mysql.mysql-connector-java>5.1.39</version.mysql.mysql-connector-java>
     <version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>3.1.10</version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>
-    <version.org.apache.tomcat.embed.tomcat-embed-core>8.0.36.redhat-14</version.org.apache.tomcat.embed.tomcat-embed-core>
-    <version.org.apache.tomcat.embed.tomcat-embed-el>8.0.36.redhat-14</version.org.apache.tomcat.embed.tomcat-embed-el>
-    <version.org.apache.tomcat.embed.tomcat-embed-jasper>8.0.36.redhat-14</version.org.apache.tomcat.embed.tomcat-embed-jasper>
-    <version.org.apache.tomcat.embed.tomcat-embed-websocket>8.0.36.redhat-14</version.org.apache.tomcat.embed.tomcat-embed-websocket>
-    <version.org.hibernate.hibernate-validator>5.2.4.Final-redhat-1</version.org.hibernate.hibernate-validator>
+    <version.org.apache.tomcat.embed.tomcat-embed-core>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-core>
+    <version.org.apache.tomcat.embed.tomcat-embed-el>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-el>
+    <version.org.apache.tomcat.embed.tomcat-embed-jasper>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-jasper>
+    <version.org.apache.tomcat.embed.tomcat-embed-websocket>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-websocket>
+    <version.org.hibernate.hibernate-validator>5.2.4.Final</version.org.hibernate.hibernate-validator>
     <version.org.jboss.logging.jboss-logging>3.3.0.Final</version.org.jboss.logging.jboss-logging>
     <version.org.json.json>20140107</version.org.json.json>
     <version.org.slf4j.slf4j-api>1.7.21</version.org.slf4j.slf4j-api>
