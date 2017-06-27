@@ -1,6 +1,6 @@
 pme:
   project.src.skip: true
   project.meta.skip: true
-  dependencyExclusion.org.hibernate:hibernate-validator@*: 5.2.4.Final-redhat-1
-  # Update version of all the Embedded Tomcat jars
-  dependencyExclusion.org.apache.tomcat.embed:*@*: 8.0.36.redhat-14
+  restMaxSize: 30
+  restURL: http://pnc-da-master-autodeploy.cloud.pnc.devel.engineering.redhat.com/da/rest/v-1
+  version.incremental.suffix: redhat

@@ -15,6 +15,7 @@ curl -O http://central.maven.org/maven2/org/commonjava/maven/ext/pom-manipulatio
 
 git checkout -b release
 java -jar pom-manipulation-cli-$VERSION.jar
+
 git commit -m "Update pom file" pom.xml
 git push --set-upstream origin release
 
