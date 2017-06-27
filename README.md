@@ -18,3 +18,11 @@ pme:
   # Update version of all the Embedded Tomcat jars
   dependencyExclusion.org.apache.tomcat.embed:*@*: 8.0.36.redhat-14
 ```
+
+# Bash script
+
+If you have admin rights on this Github project, you can  generate the BOM file and commit under the result under the branch `release` using the bash script
+
+```bash
+./generate_bom_file.sh
+```
