@@ -3,7 +3,7 @@
 Command to be used to replace the version number of the Apache Tomcat Embed and Hibernate Validator jar
 
 ```
-rm -rf target && git checkout -- pom.xml
+curl -O http://central.maven.org/maven2/org/commonjava/maven/ext/pom-manipulation-cli/2.11/pom-manipulation-cli-2.11.jar
 java -jar pom-manipulation-cli-2.11.jar 
 ```
 
