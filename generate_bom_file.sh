@@ -11,6 +11,8 @@ if [ -d $PROJECT_DIR ]; then
 fi
 
 git clone git@github.com:snowdrop/spring-boot-parent.git && cd $PROJECT_DIR
+git push origin --delete release && git branch -d release
+
 curl -O http://central.maven.org/maven2/org/commonjava/maven/ext/pom-manipulation-cli/$VERSION/pom-manipulation-cli-$VERSION.jar
 
 git checkout -b release
