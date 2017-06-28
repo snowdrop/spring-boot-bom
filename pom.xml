@@ -42,7 +42,10 @@
     <version.com.fasterxml.jackson.core.jackson-annotations>2.8.3</version.com.fasterxml.jackson.core.jackson-annotations>
     <version.com.fasterxml.jackson.core.jackson-core>2.8.3</version.com.fasterxml.jackson.core.jackson-core>
     <version.com.fasterxml.jackson.core.jackson-databind>2.8.3</version.com.fasterxml.jackson.core.jackson-databind>
+    <version.com.fasterxml.jackson.dataformat.jackson-dataformat-yaml>2.8.3</version.com.fasterxml.jackson.dataformat.jackson-dataformat-yaml>
     <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider>2.8.3</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider>
+    <version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>2.8.3</version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>
+    <version.commons-codec.commons-codec>1.10</version.commons-codec.commons-codec>
     <version.io.fabric8.kubernetes-client>2.2.14</version.io.fabric8.kubernetes-client>
     <version.io.fabric8.openshift-client>2.2.14</version.io.fabric8.openshift-client>
     <version.io.fabric8.spring-cloud-kubernetes-core>0.1.6</version.io.fabric8.spring-cloud-kubernetes-core>
@@ -50,10 +53,16 @@
     <version.javax.servlet.jstl>1.2</version.javax.servlet.jstl>
     <version.mysql.mysql-connector-java>5.1.39</version.mysql.mysql-connector-java>
     <version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>3.1.10</version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>
+    <version.org.apache.httpcomponents.httpclient>4.5.2</version.org.apache.httpcomponents.httpclient>
+    <version.org.apache.httpcomponents.httpcore>4.4.5</version.org.apache.httpcomponents.httpcore>
+    <version.org.apache.httpcomponents.httpmime>4.5.2</version.org.apache.httpcomponents.httpmime>
     <version.org.apache.tomcat.embed.tomcat-embed-core>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-core>
     <version.org.apache.tomcat.embed.tomcat-embed-el>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-el>
     <version.org.apache.tomcat.embed.tomcat-embed-jasper>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-jasper>
     <version.org.apache.tomcat.embed.tomcat-embed-websocket>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-websocket>
+    <version.org.codehaus.groovy.groovy>2.4.7</version.org.codehaus.groovy.groovy>
+    <version.org.codehaus.groovy.groovy-json>2.4.7</version.org.codehaus.groovy.groovy-json>
+    <version.org.codehaus.groovy.groovy-xml>2.4.7</version.org.codehaus.groovy.groovy-xml>
     <version.org.hibernate.hibernate-validator>5.2.4.Final</version.org.hibernate.hibernate-validator>
     <version.org.jboss.logging.jboss-logging>3.3.0.Final</version.org.jboss.logging.jboss-logging>
     <version.org.json.json>20140107</version.org.json.json>
@@ -244,9 +253,24 @@
         <version>${version.com.fasterxml.jackson.core.jackson-databind}</version>
       </dependency>
       <dependency>
+        <groupId>com.fasterxml.jackson.dataformat</groupId>
+        <artifactId>jackson-dataformat-yaml</artifactId>
+        <version>${version.com.fasterxml.jackson.dataformat.jackson-dataformat-yaml}</version>
+      </dependency>
+      <dependency>
         <groupId>com.fasterxml.jackson.jaxrs</groupId>
         <artifactId>jackson-jaxrs-json-provider</artifactId>
         <version>${version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.module</groupId>
+        <artifactId>jackson-module-jaxb-annotations</artifactId>
+        <version>${version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>${version.commons-codec.commons-codec}</version>
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
@@ -262,6 +286,42 @@
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
         <version>${version.org.apache.cxf.cxf-spring-boot-starter-jaxrs}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>${version.org.apache.httpcomponents.httpclient}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpcore</artifactId>
+        <version>${version.org.apache.httpcomponents.httpcore}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpmime</artifactId>
+        <version>${version.org.apache.httpcomponents.httpmime}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy</artifactId>
+        <version>${version.org.codehaus.groovy.groovy}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy-json</artifactId>
+        <version>${version.org.codehaus.groovy.groovy-json}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy-xml</artifactId>
+        <version>${version.org.codehaus.groovy.groovy-xml}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
