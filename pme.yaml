@@ -2,5 +2,5 @@ pme:
   project.src.skip: true
   project.meta.skip: true
   restMaxSize: 30
-  restURL: http://pnc-da-master-autodeploy.cloud.pnc.devel.engineering.redhat.com/da/rest/v-1
+  restURL: <REPLACE_WITH_ADDRES_OF_THE_REST_SERVER>
   version.incremental.suffix: redhat
