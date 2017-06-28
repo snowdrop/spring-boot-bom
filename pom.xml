@@ -46,6 +46,7 @@
     <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider>2.8.3</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider>
     <version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>2.8.3</version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>
     <version.commons-codec.commons-codec>1.10</version.commons-codec.commons-codec>
+    <version.com.h2database.h2>1.4.192</version.com.h2database.h2>
     <version.io.fabric8.kubernetes-client>2.2.14</version.io.fabric8.kubernetes-client>
     <version.io.fabric8.openshift-client>2.2.14</version.io.fabric8.openshift-client>
     <version.io.fabric8.spring-cloud-kubernetes-core>0.1.6</version.io.fabric8.spring-cloud-kubernetes-core>
@@ -64,6 +65,7 @@
     <version.org.codehaus.groovy.groovy-json>2.4.7</version.org.codehaus.groovy.groovy-json>
     <version.org.codehaus.groovy.groovy-xml>2.4.7</version.org.codehaus.groovy.groovy-xml>
     <version.org.hibernate.hibernate-validator>5.2.4.Final</version.org.hibernate.hibernate-validator>
+    <version.org.javassist.javassist>3.20.0-GA</version.org.javassist.javassist>
     <version.org.jboss.logging.jboss-logging>3.3.0.Final</version.org.jboss.logging.jboss-logging>
     <version.org.json.json>20140107</version.org.json.json>
     <version.org.slf4j.slf4j-api>1.7.21</version.org.slf4j.slf4j-api>
@@ -71,7 +73,10 @@
     <version.org.springframework.cloud.spring-cloud-netflix>1.1.6.RELEASE</version.org.springframework.cloud.spring-cloud-netflix>
     <version.org.springframework.cloud.spring-cloud-sleuth-zipkin>1.0.9.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth-zipkin>
     <version.org.springframework.spring-aspects>4.3.3.RELEASE</version.org.springframework.spring-aspects>
+    <version.org.springframework.spring-orm>4.3.3.RELEASE</version.org.springframework.spring-orm>
+    <version.org.springframework.spring-tx>4.3.3.RELEASE</version.org.springframework.spring-tx>
     <version.org.springframework.spring-web>4.3.3.RELEASE</version.org.springframework.spring-web>
+    <version.xml-apis.xml-apis>1.4.01</version.xml-apis.xml-apis>
   </properties>
 
   <dependencyManagement>
@@ -228,6 +233,16 @@
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
+        <artifactId>spring-orm</artifactId>
+        <version>${version.org.springframework.spring-orm}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-tx</artifactId>
+        <version>${version.org.springframework.spring-tx}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
         <artifactId>spring-web</artifactId>
         <version>${version.org.springframework.spring-web}</version>
       </dependency>
@@ -271,6 +286,11 @@
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
         <version>${version.commons-codec.commons-codec}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>${version.com.h2database.h2}</version>
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
@@ -329,6 +349,11 @@
         <version>${version.org.hibernate.hibernate-validator}</version>
       </dependency>
       <dependency>
+        <groupId>org.javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>${version.org.javassist.javassist}</version>
+      </dependency>
+      <dependency>
         <groupId>org.jboss.logging</groupId>
         <artifactId>jboss-logging</artifactId>
         <version>${version.org.jboss.logging.jboss-logging}</version>
@@ -342,6 +367,11 @@
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>${version.org.slf4j.slf4j-api}</version>
+      </dependency>
+      <dependency>
+        <groupId>xml-apis</groupId>
+        <artifactId>xml-apis</artifactId>
+        <version>${version.xml-apis.xml-apis}</version>
       </dependency>
 
       <!-- spring-cloud -->
