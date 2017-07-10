@@ -25,7 +25,7 @@
 
   <groupId>org.jboss.snowdrop</groupId>
   <artifactId>spring-boot-parent</artifactId>
-  <version>1</version>
+  <version>1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <licenses>
@@ -485,6 +485,10 @@
   </dependencyManagement>
 
   <scm>
-    <tag>1</tag>
+    <url>https://github.com/snowdrop</url>
+    <connection>scm:git:https://github.com/snowdrop/spring-boot-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:snowdrop/spring-boot-parent.git</developerConnection>
+    <tag>HEAD</tag>
   </scm>
+
 </project>
