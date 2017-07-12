@@ -70,6 +70,7 @@
     <version.org.javassist.javassist>3.20.0-GA</version.org.javassist.javassist>
     <version.org.jboss.logging.jboss-logging>3.3.0.Final</version.org.jboss.logging.jboss-logging>
     <version.org.json.json>20140107</version.org.json.json>
+    <!-- Version used by Red Hat SSO 7.1 -->
     <version.org.keycloak.keycloak-adapters>2.5.5.Final</version.org.keycloak.keycloak-adapters>
     <version.org.slf4j.jul-to-slf4j>1.7.21</version.org.slf4j.jul-to-slf4j>
     <version.org.slf4j.slf4j-api>1.7.21</version.org.slf4j.slf4j-api>
