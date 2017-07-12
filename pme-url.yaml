@@ -1,6 +1,0 @@
-pme:
-  project.src.skip: true
-  project.meta.skip: true
-  restMaxSize: 30
-  restURL: 
-  version.incremental.suffix: redhat
