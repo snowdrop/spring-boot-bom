@@ -25,7 +25,7 @@
 
   <groupId>org.jboss.snowdrop</groupId>
   <artifactId>spring-boot-1.4-bom</artifactId>
-  <version>2-SNAPSHOT</version>
+  <version>1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <licenses>
