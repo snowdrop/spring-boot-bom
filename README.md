@@ -1,29 +1,41 @@
-# Instructions
+# Introduction
 
-Command to be used to replace the version number of the Apache Tomcat Embed and Hibernate Validator jar
+This github repo contains the different Spring Boot BOMs maintained along the Spring Boot starters for the different Spring Boot Missions, ...
+A branch exists for each version of Spring Boot currently supported; 1.4.x, 1.5.x, 2.x ...
 
-```
-curl -O http://central.maven.org/maven2/org/commonjava/maven/ext/pom-manipulation-cli/2.11/pom-manipulation-cli-2.11.jar
-java -jar pom-manipulation-cli-2.11.jar 
-```
+To modify a pom, checkout the appropriate branch `git checkout sb-1.4.x`
 
-The params to be used are defined within the `pme.yaml` file. First, we will use the project properties `project.src.skip` and `project.meta.skip` in order to 
-avoid to add within the BOM file some maven plugins and next we will define using the param [dependencyExclusion](https://release-engineering.github.io/pom-manipulation-ext/guide/dep-manip.html)
-the GAVs to be modified like also their version
+# Releasing
 
-```
-pme:
-  project.src.skip: true
-  project.meta.skip: true
-  dependencyExclusion.org.hibernate:hibernate-validator@*: 5.2.4.Final-redhat-1
-  # Update version of all the Embedded Tomcat jars
-  dependencyExclusion.org.apache.tomcat.embed:*@*: 8.0.36.redhat-14
-```
-
-# Bash script
-
-If you have admin rights on this Github project, you can  generate the BOM file and commit under the result under the branch `release` using the bash script
+Issue first a dry run to control the changes
 
 ```bash
-./generate_bom_file.sh
+mvn release:perform -DdryRun
 ```
+
+Convention to follow :
+
+```bash
+What is the release version for "spring-boot-1.4-bom"? (org.jboss.snowdrop:spring-boot-1.4-bom) 1: : <DIGIT>
+What is SCM release tag or label for "spring-boot-1.4-bom"? (org.jboss.snowdrop:spring-boot-1.4-bom) spring-boot-1.4-bom-1: : sb-1.4-<DIGIT>
+What is the new development version for "spring-boot-1.4-bom"? (org.jboss.snowdrop:spring-boot-1.4-bom) 2-SNAPSHOT: : <NEXT-DIGIT>
+
+where <DIGIT> corresponds to the nu;ber without `-SNAPSHOT` and <NEXT-DIGIT> is the next digit available
+```
+
+Before to release, check within your `~/.m2/settings.xml` file that you have a `<service><id>` for `jboss-releases-rpository` defined which contains your 
+credentials
+
+```bash
+<server>
+  <id>jboss-releases-repository</id>
+  <username>userName</username>
+  <password>passWord</password>
+```
+
+Then release
+
+```bash
+mvn release:perform
+```
+
