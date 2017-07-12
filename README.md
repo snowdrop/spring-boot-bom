@@ -10,17 +10,20 @@ To modify a pom, checkout the appropriate branch `git checkout sb-1.4.x`
 Issue first a dry run to control the changes
 
 ```bash
-mvn release:perform -DdryRun
+mvn release:prepare -DdryRun
 ```
 
 Convention to follow :
 
 ```bash
-What is the release version for "spring-boot-1.4-bom"? (org.jboss.snowdrop:spring-boot-1.4-bom) 1: : <DIGIT>
-What is SCM release tag or label for "spring-boot-1.4-bom"? (org.jboss.snowdrop:spring-boot-1.4-bom) spring-boot-1.4-bom-1: : sb-1.4-<DIGIT>
-What is the new development version for "spring-boot-1.4-bom"? (org.jboss.snowdrop:spring-boot-1.4-bom) 2-SNAPSHOT: : <NEXT-DIGIT>
+What is the release version for "spring-boot-1.4-bom"? \
+  (org.jboss.snowdrop:spring-boot-1.4-bom) 1: : <DIGIT>
+What is SCM release tag or label for "spring-boot-1.4-bom"? \
+  (org.jboss.snowdrop:spring-boot-1.4-bom) spring-boot-1.4-bom-1: : sb-1.4-<DIGIT>
+What is the new development version for "spring-boot-1.4-bom"? \
+  (org.jboss.snowdrop:spring-boot-1.4-bom) 2-SNAPSHOT: : <NEXT-DIGIT>
 
-where <DIGIT> corresponds to the nu;ber without `-SNAPSHOT` and <NEXT-DIGIT> is the next digit available
+where <DIGIT> corresponds to the number without `-SNAPSHOT` and `<NEXT-DIGIT>` is the next digit available
 ```
 
 Before to release, check within your `~/.m2/settings.xml` file that you have a `<service><id>` for `jboss-releases-rpository` defined which contains your 
