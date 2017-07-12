@@ -24,7 +24,7 @@
   </parent>
 
   <groupId>org.jboss.snowdrop</groupId>
-  <artifactId>spring-boot-parent</artifactId>
+  <artifactId>spring-boot-1.4-bom</artifactId>
   <version>2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
