@@ -78,6 +78,8 @@
     <version.org.springframework.cloud.spring-cloud-netflix>1.2.7.RELEASE</version.org.springframework.cloud.spring-cloud-netflix>
     <version.org.springframework.cloud.spring-cloud-sleuth-zipkin>1.0.9.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth-zipkin>
     <version.org.springframework.spring-aspects>4.3.3.RELEASE</version.org.springframework.spring-aspects>
+    <version.org.springframework.spring-beans>4.3.3.RELEASE</version.org.springframework.spring-beans>
+    <version.org.springframework.spring-context>4.3.3.RELEASE</version.org.springframework.spring-context>
     <version.org.springframework.spring-core>4.3.3.RELEASE</version.org.springframework.spring-core>
     <version.org.springframework.spring-orm>4.3.3.RELEASE</version.org.springframework.spring-orm>
     <version.org.springframework.spring-tx>4.3.3.RELEASE</version.org.springframework.spring-tx>
@@ -255,6 +257,16 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-aspects</artifactId>
         <version>${version.org.springframework.spring-aspects}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>${version.org.springframework.spring-beans}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${version.org.springframework.spring-context}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
