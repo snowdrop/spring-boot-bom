@@ -10,4 +10,4 @@ This BOM is aligned to :
 - [Spring Cloud Kubernetes - 0.2.0](https://github.com/spring-cloud-incubator/spring-cloud-kubernetes/tree/v0.2.0.RELEASE)
 - Spring Boot 1.5.4.RELEASE
 - Fabric8 Kubernetes/Openshift Client 2.x
-- Arauillian Cube - TODO
+- Arquillian Cube - TODO

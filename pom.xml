@@ -46,22 +46,20 @@
     <version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>2.8.3</version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>
     <version.commons-codec.commons-codec>1.10</version.commons-codec.commons-codec>
     <version.com.h2database.h2>1.4.192</version.com.h2database.h2>
-    <version.io.fabric8.kubernetes-client>1.4.34</version.io.fabric8.kubernetes-client>
-    <version.io.fabric8.openshift-client>1.4.34</version.io.fabric8.openshift-client>
-    <version.io.fabric8.spring-cloud-kubernetes-core>0.1.4</version.io.fabric8.spring-cloud-kubernetes-core>
-    <version.io.fabric8.spring-cloud-starter-kubernetes-netflix>0.1.4</version.io.fabric8.spring-cloud-starter-kubernetes-netflix>
+    <version.io.fabric8.kubernetes-client>2.4.1</version.io.fabric8.kubernetes-client>
+    <version.io.fabric8.openshift-client>2.4.1</version.io.fabric8.openshift-client>
     <version.javax.servlet.jstl>1.2</version.javax.servlet.jstl>
     <version.mysql.mysql-connector-java>5.1.39</version.mysql.mysql-connector-java>
-    <version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>3.1.10</version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>
+    <version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>3.1.12</version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>
     <version.org.apache.httpcomponents.httpclient>4.5.2</version.org.apache.httpcomponents.httpclient>
     <version.org.apache.httpcomponents.httpcore>4.4.5</version.org.apache.httpcomponents.httpcore>
     <version.org.apache.httpcomponents.httpmime>4.5.2</version.org.apache.httpcomponents.httpmime>
-    <version.org.apache.tomcat.embed.tomcat-embed-core>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-core>
-    <version.org.apache.tomcat.embed.tomcat-embed-el>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-el>
-    <version.org.apache.tomcat.embed.tomcat-embed-jasper>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-jasper>
-    <version.org.apache.tomcat.embed.tomcat-embed-websocket>8.0.36</version.org.apache.tomcat.embed.tomcat-embed-websocket>
-    <version.org.apache.tomcat.tomcat-jdbc>8.0.36</version.org.apache.tomcat.tomcat-jdbc>
-    <version.org.apache.tomcat.tomcat-juli>8.0.36</version.org.apache.tomcat.tomcat-juli>
+    <version.org.apache.tomcat.embed.tomcat-embed-core>8.5.15</version.org.apache.tomcat.embed.tomcat-embed-core>
+    <version.org.apache.tomcat.embed.tomcat-embed-el>8.5.15</version.org.apache.tomcat.embed.tomcat-embed-el>
+    <version.org.apache.tomcat.embed.tomcat-embed-jasper>8.5.15</version.org.apache.tomcat.embed.tomcat-embed-jasper>
+    <version.org.apache.tomcat.embed.tomcat-embed-websocket>8.5.15</version.org.apache.tomcat.embed.tomcat-embed-websocket>
+    <version.org.apache.tomcat.tomcat-jdbc>8.5.15</version.org.apache.tomcat.tomcat-jdbc>
+    <version.org.apache.tomcat.tomcat-juli>8.5.15</version.org.apache.tomcat.tomcat-juli>
     <version.org.assertj.assertj-core>2.5.0</version.org.assertj.assertj-core>
     <version.org.codehaus.groovy.groovy>2.4.7</version.org.codehaus.groovy.groovy>
     <version.org.codehaus.groovy.groovy-json>2.4.7</version.org.codehaus.groovy.groovy-json>
@@ -78,15 +76,15 @@
     <version.org.springframework.cloud.spring-cloud-netflix>1.3.2.RELEASE</version.org.springframework.cloud.spring-cloud-netflix>
     <version.org.springframework.cloud.spring-cloud-sleuth-zipkin>1.2.2.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth-zipkin>
     <version.org.springframework.cloud.spring-cloud-kubernetes>0.2.0</version.org.springframework.cloud.spring-cloud-kubernetes>
-    <version.org.springframework.spring-aspects>4.3.3.RELEASE</version.org.springframework.spring-aspects>
-    <version.org.springframework.spring-beans>4.3.3.RELEASE</version.org.springframework.spring-beans>
-    <version.org.springframework.spring-context>4.3.3.RELEASE</version.org.springframework.spring-context>
-    <version.org.springframework.spring-core>4.3.3.RELEASE</version.org.springframework.spring-core>
-    <version.org.springframework.spring-orm>4.3.3.RELEASE</version.org.springframework.spring-orm>
-    <version.org.springframework.spring-tx>4.3.3.RELEASE</version.org.springframework.spring-tx>
-    <version.org.springframework.spring-web>4.3.3.RELEASE</version.org.springframework.spring-web>
-    <version.org.springframework.spring-webmvc>4.3.3.RELEASE</version.org.springframework.spring-webmvc>
-    <version.org.springframework.security.spring-security-crypto>4.1.3.RELEASE</version.org.springframework.security.spring-security-crypto>
+    <version.org.springframework.spring-aspects>4.3.9.RELEASE</version.org.springframework.spring-aspects>
+    <version.org.springframework.spring-beans>4.3.9.RELEASE</version.org.springframework.spring-beans>
+    <version.org.springframework.spring-context>4.3.9.RELEASE</version.org.springframework.spring-context>
+    <version.org.springframework.spring-core>4.3.9.RELEASE</version.org.springframework.spring-core>
+    <version.org.springframework.spring-orm>4.3.9.RELEASE</version.org.springframework.spring-orm>
+    <version.org.springframework.spring-tx>4.3.9.RELEASE</version.org.springframework.spring-tx>
+    <version.org.springframework.spring-web>4.3.9.RELEASE</version.org.springframework.spring-web>
+    <version.org.springframework.spring-webmvc>4.3.9.RELEASE</version.org.springframework.spring-webmvc>
+    <version.org.springframework.security.spring-security-crypto>4.2.3.RELEASE</version.org.springframework.security.spring-security-crypto>
     <version.org.yaml.snakeyaml>1.17</version.org.yaml.snakeyaml>
     <version.xml-apis.xml-apis>1.4.01</version.xml-apis.xml-apis>
   </properties>
@@ -470,8 +468,28 @@
         <version>${version.org.springframework.cloud.spring-cloud-sleuth-zipkin}</version>
       </dependency>
       <dependency>
-      <groupId>org.springframework.cloud</groupId>
+        <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-kubernetes</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-kubernetes-config</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-kubernetes-netflix</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-kubernetes-zipkin</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-kubernetes-all</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
 
