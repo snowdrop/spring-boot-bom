@@ -54,12 +54,12 @@
     <version.org.apache.httpcomponents.httpclient>4.5.2</version.org.apache.httpcomponents.httpclient>
     <version.org.apache.httpcomponents.httpcore>4.4.5</version.org.apache.httpcomponents.httpcore>
     <version.org.apache.httpcomponents.httpmime>4.5.2</version.org.apache.httpcomponents.httpmime>
-    <version.org.apache.tomcat.embed.tomcat-embed-core>8.5.15</version.org.apache.tomcat.embed.tomcat-embed-core>
-    <version.org.apache.tomcat.embed.tomcat-embed-el>8.5.15</version.org.apache.tomcat.embed.tomcat-embed-el>
-    <version.org.apache.tomcat.embed.tomcat-embed-jasper>8.5.15</version.org.apache.tomcat.embed.tomcat-embed-jasper>
-    <version.org.apache.tomcat.embed.tomcat-embed-websocket>8.5.15</version.org.apache.tomcat.embed.tomcat-embed-websocket>
-    <version.org.apache.tomcat.tomcat-jdbc>8.5.15</version.org.apache.tomcat.tomcat-jdbc>
-    <version.org.apache.tomcat.tomcat-juli>8.5.15</version.org.apache.tomcat.tomcat-juli>
+    <version.org.apache.tomcat.embed.tomcat-embed-core>8.5.20</version.org.apache.tomcat.embed.tomcat-embed-core>
+    <version.org.apache.tomcat.embed.tomcat-embed-el>8.5.20</version.org.apache.tomcat.embed.tomcat-embed-el>
+    <version.org.apache.tomcat.embed.tomcat-embed-jasper>8.5.20</version.org.apache.tomcat.embed.tomcat-embed-jasper>
+    <version.org.apache.tomcat.embed.tomcat-embed-websocket>8.5.20</version.org.apache.tomcat.embed.tomcat-embed-websocket>
+    <version.org.apache.tomcat.tomcat-jdbc>8.5.20</version.org.apache.tomcat.tomcat-jdbc>
+    <version.org.apache.tomcat.tomcat-juli>8.5.20</version.org.apache.tomcat.tomcat-juli>
     <version.org.assertj.assertj-core>2.5.0</version.org.assertj.assertj-core>
     <version.org.codehaus.groovy.groovy>2.4.7</version.org.codehaus.groovy.groovy>
     <version.org.codehaus.groovy.groovy-json>2.4.7</version.org.codehaus.groovy.groovy-json>
