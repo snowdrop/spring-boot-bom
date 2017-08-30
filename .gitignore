@@ -2,3 +2,7 @@
 *.iml
 /target
 *.jar
+.vscode
+.project
+.classpath
+.settings/*
