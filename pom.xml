@@ -517,8 +517,8 @@
 
   <scm>
     <url>https://github.com/snowdrop</url>
-    <connection>scm:git:https://github.com/snowdrop/spring-boot-parent.git</connection>
-    <developerConnection>scm:git:git@github.com:snowdrop/spring-boot-parent.git</developerConnection>
+    <connection>scm:git:https://github.com/snowdrop/spring-boot-bom.git</connection>
+    <developerConnection>scm:git:git@github.com:snowdrop/spring-boot-bom.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
