@@ -23,9 +23,9 @@
     <version>21</version>
   </parent>
 
-  <groupId>org.jboss.snowdrop</groupId>
-  <artifactId>spring-boot-1.5-bom</artifactId>
-  <version>1-SNAPSHOT</version>
+  <groupId>me.snowdrop</groupId>
+  <artifactId>spring-boot-bom</artifactId>
+  <version>1.5.4-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <licenses>
