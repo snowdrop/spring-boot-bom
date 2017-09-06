@@ -37,6 +37,7 @@
   </licenses>
 
   <properties>
+    <version.antlr.antlr>2.7.7</version.antlr.antlr> <!-- For Hibernate core -->
     <version.com.fasterxml.classmate>1.3.1</version.com.fasterxml.classmate>
     <version.com.fasterxml.jackson.core.jackson-annotations>2.8.3</version.com.fasterxml.jackson.core.jackson-annotations>
     <version.com.fasterxml.jackson.core.jackson-core>2.8.3</version.com.fasterxml.jackson.core.jackson-core>
@@ -46,10 +47,15 @@
     <version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>2.8.3</version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>
     <version.commons-codec.commons-codec>1.10</version.commons-codec.commons-codec>
     <version.com.h2database.h2>1.4.192</version.com.h2database.h2>
+    <version.dom4j.dom4j>1.6.1</version.dom4j.dom4j> <!-- For Hibernate core -->
     <version.io.fabric8.kubernetes-client>1.4.34</version.io.fabric8.kubernetes-client>
     <version.io.fabric8.openshift-client>1.4.34</version.io.fabric8.openshift-client>
     <version.io.fabric8.spring-cloud-kubernetes-core>0.1.4</version.io.fabric8.spring-cloud-kubernetes-core>
     <version.io.fabric8.spring-cloud-starter-kubernetes-netflix>0.1.4</version.io.fabric8.spring-cloud-starter-kubernetes-netflix>
+    <version.javax.annotation.jsr250-api>1.0</version.javax.annotation.jsr250-api> <!-- For Hibernate core -->
+    <version.javax.el.el-api>2.2</version.javax.el.el-api> <!-- For Hibernate core -->
+    <version.javax.enterprise.cdi-api>1.1</version.javax.enterprise.cdi-api> <!-- For Hibernate core -->
+    <version.javax.inject.javax.inject>1</version.javax.inject.javax.inject> <!-- For Hibernate core -->
     <version.javax.servlet.jstl>1.2</version.javax.servlet.jstl>
     <version.mysql.mysql-connector-java>5.1.39</version.mysql.mysql-connector-java>
     <version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>3.1.12</version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>
@@ -66,9 +72,14 @@
     <version.org.codehaus.groovy.groovy>2.4.7</version.org.codehaus.groovy.groovy>
     <version.org.codehaus.groovy.groovy-json>2.4.7</version.org.codehaus.groovy.groovy-json>
     <version.org.codehaus.groovy.groovy-xml>2.4.7</version.org.codehaus.groovy.groovy-xml>
+    <version.org.hibernate.common.hibernate-commons-annotations>5.0.1.Final</version.org.hibernate.common.hibernate-commons-annotations> <!-- For Hibernate core -->
+    <version.org.hibernate.hibernate-core>5.2.4.Final</version.org.hibernate.hibernate-core>
     <version.org.hibernate.hibernate-validator>5.2.4.Final</version.org.hibernate.hibernate-validator>
+    <version.org.hibernate.javax.persistence.hibernate-jpa-2.1-api>1.0.0.Final</version.org.hibernate.javax.persistence.hibernate-jpa-2.1-api> <!-- For Hibernate core -->
     <version.org.javassist.javassist>3.20.0-GA</version.org.javassist.javassist>
+    <version.org.jboss.jandex>2.0.0.Final</version.org.jboss.jandex> <!-- For Hibernate core -->
     <version.org.jboss.logging.jboss-logging>3.3.0.Final</version.org.jboss.logging.jboss-logging>
+    <version.org.jboss.spec.javax.interceptor.jboss-interceptors-api_1.1_spec>1.0.0.Beta1</version.org.jboss.spec.javax.interceptor.jboss-interceptors-api_1.1_spec> <!-- For Hibernate core -->
     <version.org.json.json>20140107</version.org.json.json>
     <!-- Version used by Red Hat SSO 7.1 -->
     <version.org.keycloak.keycloak-adapters>2.5.5.Final</version.org.keycloak.keycloak-adapters>
@@ -398,6 +409,61 @@
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
         <version>${version.org.hibernate.hibernate-validator}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>${version.org.hibernate.hibernate-core}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate.javax.persistence</groupId>
+        <artifactId>hibernate-jpa-2.1-api</artifactId>
+        <version>${version.org.hibernate.javax.persistence.hibernate-jpa-2.1-api}</version>
+      </dependency>
+      <dependency>
+        <groupId>antlr</groupId>
+        <artifactId>antlr</artifactId>
+        <version>${version.antlr.antlr}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss</groupId>
+        <artifactId>jandex</artifactId>
+        <version>${version.org.jboss.jandex}</version>
+      </dependency>
+      <dependency>
+        <groupId>dom4j</groupId>
+        <artifactId>dom4j</artifactId>
+        <version>${version.dom4j.dom4j}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate.common</groupId>
+        <artifactId>hibernate-commons-annotations</artifactId>
+        <version>${version.org.hibernate.common.hibernate-commons-annotations}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.enterprise</groupId>
+        <artifactId>cdi-api</artifactId>
+        <version>${version.javax.enterprise.cdi-api}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.el</groupId>
+        <artifactId>el-api</artifactId>
+        <version>${version.javax.el.el-api}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.spec.javax.interceptor</groupId>
+        <artifactId>jboss-interceptors-api_1.1_spec</artifactId>
+        <version>${version.org.jboss.spec.javax.interceptor.jboss-interceptors-api_1.1_spec}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.annotation</groupId>
+        <artifactId>jsr250-api</artifactId>
+        <version>${version.javax.annotation.jsr250-api}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>${version.javax.inject.javax.inject}</version>
       </dependency>
       <dependency>
         <groupId>org.javassist</groupId>
