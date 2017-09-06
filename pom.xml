@@ -38,6 +38,7 @@
 
   <properties>
     <version.antlr.antlr>2.7.7</version.antlr.antlr> <!-- For Hibernate core -->
+    <version.ch.qos.logback.logback>1.1.7</version.ch.qos.logback.logback>
     <version.com.fasterxml.classmate>1.3.1</version.com.fasterxml.classmate>
     <version.com.fasterxml.jackson.core.jackson-annotations>2.8.3</version.com.fasterxml.jackson.core.jackson-annotations>
     <version.com.fasterxml.jackson.core.jackson-core>2.8.3</version.com.fasterxml.jackson.core.jackson-core>
@@ -363,6 +364,18 @@
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
         <version>${version.org.apache.cxf.cxf-spring-boot-starter-jaxrs}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-core</artifactId>
+        <version>${version.ch.qos.logback.logback}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${version.ch.qos.logback.logback}</version>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
