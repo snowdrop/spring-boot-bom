@@ -72,13 +72,35 @@
     <version.org.slf4j.jul-to-slf4j>1.7.21</version.org.slf4j.jul-to-slf4j>
     <version.org.slf4j.slf4j-api>1.7.21</version.org.slf4j.slf4j-api>
     <version.org.springframework.boot.spring-boot>1.5.4.RELEASE</version.org.springframework.boot.spring-boot>
+    <version.org.springframework.cloud>Dalston.SR2</version.org.springframework.cloud>
+    <version.org.springframework.cloud.spring-cloud-config>1.3.2.RELEASE</version.org.springframework.cloud.spring-cloud-config>
     <version.org.springframework.cloud.spring-cloud-netflix>1.3.2.RELEASE</version.org.springframework.cloud.spring-cloud-netflix>
+    <version.org.springframework.cloud.spring-cloud-sleuth>1.2.2.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth> 
     <version.org.springframework.cloud.spring-cloud-sleuth-zipkin>1.2.2.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth-zipkin>
-    <version.org.springframework.cloud.spring-cloud-kubernetes>0.2.0</version.org.springframework.cloud.spring-cloud-kubernetes>
+    <version.org.springframework.cloud.spring-cloud-kubernetes>0.2.0.RELEASE</version.org.springframework.cloud.spring-cloud-kubernetes>
+    <version.org.springframework.cloud.spring-cloud-starter-feign>1.3.4.RELEASE</version.org.springframework.cloud.spring-cloud-starter-feign>
+    <version.org.springframework.cloud.spring-cloud-starter-zuul>1.3.4.RELEASE</version.org.springframework.cloud.spring-cloud-starter-zuul>
+    <version.org.springframework.cloud.spring-cloud-sleuth-stream>1.2.4.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth-stream>
+    <version.org.springframework.cloud.spring-cloud-starter-stream-rabbit>1.2.1.RELEASE</version.org.springframework.cloud.spring-cloud-starter-stream-rabbit>
     <version.org.springframework.spring>4.3.9.RELEASE</version.org.springframework.spring>
+    <version.org.springframework.spring-aspects>4.3.9.RELEASE</version.org.springframework.spring-aspects>
+    <version.org.springframework.spring-beans>4.3.9.RELEASE</version.org.springframework.spring-beans>
+    <version.org.springframework.spring-context>4.3.9.RELEASE</version.org.springframework.spring-context>
+    <version.org.springframework.spring-core>4.3.9.RELEASE</version.org.springframework.spring-core>
+    <version.org.springframework.spring-orm>4.3.9.RELEASE</version.org.springframework.spring-orm>
+    <version.org.springframework.spring-tx>4.3.9.RELEASE</version.org.springframework.spring-tx>
+    <version.org.springframework.spring-web>4.3.9.RELEASE</version.org.springframework.spring-web>
+    <version.org.springframework.spring-webmvc>4.3.9.RELEASE</version.org.springframework.spring-webmvc>
     <version.org.springframework.security.spring-security-crypto>4.2.3.RELEASE</version.org.springframework.security.spring-security-crypto>
+    <version.org.springframework.spring-amqp>1.7.3.RELEASE</version.org.springframework.spring-amqp>
     <version.org.yaml.snakeyaml>1.17</version.org.yaml.snakeyaml>
     <version.xml-apis.xml-apis>1.4.01</version.xml-apis.xml-apis>
+    <version.spock>1.0-groovy-2.4</version.spock>
+    <version.lombok>1.16.16</version.lombok>
+    <version.aspectj>1.8.10</version.aspectj> 
+    <version.dropwizard-metrics>3.1.4</version.dropwizard-metrics>
+    <version.hsqldb>2.3.5</version.hsqldb>
+    <version.gauva>23.0</version.gauva>
   </properties>
 
   <dependencyManagement>
@@ -96,6 +118,11 @@
       </dependency>
 
       <!-- spring-boot -->
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${version.lombok}</version>
+      </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot</artifactId>
@@ -185,6 +212,11 @@
         <version>${version.org.springframework.boot.spring-boot}</version>
       </dependency>
       <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-feign</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-starter-feign}</version>
+      </dependency>
+      <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-jdbc</artifactId>
         <version>${version.org.springframework.boot.spring-boot}</version>
@@ -223,6 +255,21 @@
 
       <!-- spring-framework -->
       <dependency>
+          <groupId>org.aspectj</groupId>
+          <artifactId>aspectjrt</artifactId>
+          <version>${version.aspectj}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.aspectj</groupId>
+          <artifactId>aspectjtools</artifactId>
+          <version>${version.aspectj}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>${version.aspectj}</version>
+        </dependency>
+      <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aspects</artifactId>
         <version>${version.org.springframework.spring}</version>
@@ -250,6 +297,11 @@
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>${version.org.springframework.spring-core}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
         <artifactId>spring-orm</artifactId>
         <version>${version.org.springframework.spring}</version>
       </dependency>
@@ -273,7 +325,27 @@
         <artifactId>spring-security-crypto</artifactId>
         <version>${version.org.springframework.security.spring-security-crypto}</version>
       </dependency>
-
+      <dependency>
+        <groupId>org.springframework.amqp</groupId>
+        <artifactId>spring-amqp</artifactId>
+        <version>${version.org.springframework.spring-amqp}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.spockframework</groupId>
+        <artifactId>spock-core</artifactId>
+        <version>${version.spock}</version>
+        <exclusions>
+          <exclusion>
+          <groupId>org.codehaus.groovy</groupId>
+          <artifactId>groovy-all</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.spockframework</groupId>
+        <artifactId>spock-spring</artifactId>
+        <version>${version.spock}</version>
+      </dependency>
       <dependency>
         <groupId>com.fasterxml</groupId>
         <artifactId>classmate</artifactId>
@@ -497,6 +569,36 @@
         <artifactId>xml-apis</artifactId>
         <version>${version.xml-apis.xml-apis}</version>
       </dependency>
+      <dependency>
+        <groupId>io.dropwizard.metrics</groupId>
+        <artifactId>metrics-core</artifactId>
+        <version>${version.dropwizard-metrics}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.dropwizard.metrics</groupId>
+        <artifactId>metrics-ganglia</artifactId>
+        <version>${version.dropwizard-metrics}</version>
+        </dependency>
+      <dependency>
+        <groupId>io.dropwizard.metrics</groupId>
+        <artifactId>metrics-graphite</artifactId>
+        <version>${version.dropwizard-metrics}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.dropwizard.metrics</groupId>
+        <artifactId>metrics-servlets</artifactId>
+        <version>${version.dropwizard-metrics}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hsqldb</groupId>
+        <artifactId>hsqldb</artifactId>
+        <version>${version.hsqldb}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${version.gauva}</version>
+      </dependency>
 
       <!-- spring-cloud -->
       <dependency>
@@ -506,38 +608,94 @@
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-config</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-config}</version>
+      </dependency>
+       <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-starter-stream-rabbit}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-ribbon</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-netflix}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-sleuth</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-sleuth}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-sleuth-zipkin}</version>
+        <version>${version.org.springframework.cloud.spring-cloud-sleuth}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-kubernetes</artifactId>
+        <artifactId>spring-cloud-sleuth-zipkin-stream</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-sleuth}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-sleuth-stream</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-sleuth-stream}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-kubernetes-core</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-kubernetes-config</artifactId>
+        <artifactId>spring-cloud-kubernetes-config</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-kubernetes-netflix</artifactId>
+        <artifactId>spring-cloud-kubernetes-discovery</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-kubernetes-zipkin</artifactId>
+        <artifactId>spring-cloud-kubernetes-archaius</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-kubernetes-all</artifactId>
+        <artifactId>spring-cloud-kubernetes-ribbon</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-kubernetes-hystrix</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-kubernetes-config</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-kubernetes-netflix</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-kubernetes-zipkin</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-kubernetes-all</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.springframework.cloud</groupId>
+          <artifactId>spring-cloud-starter-zuul</artifactId>
+          <version>${version.org.springframework.cloud.spring-cloud-starter-zuul}</version>
       </dependency>
 
       <!-- Tomcat -->
