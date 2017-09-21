@@ -659,11 +659,6 @@
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-config</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-kubernetes-netflix</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
