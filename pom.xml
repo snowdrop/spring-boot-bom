@@ -81,7 +81,7 @@
     <version.org.springframework.cloud.spring-cloud-starter-zuul>1.3.4.RELEASE</version.org.springframework.cloud.spring-cloud-starter-zuul>
     <version.org.springframework.cloud.spring-cloud-sleuth-stream>1.2.4.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth-stream>
     <version.org.springframework.cloud.spring-cloud-starter-stream-rabbit>1.2.1.RELEASE</version.org.springframework.cloud.spring-cloud-starter-stream-rabbit>
-    <version.org.springframework.spring>4.3.9.RELEASE</version.org.springframework.spring>
+    <version.org.springframework.spring>4.3.11.RELEASE</version.org.springframework.spring>
     <version.org.springframework.security.spring-security-crypto>4.2.3.RELEASE</version.org.springframework.security.spring-security-crypto>
     <version.org.springframework.spring-amqp>1.7.3.RELEASE</version.org.springframework.spring-amqp>
     <version.org.yaml.snakeyaml>1.17</version.org.yaml.snakeyaml>
