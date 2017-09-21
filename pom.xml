@@ -68,7 +68,6 @@
     <version.org.json.json>20140107</version.org.json.json>
     <!-- Version used by Red Hat SSO 7.1 -->
     <version.org.keycloak.keycloak-adapters>2.5.5.Final</version.org.keycloak.keycloak-adapters>
-    <version.org.slf4j.jul-to-slf4j>1.7.21</version.org.slf4j.jul-to-slf4j>
     <version.org.slf4j.slf4j-api>1.7.21</version.org.slf4j.slf4j-api>
     <version.org.springframework.boot.spring-boot>1.5.7.RELEASE</version.org.springframework.boot.spring-boot>
     <version.org.springframework.cloud>Dalston.SR2</version.org.springframework.cloud>
@@ -289,7 +288,7 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-jdbc</artifactId>
-        <version>${version.org.springframework.spring-core}</version>
+        <version>${version.org.springframework.spring}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
