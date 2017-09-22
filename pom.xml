@@ -58,7 +58,7 @@
     <version.org.assertj.assertj-core>2.5.0</version.org.assertj.assertj-core>
     <version.org.codehaus.groovy.groovy>2.4.7</version.org.codehaus.groovy.groovy>
     <version.org.hibernate.common.hibernate-commons-annotations>5.0.1.Final</version.org.hibernate.common.hibernate-commons-annotations> <!-- For Hibernate core -->
-    <version.org.hibernate.hibernate-core>5.2.4.Final</version.org.hibernate.hibernate-core>
+    <version.org.hibernate.hibernate-core>5.0.12.Final</version.org.hibernate.hibernate-core>
     <version.org.hibernate.hibernate-validator>5.2.4.Final</version.org.hibernate.hibernate-validator>
     <version.org.hibernate.javax.persistence.hibernate-jpa-2.1-api>1.0.0.Final</version.org.hibernate.javax.persistence.hibernate-jpa-2.1-api> <!-- For Hibernate core -->
     <version.org.javassist.javassist>3.20.0-GA</version.org.javassist.javassist>
