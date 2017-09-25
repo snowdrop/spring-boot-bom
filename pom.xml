@@ -169,7 +169,7 @@
         <version>${version.org.springframework.boot.spring-boot}</version>
       </dependency>
 
-      <!-- spring-boot starters -->
+      <!-- Spring Boot Starters -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter</artifactId>
@@ -588,31 +588,6 @@
       <!-- spring-cloud -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-hystrix</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-netflix}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-config</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-config}</version>
-      </dependency>
-       <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-starter-stream-rabbit}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-ribbon</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-netflix}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-sleuth</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-sleuth}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-sleuth-zipkin</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-sleuth}</version>
       </dependency>
@@ -626,6 +601,41 @@
         <artifactId>spring-cloud-sleuth-stream</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-sleuth-stream}</version>
       </dependency>
+
+      <!-- Spring Cloud Starters -->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-config</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-config}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-hystrix</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-netflix}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-ribbon</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-netflix}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-sleuth</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-sleuth}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-starter-stream-rabbit}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-zuul</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-starter-zuul}</version>
+      </dependency>
+
+
+      <!-- Spring Cloud Kubernetes -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-kubernetes-core</artifactId>
@@ -658,11 +668,6 @@
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-kubernetes-netflix</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-kubernetes-zipkin</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
@@ -671,11 +676,32 @@
         <artifactId>spring-cloud-kubernetes-all</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
-
+      
+      <!-- Spring Cloud Kubernetes Starters -->
       <dependency>
-          <groupId>org.springframework.cloud</groupId>
-          <artifactId>spring-cloud-starter-zuul</artifactId>
-          <version>${version.org.springframework.cloud.spring-cloud-starter-zuul}</version>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-kubernetes-all</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-kubernetes</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-kubernetes-config</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-kubernetes-netflix</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-kubernetes-zipkin</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
 
       <!-- Tomcat -->
