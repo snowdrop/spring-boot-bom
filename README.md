@@ -36,7 +36,7 @@ credentials
   <password>passWord</password>
 ```
 
-Then release
+Then release using maven release plugin
 
 ```bash
 mvn release:perform
