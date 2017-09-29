@@ -1,6 +1,6 @@
 # Introduction
 
-This github repo contains the different Spring Boot BOMs maintained along the Spring Boot starters to be used to create Microservices, Quickstarts as proposed by our different boosters.
+This project contains different Spring Boot BOMs created to be used to create Microservices, Quickstarts as proposed by our different opinionated Red Hat Spring examples that we call boosters to be used to develop Cloud Native application running on Openshift/Kubernetes.
 
 A branch exists for each version of Spring Boot currently supported; 1.4.x, 1.5.x, 2.x ...
 
