@@ -1,6 +1,6 @@
 # Introduction
 
-This project contains different Spring Boot BOMs created in order to be used to developp Microservices, Quickstarts as proposed by our different opinionated Red Hat Spring examples that we call boosters. Such boosters ill help you to develop Cloud Native application running on Openshift/Kubernetes.
+This project contains different Spring Boot BOMs created to simplify the developement of Microservice Spring application top of the Openshift/Kubenetes Cloud platform. They are used by our opinionated examples called boosters which contains Spring Java code implementing a pattern, use case or capability. Such booster will help you to develop Cloud Native application running on Openshift/Kubernetes.
 
 A branch exists for each version of Spring Boot currently supported; 1.4.x, 1.5.x, 2.x ...
 
