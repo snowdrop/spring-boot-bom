@@ -1,6 +1,7 @@
 # Introduction
 
-This github repo contains the different Spring Boot BOMs maintained along the Spring Boot starters for the different Spring Boot Missions, ...
+This github repo contains the different Spring Boot BOMs maintained along the Spring Boot starters to be used to create Microservices, Quickstarts as proposed by our different boosters.
+
 A branch exists for each version of Spring Boot currently supported; 1.4.x, 1.5.x, 2.x ...
 
 To modify a pom, checkout the appropriate branch `git checkout sb-1.4.x`
