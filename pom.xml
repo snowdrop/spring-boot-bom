@@ -671,11 +671,6 @@
         <artifactId>spring-cloud-kubernetes-zipkin</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-all</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
-      </dependency>
       
       <!-- Spring Cloud Kubernetes Starters -->
       <dependency>
@@ -701,6 +696,11 @@
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-kubernetes-zipkin</artifactId>
+        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-kubernetes-all</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
 
