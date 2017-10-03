@@ -698,11 +698,6 @@
         <artifactId>spring-cloud-starter-kubernetes-zipkin</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-kubernetes-all</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
-      </dependency>
 
       <!-- Tomcat -->
       <dependency>
