@@ -57,7 +57,7 @@
     <version.javax.enterprise.cdi-api>1.1</version.javax.enterprise.cdi-api> <!-- For Hibernate core -->
     <version.javax.inject.javax.inject>1</version.javax.inject.javax.inject> <!-- For Hibernate core -->
     <version.javax.servlet.jstl>1.2</version.javax.servlet.jstl>
-    <version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>3.1.12</version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>
+    <version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>3.2.0</version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>
     <version.org.apache.httpcomponents.httpclient>4.5.2</version.org.apache.httpcomponents.httpclient>
     <version.org.apache.httpcomponents.httpcore>4.4.5</version.org.apache.httpcomponents.httpcore>
     <version.org.apache.tomcat>8.5.20</version.org.apache.tomcat>
