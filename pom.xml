@@ -36,6 +36,60 @@
     </license>
   </licenses>
 
+  <scm>
+    <url>https://github.com/snowdrop</url>
+    <connection>scm:git:https://github.com/snowdrop/spring-boot-bom.git</connection>
+    <developerConnection>scm:git:git@github.com:snowdrop/spring-boot-bom.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+
+  <profiles>
+    <profile>
+      <id>release</id>
+      <distributionManagement>
+        <snapshotRepository>
+          <id>ossrh</id>
+          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+          <id>ossrh</id>
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+      </distributionManagement>
+
+      <build>
+        <plugins>
+          <plugin>
+            <!--See http://central.sonatype.org/pages/apache-maven.html for more information -->
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.6.8</version>
+            <extensions>true</extensions>
+            <configuration>
+              <serverId>ossrh</serverId>
+              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+              <autoReleaseAfterClose>true</autoReleaseAfterClose>
+            </configuration>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
   <properties>
     <version.antlr.antlr>2.7.7</version.antlr.antlr> <!-- For Hibernate core -->
     <version.ch.qos.logback.logback>1.1.11</version.ch.qos.logback.logback>
@@ -802,29 +856,4 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
-  <scm>
-    <url>https://github.com/snowdrop</url>
-    <connection>scm:git:https://github.com/snowdrop/spring-boot-bom.git</connection>
-    <developerConnection>scm:git:git@github.com:snowdrop/spring-boot-bom.git</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
-
-  <distributionManagement>
-    <repository>
-      <id>jboss-releases-repository</id>
-      <name>JBoss Releases Repository</name>
-      <url>
-        https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/
-      </url>
-    </repository>
-    <snapshotRepository>
-      <id>jboss-snapshots-repository</id>
-      <name>JBoss Snapshots Repository</name>
-      <url>
-        https://repository.jboss.org/nexus/content/repositories/snapshots/
-      </url>
-    </snapshotRepository>
-  </distributionManagement>
-
 </project>
