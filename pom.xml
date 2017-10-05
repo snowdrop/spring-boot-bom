@@ -118,7 +118,7 @@
     <version.org.assertj.assertj-core>2.5.0</version.org.assertj.assertj-core>
     <version.org.codehaus.groovy.groovy>2.4.7</version.org.codehaus.groovy.groovy>
     <version.org.hibernate.common.hibernate-commons-annotations>5.0.1.Final</version.org.hibernate.common.hibernate-commons-annotations> <!-- For Hibernate core -->
-    <version.org.hibernate.hibernate-core>5.0.12.Final</version.org.hibernate.hibernate-core>
+    <version.org.hibernate.hibernate>5.2.11.Final</version.org.hibernate.hibernate>
     <version.org.hibernate.hibernate-validator>5.2.4.Final</version.org.hibernate.hibernate-validator>
     <version.org.hibernate.javax.persistence.hibernate-jpa-2.1-api>1.0.0.Final</version.org.hibernate.javax.persistence.hibernate-jpa-2.1-api> <!-- For Hibernate core -->
     <version.org.javassist.javassist>3.20.0-GA</version.org.javassist.javassist>
@@ -133,7 +133,7 @@
     <version.org.springframework.cloud>Dalston.SR2</version.org.springframework.cloud>
     <version.org.springframework.cloud.spring-cloud-config>1.3.2.RELEASE</version.org.springframework.cloud.spring-cloud-config>
     <version.org.springframework.cloud.spring-cloud-netflix>1.3.2.RELEASE</version.org.springframework.cloud.spring-cloud-netflix>
-    <version.org.springframework.cloud.spring-cloud-sleuth>1.2.2.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth> 
+    <version.org.springframework.cloud.spring-cloud-sleuth>1.2.2.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth>
     <version.org.springframework.cloud.spring-cloud-sleuth-zipkin>1.2.2.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth-zipkin>
     <version.org.springframework.cloud.spring-cloud-kubernetes>0.2.0.RELEASE</version.org.springframework.cloud.spring-cloud-kubernetes>
     <version.org.springframework.cloud.spring-cloud-starter-feign>1.3.4.RELEASE</version.org.springframework.cloud.spring-cloud-starter-feign>
@@ -147,7 +147,7 @@
     <version.xml-apis.xml-apis>1.4.01</version.xml-apis.xml-apis>
     <version.spock>1.0-groovy-2.4</version.spock>
     <version.lombok>1.16.16</version.lombok>
-    <version.aspectj>1.8.10</version.aspectj> 
+    <version.aspectj>1.8.10</version.aspectj>
     <version.dropwizard-metrics>3.1.4</version.dropwizard-metrics>
     <version.hsqldb>2.3.5</version.hsqldb>
     <version.gauva>23.0</version.gauva>
@@ -515,7 +515,12 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
-        <version>${version.org.hibernate.hibernate-core}</version>
+        <version>${version.org.hibernate.hibernate}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>${version.org.hibernate.hibernate}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.javax.persistence</groupId>
@@ -733,7 +738,7 @@
         <artifactId>spring-cloud-kubernetes-zipkin</artifactId>
         <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
       </dependency>
-      
+
       <!-- Spring Cloud Kubernetes Starters -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
