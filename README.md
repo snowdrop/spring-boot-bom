@@ -12,3 +12,4 @@ This BOM is aligned to :
 - Fabric8 Kubernetes/OpenShift Client 2.4.1
 - OpenTracing 0.30.0
 - Apache CXF Spring Boot Starter 3.2
+- Hibernate 5.2.11.Final
