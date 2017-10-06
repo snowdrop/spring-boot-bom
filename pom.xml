@@ -92,6 +92,7 @@
 
   <properties>
     <version.antlr.antlr>2.7.7</version.antlr.antlr> <!-- For Hibernate core -->
+    <version.net.bytebuddy.byte-buddy>1.6.14</version.net.bytebuddy.byte-buddy> <!-- For Hibernate entity-manager -->
     <version.ch.qos.logback.logback>1.1.11</version.ch.qos.logback.logback>
     <version.com.fasterxml.classmate>1.3.1</version.com.fasterxml.classmate>
     <version.com.fasterxml.jackson>2.8.3</version.com.fasterxml.jackson>
@@ -124,7 +125,7 @@
     <version.org.javassist.javassist>3.20.0-GA</version.org.javassist.javassist>
     <version.org.jboss.jandex>2.0.0.Final</version.org.jboss.jandex> <!-- For Hibernate core -->
     <version.org.jboss.logging.jboss-logging>3.3.0.Final</version.org.jboss.logging.jboss-logging>
-    <version.org.jboss.spec.javax.interceptor.jboss-interceptors-api_1.1_spec>1.0.0.Beta1</version.org.jboss.spec.javax.interceptor.jboss-interceptors-api_1.1_spec> <!-- For Hibernate core -->
+    <version.org.jboss.spec.javax.transaction.jboss-transaction-api_1.2_spec>1.0.1.Final</version.org.jboss.spec.javax.transaction.jboss-transaction-api_1.2_spec> <!-- For Hibernate core-->
     <version.org.json.json>20140107</version.org.json.json>
     <!-- Version used by Red Hat SSO 7.1 -->
     <version.org.keycloak.keycloak-adapters>2.5.5.Final</version.org.keycloak.keycloak-adapters>
@@ -523,6 +524,11 @@
         <version>${version.org.hibernate.hibernate}</version>
       </dependency>
       <dependency>
+        <groupId>net.bytebuddy</groupId>
+        <artifactId>byte-buddy</artifactId>
+        <version>${version.net.bytebuddy.byte-buddy}</version>
+      </dependency>
+      <dependency>
         <groupId>org.hibernate.javax.persistence</groupId>
         <artifactId>hibernate-jpa-2.1-api</artifactId>
         <version>${version.org.hibernate.javax.persistence.hibernate-jpa-2.1-api}</version>
@@ -558,9 +564,9 @@
         <version>${version.javax.el.el-api}</version>
       </dependency>
       <dependency>
-        <groupId>org.jboss.spec.javax.interceptor</groupId>
-        <artifactId>jboss-interceptors-api_1.1_spec</artifactId>
-        <version>${version.org.jboss.spec.javax.interceptor.jboss-interceptors-api_1.1_spec}</version>
+        <groupId>org.jboss.spec.javax.transaction</groupId>
+        <artifactId>jboss-transaction-api_1.2_spec</artifactId>
+        <version>${version.org.jboss.spec.javax.transaction.jboss-transaction-api_1.2_spec}</version>
       </dependency>
       <dependency>
         <groupId>javax.annotation</groupId>
