@@ -854,11 +854,6 @@
         <artifactId>tomcat-jdbc</artifactId>
         <version>${version.org.apache.tomcat}</version>
       </dependency>
-      <dependency>
-        <groupId>org.apache.tomcat</groupId>
-        <artifactId>tomcat-juli</artifactId>
-        <version>${version.org.apache.tomcat}</version>
-      </dependency>
-    </dependencies>
+   </dependencies>
   </dependencyManagement>
 </project>
