@@ -10,7 +10,7 @@ This BOM is aligned to :
 Spring
 - Spring Boot 1.5.7.RELEASE
 
-Cloud
+Spring Cloud
 - [Dalton SR2](https://spring.io/blog/2017/07/21/spring-cloud-dalston-sr2-is-available-now)
 - [Spring Cloud Kubernetes - 0.2.0](https://github.com/spring-cloud-incubator/spring-cloud-kubernetes/tree/v0.2.0.RELEASE)
 - Fabric8 Kubernetes/OpenShift Client 2.4.1
@@ -20,6 +20,7 @@ Tracing
 
 Integration
 - Apache CXF Spring Boot Starter 3.2
+- Keycloak 3.3.0.CR2 (target for release is 3.4.0)
 
 ORM
 - Hibernate 5.2.11.Final
