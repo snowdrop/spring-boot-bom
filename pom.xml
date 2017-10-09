@@ -142,12 +142,10 @@
     <version.org.springframework.boot.spring-boot>1.5.7.RELEASE</version.org.springframework.boot.spring-boot>
     <version.org.springframework.cloud.spring-cloud-config>1.3.2.RELEASE</version.org.springframework.cloud.spring-cloud-config>
     <version.org.springframework.cloud.spring-cloud-netflix>1.3.2.RELEASE</version.org.springframework.cloud.spring-cloud-netflix>
-    <version.org.springframework.cloud.spring-cloud-sleuth>1.2.2.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth>
-    <version.org.springframework.cloud.spring-cloud-sleuth-zipkin>1.2.2.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth-zipkin>
+    <version.spring-cloud-sleuth>1.2.2.RELEASE</version.spring-cloud-sleuth>
     <version.org.springframework.cloud.spring-cloud-kubernetes>0.2.0.RELEASE</version.org.springframework.cloud.spring-cloud-kubernetes>
     <version.org.springframework.cloud.spring-cloud-starter-feign>1.3.4.RELEASE</version.org.springframework.cloud.spring-cloud-starter-feign>
     <version.org.springframework.cloud.spring-cloud-starter-zuul>1.3.4.RELEASE</version.org.springframework.cloud.spring-cloud-starter-zuul>
-    <version.org.springframework.cloud.spring-cloud-sleuth-stream>1.2.4.RELEASE</version.org.springframework.cloud.spring-cloud-sleuth-stream>
     <version.org.springframework.cloud.spring-cloud-starter-stream-rabbit>1.2.1.RELEASE</version.org.springframework.cloud.spring-cloud-starter-stream-rabbit>
     <version.org.springframework.spring>4.3.11.RELEASE</version.org.springframework.spring>
     <version.org.springframework.security.spring-security-crypto>4.2.3.RELEASE</version.org.springframework.security.spring-security-crypto>
@@ -657,17 +655,17 @@
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-sleuth}</version>
+        <version>${version.spring-cloud-sleuth}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-sleuth-zipkin-stream</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-sleuth}</version>
+        <version>${version.spring-cloud-sleuth}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-sleuth-stream</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-sleuth-stream}</version>
+        <version>${version.spring-cloud-sleuth}</version>
       </dependency>
 
       <!-- Spring Cloud Starters -->
@@ -689,7 +687,7 @@
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-sleuth</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-sleuth}</version>
+        <version>${version.spring-cloud-sleuth}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
