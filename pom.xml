@@ -102,63 +102,71 @@
   </profiles>
 
   <properties>
-    <version.antlr.antlr>2.7.7</version.antlr.antlr> <!-- For Hibernate core -->
-    <version.net.bytebuddy.byte-buddy>1.6.14</version.net.bytebuddy.byte-buddy> <!-- For Hibernate entity-manager -->
-    <version.ch.qos.logback.logback>1.1.11</version.ch.qos.logback.logback>
-    <version.com.fasterxml.classmate>1.3.1</version.com.fasterxml.classmate>
-    <version.com.fasterxml.jackson>2.8.3</version.com.fasterxml.jackson>
-    <version.commons-codec.commons-codec>1.10</version.commons-codec.commons-codec>
-    <version.com.h2database.h2>1.4.192</version.com.h2database.h2>
-    <version.dom4j.dom4j>1.6.1</version.dom4j.dom4j> <!-- For Hibernate core -->
-    <version.io.fabric8.kubernetes-client>2.4.1</version.io.fabric8.kubernetes-client>
-    <version.io.fabric8.openshift-client>2.4.1</version.io.fabric8.openshift-client>
-    <version.io.opentracing>0.30.0</version.io.opentracing>
-    <version.io.opentracing.contrib-java-cloud>0.0.4</version.io.opentracing.contrib-java-cloud>
-    <version.io.opentracing.contrib-java-concurrent>0.0.2</version.io.opentracing.contrib-java-concurrent>
-    <version.io.opentracing.contrib-java-jdbc>0.0.3</version.io.opentracing.contrib-java-jdbc>
-    <version.io.opentracing.contrib-opentracing-spring-web>0.0.10</version.io.opentracing.contrib-opentracing-spring-web>
-    <version.io.opentracing.contrib-opentracing-spring-jms>0.0.3</version.io.opentracing.contrib-opentracing-spring-jms>
-    <version.javax.annotation.jsr250-api>1.0</version.javax.annotation.jsr250-api> <!-- For Hibernate core -->
-    <version.javax.el.el-api>2.2</version.javax.el.el-api> <!-- For Hibernate core -->
-    <version.javax.enterprise.cdi-api>1.1</version.javax.enterprise.cdi-api> <!-- For Hibernate core -->
-    <version.javax.inject.javax.inject>1</version.javax.inject.javax.inject> <!-- For Hibernate core -->
-    <version.javax.servlet.jstl>1.2</version.javax.servlet.jstl>
-    <version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>3.2.0</version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>
-    <version.org.apache.httpcomponents.httpclient>4.5.2</version.org.apache.httpcomponents.httpclient>
-    <version.org.apache.httpcomponents.httpcore>4.4.5</version.org.apache.httpcomponents.httpcore>
-    <version.org.apache.tomcat>8.5.20</version.org.apache.tomcat>
-    <version.org.assertj.assertj-core>2.5.0</version.org.assertj.assertj-core>
-    <version.org.codehaus.groovy.groovy>2.4.7</version.org.codehaus.groovy.groovy>
-    <version.org.hibernate.common.hibernate-commons-annotations>5.0.1.Final</version.org.hibernate.common.hibernate-commons-annotations> <!-- For Hibernate core -->
-    <version.org.hibernate.hibernate>5.2.11.Final</version.org.hibernate.hibernate>
-    <version.org.hibernate.hibernate-validator>5.2.4.Final</version.org.hibernate.hibernate-validator>
-    <version.org.hibernate.javax.persistence.hibernate-jpa-2.1-api>1.0.0.Final</version.org.hibernate.javax.persistence.hibernate-jpa-2.1-api> <!-- For Hibernate core -->
-    <version.org.javassist.javassist>3.20.0-GA</version.org.javassist.javassist>
-    <version.org.jboss.jandex>2.0.0.Final</version.org.jboss.jandex> <!-- For Hibernate core -->
-    <version.org.jboss.logging.jboss-logging>3.3.0.Final</version.org.jboss.logging.jboss-logging>
-    <version.org.jboss.spec.javax.transaction.jboss-transaction-api_1.2_spec>1.0.1.Final</version.org.jboss.spec.javax.transaction.jboss-transaction-api_1.2_spec> <!-- For Hibernate core-->
-    <version.org.json.json>20140107</version.org.json.json>
-    <version.org.slf4j.slf4j-api>1.7.21</version.org.slf4j.slf4j-api>
-    <version.org.springframework.boot.spring-boot>1.5.7.RELEASE</version.org.springframework.boot.spring-boot>
-    <version.org.springframework.cloud.spring-cloud-config>1.3.2.RELEASE</version.org.springframework.cloud.spring-cloud-config>
-    <version.org.springframework.cloud.spring-cloud-netflix>1.3.2.RELEASE</version.org.springframework.cloud.spring-cloud-netflix>
-    <version.spring-cloud-sleuth>1.2.2.RELEASE</version.spring-cloud-sleuth>
-    <version.org.springframework.cloud.spring-cloud-kubernetes>0.2.0.RELEASE</version.org.springframework.cloud.spring-cloud-kubernetes>
-    <version.org.springframework.cloud.spring-cloud-starter-feign>1.3.4.RELEASE</version.org.springframework.cloud.spring-cloud-starter-feign>
-    <version.org.springframework.cloud.spring-cloud-starter-zuul>1.3.4.RELEASE</version.org.springframework.cloud.spring-cloud-starter-zuul>
-    <version.org.springframework.cloud.spring-cloud-starter-stream-rabbit>1.2.1.RELEASE</version.org.springframework.cloud.spring-cloud-starter-stream-rabbit>
-    <version.org.springframework.spring>4.3.11.RELEASE</version.org.springframework.spring>
-    <version.org.springframework.security.spring-security-crypto>4.2.3.RELEASE</version.org.springframework.security.spring-security-crypto>
-    <version.org.springframework.spring-amqp>1.7.3.RELEASE</version.org.springframework.spring-amqp>
-    <version.org.yaml.snakeyaml>1.17</version.org.yaml.snakeyaml>
-    <version.xml-apis.xml-apis>1.4.01</version.xml-apis.xml-apis>
-    <version.spock>1.0-groovy-2.4</version.spock>
-    <version.lombok>1.16.16</version.lombok>
-    <version.aspectj>1.8.10</version.aspectj>
-    <version.dropwizard-metrics>3.1.4</version.dropwizard-metrics>
-    <version.hsqldb>2.3.5</version.hsqldb>
-    <version.gauva>23.0</version.gauva>
-    <version.keycloak>3.3.0.CR2</version.keycloak> <!-- Red Hat SSO 7.2 will use 3.4.0 -->
+
+    <!-- Other -->
+    <guava.version>23.0</guava.version>
+    <keycloak.version>3.3.0.CR2</keycloak.version> <!-- Red Hat SSO 7.2 will use 3.4.0 -->
+    <kubernetes-client.version>2.4.1</kubernetes-client.version>
+    <openshift-client.version>2.4.1</openshift-client.version>
+    <opentracing.version>0.30.0</opentracing.version>
+    <opentracing.contrib-java-cloud.version>0.0.4</opentracing.contrib-java-cloud.version>
+    <opentracing.contrib-java-concurrent.version>0.0.2</opentracing.contrib-java-concurrent.version>
+    <opentracing.contrib-java-jdbc.version>0.0.3</opentracing.contrib-java-jdbc.version>
+    <opentracing.contrib-opentracing-spring-web.version>0.0.10</opentracing.contrib-opentracing-spring-web.version>
+    <opentracing.contrib-opentracing-spring-jms.version>0.0.3</opentracing.contrib-opentracing-spring-jms.version>
+    <cxf-spring-boot-starter-jaxrs.version>3.2.0</cxf-spring-boot-starter-jaxrs.version>
+
+    <!-- Hibernate -->
+    <byte-buddy.version>1.6.14</byte-buddy.version> <!-- For Hibernate entity-manager -->
+    <el-api.version>2.2</el-api.version> <!-- For Hibernate core -->
+    <jsr250-api.version>1.0</jsr250-api.version> <!-- For Hibernate core -->
+    <cdi-api.version>1.1</cdi-api.version> <!-- For Hibernate core -->
+    <inject.version>1</inject.version> <!-- For Hibernate core -->
+    <hibernate-commons-annotations.version>5.0.1.Final</hibernate-commons-annotations.version> <!-- For Hibernate core -->
+    <hibernate-jpa-2.1-api.version>1.0.0.Final</hibernate-jpa-2.1-api.version> <!-- For Hibernate core -->
+    <jandex.version>2.0.0.Final</jandex.version> <!-- For Hibernate core -->
+
+    <!-- Spring Ecosystem -->
+    <spring-boot.version>1.5.7.RELEASE</spring-boot.version>
+    <spring-cloud-config.version>1.3.2.RELEASE</spring-cloud-config.version>
+    <spring-cloud-netflix.version>1.3.2.RELEASE</spring-cloud-netflix.version>
+    <spring-cloud-sleuth.version>1.2.2.RELEASE</spring-cloud-sleuth.version>
+    <spring-cloud-kubernetes.version>0.2.0.RELEASE</spring-cloud-kubernetes.version>
+    <spring-cloud-starter-feign.version>1.3.4.RELEASE</spring-cloud-starter-feign.version>
+    <spring-cloud-starter-zuul.version>1.3.4.RELEASE</spring-cloud-starter-zuul.version>
+    <spring-cloud-starter-stream-rabbit.version>1.2.1.RELEASE</spring-cloud-starter-stream-rabbit.version>
+
+    <!-- Spring Boot defined -->
+    <antlr2.version>2.7.7</antlr2.version> <!-- For Hibernate core -->
+    <aspectj.version>1.8.10</aspectj.version>
+    <assertj.version>2.6.0</assertj.version>
+    <classmate.version>1.3.4</classmate.version>
+    <commons-codec.version>1.10</commons-codec.version>
+    <dom4j.version>1.6.1</dom4j.version> <!-- For Hibernate core -->
+    <dropwizard-metrics.version>3.1.5</dropwizard-metrics.version>
+    <groovy.version>2.4.12</groovy.version>
+    <h2.version>1.4.196</h2.version>
+    <hibernate.version>5.2.11.Final</hibernate.version> <!-- SB 1.5.7 uses 5.0.12.Final -->
+    <hibernate-validator.version>5.3.5.Final</hibernate-validator.version>
+    <hsqldb.version>2.3.5</hsqldb.version>
+    <httpclient.version>4.5.3</httpclient.version>
+    <httpcore.version>4.4.6</httpcore.version>
+    <jackson.version>2.8.10</jackson.version>
+    <javassist.version>3.21.0-GA</javassist.version>
+    <javax-transaction.version>1.2</javax-transaction.version>
+    <jboss-logging.version>3.3.1.Final</jboss-logging.version>
+    <json.version>20140107</json.version>
+    <jstl.version>1.2</jstl.version>
+    <logback.version>1.1.11</logback.version>
+    <lombok.version>1.16.18</lombok.version>
+    <slf4j.version>1.7.25</slf4j.version>
+    <snakeyaml.version>1.17</snakeyaml.version>
+    <spock.version>1.0-groovy-2.4</spock.version>
+    <tomcat.version>8.5.20</tomcat.version>
+    <spring.version>4.3.11.RELEASE</spring.version>
+    <spring-amqp.version>1.7.4.RELEASE</spring-amqp.version>
+    <spring-security.version>4.2.3.RELEASE</spring-security.version>
+    <xml-apis.version>1.4.01</xml-apis.version>
   </properties>
 
   <dependencyManagement>
@@ -167,81 +175,81 @@
       <dependency>
         <groupId>io.fabric8</groupId>
         <artifactId>kubernetes-client</artifactId>
-        <version>${version.io.fabric8.kubernetes-client}</version>
+        <version>${kubernetes-client.version}</version>
       </dependency>
       <dependency>
         <groupId>io.fabric8</groupId>
         <artifactId>openshift-client</artifactId>
-        <version>${version.io.fabric8.openshift-client}</version>
+        <version>${openshift-client.version}</version>
       </dependency>
 
       <!-- spring-boot -->
       <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>${version.lombok}</version>
+        <version>${lombok.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-test</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-test-autoconfigure</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-actuator</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-actuator-docs</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-autoconfigure</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-configuration-metadata</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-configuration-processor</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-devtools</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-loader</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-loader-tools</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
 
       <!-- Spring Boot Starters -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
         <exclusions>
           <exclusion>
             <groupId>commons-logging</groupId>
@@ -252,37 +260,37 @@
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-actuator</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-jpa</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-rest</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-feign</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-starter-feign}</version>
+        <version>${spring-cloud-starter-feign.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-jdbc</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-test</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
         <exclusions>
           <exclusion>
             <groupId>commons-logging</groupId>
@@ -293,59 +301,59 @@
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-logging</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-tomcat</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-websocket</artifactId>
-        <version>${version.org.springframework.boot.spring-boot}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
 
       <!-- spring-framework -->
       <dependency>
           <groupId>org.aspectj</groupId>
           <artifactId>aspectjrt</artifactId>
-          <version>${version.aspectj}</version>
+          <version>${aspectj.version}</version>
       </dependency>
       <dependency>
           <groupId>org.aspectj</groupId>
           <artifactId>aspectjtools</artifactId>
-          <version>${version.aspectj}</version>
+          <version>${aspectj.version}</version>
       </dependency>
       <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjweaver</artifactId>
-        <version>${version.aspectj}</version>
+        <version>${aspectj.version}</version>
         </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aspects</artifactId>
-        <version>${version.org.springframework.spring}</version>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-beans</artifactId>
-        <version>${version.org.springframework.spring}</version>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context</artifactId>
-        <version>${version.org.springframework.spring}</version>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-core</artifactId>
-        <version>${version.org.springframework.spring}</version>
+        <version>${spring.version}</version>
         <exclusions>
           <exclusion>
             <groupId>commons-logging</groupId>
@@ -356,42 +364,42 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-jdbc</artifactId>
-        <version>${version.org.springframework.spring}</version>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-orm</artifactId>
-        <version>${version.org.springframework.spring}</version>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-tx</artifactId>
-        <version>${version.org.springframework.spring}</version>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-web</artifactId>
-        <version>${version.org.springframework.spring}</version>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
-        <version>${version.org.springframework.spring}</version>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-crypto</artifactId>
-        <version>${version.org.springframework.security.spring-security-crypto}</version>
+        <version>${spring-security.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.amqp</groupId>
         <artifactId>spring-amqp</artifactId>
-        <version>${version.org.springframework.spring-amqp}</version>
+        <version>${spring-amqp.version}</version>
       </dependency>
       <dependency>
         <groupId>org.spockframework</groupId>
         <artifactId>spock-core</artifactId>
-        <version>${version.spock}</version>
+        <version>${spock.version}</version>
         <exclusions>
           <exclusion>
           <groupId>org.codehaus.groovy</groupId>
@@ -402,82 +410,82 @@
       <dependency>
         <groupId>org.spockframework</groupId>
         <artifactId>spock-spring</artifactId>
-        <version>${version.spock}</version>
+        <version>${spock.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml</groupId>
         <artifactId>classmate</artifactId>
-        <version>${version.com.fasterxml.classmate}</version>
+        <version>${classmate.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-annotations</artifactId>
-        <version>${version.com.fasterxml.jackson}</version>
+        <version>${jackson.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-core</artifactId>
-        <version>${version.com.fasterxml.jackson}</version>
+        <version>${jackson.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
-        <version>${version.com.fasterxml.jackson}</version>
+        <version>${jackson.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.dataformat</groupId>
         <artifactId>jackson-dataformat-yaml</artifactId>
-        <version>${version.com.fasterxml.jackson}</version>
+        <version>${jackson.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.jaxrs</groupId>
         <artifactId>jackson-jaxrs-json-provider</artifactId>
-        <version>${version.com.fasterxml.jackson}</version>
+        <version>${jackson.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.module</groupId>
         <artifactId>jackson-module-jaxb-annotations</artifactId>
-        <version>${version.com.fasterxml.jackson}</version>
+        <version>${jackson.version}</version>
       </dependency>
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>${version.commons-codec.commons-codec}</version>
+        <version>${commons-codec.version}</version>
       </dependency>
       <dependency>
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
-        <version>${version.com.h2database.h2}</version>
+        <version>${h2.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>jstl</artifactId>
-        <version>${version.javax.servlet.jstl}</version>
+        <version>${jstl.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
-        <version>${version.org.apache.cxf.cxf-spring-boot-starter-jaxrs}</version>
+        <version>${cxf-spring-boot-starter-jaxrs.version}</version>
       </dependency>
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-core</artifactId>
-        <version>${version.ch.qos.logback.logback}</version>
+        <version>${logback.version}</version>
       </dependency>
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>${version.ch.qos.logback.logback}</version>
+        <version>${logback.version}</version>
       </dependency>
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-access</artifactId>
-        <version>${version.ch.qos.logback.logback}</version>
+        <version>${logback.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
-        <version>${version.org.apache.httpcomponents.httpclient}</version>
+        <version>${httpclient.version}</version>
         <exclusions>
           <exclusion>
             <groupId>commons-logging</groupId>
@@ -488,376 +496,376 @@
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpcore</artifactId>
-        <version>${version.org.apache.httpcomponents.httpcore}</version>
+        <version>${httpcore.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpmime</artifactId>
-        <version>${version.org.apache.httpcomponents.httpclient}</version>
+        <version>${httpclient.version}</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy</artifactId>
-        <version>${version.org.codehaus.groovy.groovy}</version>
+        <version>${groovy.version}</version>
       </dependency>
       <dependency>
         <groupId>org.assertj</groupId>
         <artifactId>assertj-core</artifactId>
-        <version>${version.org.assertj.assertj-core}</version>
+        <version>${assertj.version}</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-json</artifactId>
-        <version>${version.org.codehaus.groovy.groovy}</version>
+        <version>${groovy.version}</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-xml</artifactId>
-        <version>${version.org.codehaus.groovy.groovy}</version>
+        <version>${groovy.version}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
-        <version>${version.org.hibernate.hibernate-validator}</version>
+        <version>${hibernate-validator.version}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
-        <version>${version.org.hibernate.hibernate}</version>
+        <version>${hibernate.version}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-entitymanager</artifactId>
-        <version>${version.org.hibernate.hibernate}</version>
+        <version>${hibernate.version}</version>
       </dependency>
       <dependency>
         <groupId>net.bytebuddy</groupId>
         <artifactId>byte-buddy</artifactId>
-        <version>${version.net.bytebuddy.byte-buddy}</version>
+        <version>${byte-buddy.version}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.javax.persistence</groupId>
         <artifactId>hibernate-jpa-2.1-api</artifactId>
-        <version>${version.org.hibernate.javax.persistence.hibernate-jpa-2.1-api}</version>
+        <version>${hibernate-jpa-2.1-api.version}</version>
       </dependency>
       <dependency>
         <groupId>antlr</groupId>
         <artifactId>antlr</artifactId>
-        <version>${version.antlr.antlr}</version>
+        <version>${antlr2.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss</groupId>
         <artifactId>jandex</artifactId>
-        <version>${version.org.jboss.jandex}</version>
+        <version>${jandex.version}</version>
       </dependency>
       <dependency>
         <groupId>dom4j</groupId>
         <artifactId>dom4j</artifactId>
-        <version>${version.dom4j.dom4j}</version>
+        <version>${dom4j.version}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.common</groupId>
         <artifactId>hibernate-commons-annotations</artifactId>
-        <version>${version.org.hibernate.common.hibernate-commons-annotations}</version>
+        <version>${hibernate-commons-annotations.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.enterprise</groupId>
         <artifactId>cdi-api</artifactId>
-        <version>${version.javax.enterprise.cdi-api}</version>
+        <version>${cdi-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.el</groupId>
         <artifactId>el-api</artifactId>
-        <version>${version.javax.el.el-api}</version>
+        <version>${el-api.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.jboss.spec.javax.transaction</groupId>
-        <artifactId>jboss-transaction-api_1.2_spec</artifactId>
-        <version>${version.org.jboss.spec.javax.transaction.jboss-transaction-api_1.2_spec}</version>
+        <groupId>javax.transaction</groupId>
+        <artifactId>javax.transaction-api</artifactId>
+        <version>${javax-transaction.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.annotation</groupId>
         <artifactId>jsr250-api</artifactId>
-        <version>${version.javax.annotation.jsr250-api}</version>
+        <version>${jsr250-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.inject</groupId>
         <artifactId>javax.inject</artifactId>
-        <version>${version.javax.inject.javax.inject}</version>
+        <version>${inject.version}</version>
       </dependency>
       <dependency>
         <groupId>org.javassist</groupId>
         <artifactId>javassist</artifactId>
-        <version>${version.org.javassist.javassist}</version>
+        <version>${javassist.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.logging</groupId>
         <artifactId>jboss-logging</artifactId>
-        <version>${version.org.jboss.logging.jboss-logging}</version>
+        <version>${jboss-logging.version}</version>
       </dependency>
       <dependency>
         <groupId>org.json</groupId>
         <artifactId>json</artifactId>
-        <version>${version.org.json.json}</version>
+        <version>${json.version}</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>jul-to-slf4j</artifactId>
-        <version>${version.org.slf4j.slf4j-api}</version>
+        <version>${slf4j.version}</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>${version.org.slf4j.slf4j-api}</version>
+        <version>${slf4j.version}</version>
       </dependency>
       <dependency>
         <groupId>org.yaml</groupId>
         <artifactId>snakeyaml</artifactId>
-        <version>${version.org.yaml.snakeyaml}</version>
+        <version>${snakeyaml.version}</version>
       </dependency>
       <dependency>
         <groupId>xml-apis</groupId>
         <artifactId>xml-apis</artifactId>
-        <version>${version.xml-apis.xml-apis}</version>
+        <version>${xml-apis.version}</version>
       </dependency>
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
         <artifactId>metrics-core</artifactId>
-        <version>${version.dropwizard-metrics}</version>
+        <version>${dropwizard-metrics.version}</version>
       </dependency>
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
         <artifactId>metrics-ganglia</artifactId>
-        <version>${version.dropwizard-metrics}</version>
+        <version>${dropwizard-metrics.version}</version>
         </dependency>
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
         <artifactId>metrics-graphite</artifactId>
-        <version>${version.dropwizard-metrics}</version>
+        <version>${dropwizard-metrics.version}</version>
       </dependency>
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
         <artifactId>metrics-servlets</artifactId>
-        <version>${version.dropwizard-metrics}</version>
+        <version>${dropwizard-metrics.version}</version>
       </dependency>
       <dependency>
         <groupId>org.hsqldb</groupId>
         <artifactId>hsqldb</artifactId>
-        <version>${version.hsqldb}</version>
+        <version>${hsqldb.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>${version.gauva}</version>
+        <version>${guava.version}</version>
       </dependency>
 
       <!-- spring-cloud -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-        <version>${version.spring-cloud-sleuth}</version>
+        <version>${spring-cloud-sleuth.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-sleuth-zipkin-stream</artifactId>
-        <version>${version.spring-cloud-sleuth}</version>
+        <version>${spring-cloud-sleuth.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-sleuth-stream</artifactId>
-        <version>${version.spring-cloud-sleuth}</version>
+        <version>${spring-cloud-sleuth.version}</version>
       </dependency>
 
       <!-- Spring Cloud Starters -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-config</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-config}</version>
+        <version>${spring-cloud-config.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-hystrix</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-netflix}</version>
+        <version>${spring-cloud-netflix.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-ribbon</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-netflix}</version>
+        <version>${spring-cloud-netflix.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-sleuth</artifactId>
-        <version>${version.spring-cloud-sleuth}</version>
+        <version>${spring-cloud-sleuth.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-starter-stream-rabbit}</version>
+        <version>${spring-cloud-starter-stream-rabbit.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-zuul</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-starter-zuul}</version>
+        <version>${spring-cloud-starter-zuul.version}</version>
       </dependency>
 
       <!-- Spring Cloud Kubernetes -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-kubernetes-core</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-kubernetes-config</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-kubernetes-discovery</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-kubernetes-archaius</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-kubernetes-ribbon</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-kubernetes-hystrix</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-kubernetes-zipkin</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
 
       <!-- Spring Cloud Kubernetes Starters -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-kubernetes-all</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-kubernetes</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-kubernetes-config</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-kubernetes-netflix</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-kubernetes-zipkin</artifactId>
-        <version>${version.org.springframework.cloud.spring-cloud-kubernetes}</version>
+        <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
 
       <!-- OpenTracing -->
       <dependency>
         <groupId>io.opentracing</groupId>
         <artifactId>opentracing-api</artifactId>
-        <version>${version.io.opentracing}</version>
+        <version>${opentracing.version}</version>
       </dependency>
       <dependency>
         <groupId>io.opentracing</groupId>
         <artifactId>opentracing-noop</artifactId>
-        <version>${version.io.opentracing}</version>
+        <version>${opentracing.version}</version>
       </dependency>
       <dependency>
         <groupId>io.opentracing</groupId>
         <artifactId>opentracing-mock</artifactId>
-        <version>${version.io.opentracing}</version>
+        <version>${opentracing.version}</version>
       </dependency>
       <dependency>
         <groupId>io.opentracing</groupId>
         <artifactId>opentracing-util</artifactId>
-        <version>${version.io.opentracing}</version>
+        <version>${opentracing.version}</version>
       </dependency>
       <dependency>
         <groupId>io.opentracing.contrib</groupId>
         <artifactId>opentracing-spring-cloud</artifactId>
-        <version>${version.io.opentracing.contrib-java-cloud}</version>
+        <version>${opentracing.contrib-java-cloud.version}</version>
       </dependency>
       <dependency>
         <groupId>io.opentracing.contrib</groupId>
         <artifactId>opentracing-spring-cloud-starter</artifactId>
-        <version>${version.io.opentracing.contrib-java-cloud}</version>
+        <version>${opentracing.contrib-java-cloud.version}</version>
       </dependency>
       <dependency>
         <groupId>io.opentracing.contrib</groupId>
         <artifactId>opentracing-spring-web</artifactId>
-        <version>${version.io.opentracing.contrib-opentracing-spring-web}</version>
+        <version>${opentracing.contrib-opentracing-spring-web.version}</version>
       </dependency>
       <dependency>
         <groupId>io.opentracing.contrib</groupId>
         <artifactId>opentracing-spring-web-autoconfigure</artifactId>
-        <version>${version.io.opentracing.contrib-opentracing-spring-web}</version>
+        <version>${opentracing.contrib-opentracing-spring-web.version}</version>
       </dependency>
       <dependency>
         <groupId>io.opentracing.contrib</groupId>
         <artifactId>opentracing-jms-spring</artifactId>
-        <version>${version.io.opentracing.contrib-opentracing-spring-jms}</version>
+        <version>${opentracing.contrib-opentracing-spring-jms.version}</version>
       </dependency>
       <dependency>
         <groupId>io.opentracing.contrib</groupId>
         <artifactId>opentracing-jms-common</artifactId>
-        <version>${version.io.opentracing.contrib-opentracing-spring-jms}</version>
+        <version>${opentracing.contrib-opentracing-spring-jms.version}</version>
       </dependency>
       <dependency>
         <groupId>io.opentracing.contrib</groupId>
         <artifactId>opentracing-jms-1</artifactId>
-        <version>${version.io.opentracing.contrib-opentracing-spring-jms}</version>
+        <version>${opentracing.contrib-opentracing-spring-jms.version}</version>
       </dependency>
       <dependency>
         <groupId>io.opentracing.contrib</groupId>
         <artifactId>opentracing-concurrent</artifactId>
-        <version>${version.io.opentracing.contrib-java-concurrent}</version>
+        <version>${opentracing.contrib-java-concurrent.version}</version>
       </dependency>
 
       <!-- Tomcat -->
       <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-core</artifactId>
-        <version>${version.org.apache.tomcat}</version>
+        <version>${tomcat.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-el</artifactId>
-        <version>${version.org.apache.tomcat}</version>
+        <version>${tomcat.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-jasper</artifactId>
-        <version>${version.org.apache.tomcat}</version>
+        <version>${tomcat.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-websocket</artifactId>
-        <version>${version.org.apache.tomcat}</version>
+        <version>${tomcat.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomcat</groupId>
         <artifactId>tomcat-jdbc</artifactId>
-        <version>${version.org.apache.tomcat}</version>
+        <version>${tomcat.version}</version>
       </dependency>
 
       <!-- Keycloak -->
       <dependency>
         <groupId>org.keycloak</groupId>
         <artifactId>keycloak-spring-boot-starter</artifactId>
-        <version>${version.keycloak}</version>
+        <version>${keycloak.version}</version>
         <exclusions>
           <exclusion>
             <groupId>org.springframework.boot</groupId>
