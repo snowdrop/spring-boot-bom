@@ -19,7 +19,7 @@ Tracing
 - OpenTracing 0.30.0
 
 Integration
-- Apache CXF Spring Boot Starter 3.2
+- Apache CXF Spring Boot Starter 3.1.12 (which corresponds to latest EAP 7.1.0 version)
 - Keycloak 3.3.0.CR2 (target for release is 3.4.0)
 
 ORM
