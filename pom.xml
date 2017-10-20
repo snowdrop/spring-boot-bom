@@ -106,7 +106,7 @@
     <!-- Other -->
     <cxf-spring-boot-starter-jaxrs.version>3.1.12</cxf-spring-boot-starter-jaxrs.version> <!-- Corresponds to latest EAP 7.1.0 version productized -->
     <guava.version>23.0</guava.version>
-    <keycloak.version>3.3.0.CR2</keycloak.version> <!-- Red Hat SSO 7.2 will use 3.4.0 -->
+    <keycloak.version>2.5.5.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.1 -->
     <kubernetes-client.version>2.4.1</kubernetes-client.version>
     <openshift-client.version>2.4.1</openshift-client.version>
     <opentracing.version>0.30.0</opentracing.version>
@@ -864,34 +864,24 @@
       <!-- Keycloak -->
       <dependency>
         <groupId>org.keycloak</groupId>
-        <artifactId>keycloak-spring-boot-starter</artifactId>
+        <artifactId>keycloak-adapter-spi</artifactId>
         <version>${keycloak.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starters</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-parent</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-logging</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-          </exclusion>
-        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-tomcat8-adapter</artifactId>
+        <version>${keycloak.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-spring-boot-adapter</artifactId>
+        <version>${keycloak.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-authz-client</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>test</scope>
       </dependency>
    </dependencies>
   </dependencyManagement>
