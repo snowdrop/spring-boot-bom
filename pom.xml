@@ -22,6 +22,54 @@
   <version>1.5.8-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <name>Snowdrop Spring Boot BOM</name>
+  <description>Bill Of Materials (BOM) file for Snowdrop project to facilitate usage of Spring Boot on OpenShift.</description>
+  <url>http://www.snowdrop.me</url>
+
+  <issueManagement>
+    <system>JIRA</system>
+    <url>https://issues.jboss.org/projects/SB/summary</url>
+  </issueManagement>
+
+  <developers>
+    <developer>
+      <id>jboss.org</id>
+      <name>JBoss.org Community</name>
+      <organization>JBoss.org</organization>
+      <organizationUrl>http://www.jboss.org</organizationUrl>
+    </developer>
+    <developer>
+      <id>alesj</id>
+      <name>Aleš Justin</name>
+      <organization>Red Hat Inc.</organization>
+      <organizationUrl>https://www.redhat.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>cmoulliard</id>
+      <name>Charles Moulliard</name>
+      <organization>Red Hat Inc.</organization>
+      <organizationUrl>https://www.redhat.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>gytis</id>
+      <name>Gytis Trikleris</name>
+      <organization>Red Hat Inc.</organization>
+      <organizationUrl>https://www.redhat.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>metacosm</id>
+      <name>Christophe Laprun</name>
+      <organization>Red Hat Inc.</organization>
+      <organizationUrl>https://www.redhat.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>michalszynkiewicz</id>
+      <name>Michał Szynkiewicz</name>
+      <organization>Red Hat Inc.</organization>
+      <organizationUrl>https://www.redhat.com</organizationUrl>
+    </developer>
+  </developers>
+
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
