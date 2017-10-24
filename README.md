@@ -42,9 +42,33 @@ Qualifiers are numbered and we should try to limit their number to 9 but we shou
 
 Until a version is released, the BOM version will be `<target spring boot version>-SNAPSHOT`. Once it's released, we will switch to `<target spring boot version>.SP<current SP version + 1>-SNAPSHOT`.
 
-So, right now, as we are targeting Spring Boot version 1.5.7.RELEASE, our BOM GAV will be: 
-`me.snowdrop:spring-boot-bom:1.5.7-SNAPSHOT` until released. The released version will be 
-`me.snowdrop:spring-boot-bom:1.5.7.Final` and the new version in the 1.5 branch will 
-be `me.snowdrop:spring-boot-bom:1.5.7.SP1-SNAPSHOT`.
+So, right now, as we are targeting Spring Boot version 1.5.8.RELEASE, our BOM GAV will be: 
+`me.snowdrop:spring-boot-bom:1.5.8-SNAPSHOT` until released. The released version will be 
+`me.snowdrop:spring-boot-bom:1.5.8.Final` and the new version in the 1.5 branch will 
+be `me.snowdrop:spring-boot-bom:1.5.8.SP1-SNAPSHOT`.
 
 See [SB-162](https://issues.jboss.org/browse/SB-162) for a discussion of BOM versionning.
+
+## Releasing
+
+The artifacts are released on [Sonatype Open Source Software Repository Hosting (OSSRH)](http://central.sonatype.org/), which is
+then synchronized to Maven Central. To perform a release, you need to activate the `release` profile.
+
+0. Make sure that your computer is properly set up as explained in http://central.sonatype.org/pages/apache-maven.html. In 
+particular, this implies having a Sonatype JIRA account, added the appropriate configuration in your Maven `settings.xml` and 
+having GPG set up on your computer.
+0. Check this README for outdated information, notably dependency versions.
+1. Prepare the release: `mvn release:prepare -Prelease` on a "clean" repository (i.e. everything is committed and pushed). Note 
+that the project version in the POM file needs to end in `-SNAPSHOT` to be recognized as needing release.
+    - The release plugin will ask you several questions based on the current project version. Let's assume we're trying to 
+    release the `1.5.8.Beta2` of the BOM. The current project version should be `1.5.8-SNAPSHOT` if the version conventions 
+    (above) have been properly followed. Based on this, the release plugin will offer to release version `1.5.8` of the BOM.
+    - Override this version by type `1.5.8.Beta2`
+    - Override the tag name to use the same version: `1.5.8.Beta2` instead of the default suggestion
+    - Override the suggested next release version as appropriate, in this case, since we're haven't released a final version of
+    the 1.5.8 BOM, the next version still needs to be `1.5.8-SNAPSHOT`.
+2. Once this prepare step is done, check that everything is as expected and then release: `mvn release:perform -Prelease`.
+3. If everything went well, the new artifact should be available on Maven Central after a couple of minutes.
+
+Note that the Sonatype release plugin is configured to auto-release the artifacts from staging, resulting in a faster, more 
+automated release process. This is not mandatory and can be changed in the plugin configuration.
