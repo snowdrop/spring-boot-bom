@@ -3,12 +3,12 @@
 This Bill Of Materials for Spring Boot 1.5 contains starters which are currently used by the 
 [Spring Boot Mission Boosters](https://github.com/snowdrop?q=booster)
 
-The starters have been aligned against Spring Boot Version : 1.5.7.RELEASE
+The starters have been aligned against Spring Boot Version : 1.5.8.RELEASE
 
 This BOM is aligned to : 
 
 Spring
-- Spring Boot 1.5.7.RELEASE
+- Spring Boot 1.5.8.RELEASE
 
 Spring Cloud
 - [Dalton SR2](https://spring.io/blog/2017/07/21/spring-cloud-dalston-sr2-is-available-now)
@@ -20,11 +20,10 @@ Tracing
 
 Integration
 - Apache CXF Spring Boot Starter 3.1.12 (which corresponds to latest EAP 7.1.0 version)
-- Keycloak 3.3.0.CR2 (target for release is 3.4.0)
+- Keycloak 2.5.5.Final (which corresponds to latest RH SSO 7.1 version)
 
 ORM
 - Hibernate 5.2.11.Final
-
 
 ## Versionning scheme
 
