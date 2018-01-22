@@ -163,12 +163,12 @@
     <keycloak.version>3.4.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
     <kubernetes-client.version>2.4.1</kubernetes-client.version>
     <openshift-client.version>2.4.1</openshift-client.version>
-    <opentracing.version>0.30.0</opentracing.version>
-    <opentracing.contrib-java-cloud.version>0.0.4</opentracing.contrib-java-cloud.version>
-    <opentracing.contrib-java-concurrent.version>0.0.2</opentracing.contrib-java-concurrent.version>
-    <opentracing.contrib-java-jdbc.version>0.0.3</opentracing.contrib-java-jdbc.version>
-    <opentracing.contrib-opentracing-spring-web.version>0.0.10</opentracing.contrib-opentracing-spring-web.version>
-    <opentracing.contrib-opentracing-spring-jms.version>0.0.3</opentracing.contrib-opentracing-spring-jms.version>
+    <opentracing.version>0.31.0</opentracing.version>
+    <opentracing.contrib-java-cloud.version>0.1.0</opentracing.contrib-java-cloud.version>
+    <opentracing.contrib-java-concurrent.version>0.1.0</opentracing.contrib-java-concurrent.version>
+    <opentracing.contrib-java-jdbc.version>0.0.6</opentracing.contrib-java-jdbc.version>
+    <opentracing.contrib-opentracing-spring-web.version>0.1.0</opentracing.contrib-opentracing-spring-web.version>
+    <opentracing.contrib-opentracing-spring-jms.version>0.0.5</opentracing.contrib-opentracing-spring-jms.version>
 
     <!-- Hibernate -->
     <byte-buddy.version>1.6.14</byte-buddy.version> <!-- For Hibernate entity-manager -->
