@@ -16,7 +16,7 @@ Spring Cloud
 - Fabric8 Kubernetes/OpenShift Client 2.4.1
 
 Tracing
-- OpenTracing 0.30.0
+- OpenTracing 0.31.0
 
 Integration
 - Apache CXF Spring Boot Starter 3.1.12 (which corresponds to latest EAP 7.1.0 version)
