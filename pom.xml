@@ -160,7 +160,7 @@
     <!-- Other -->
     <cxf-spring-boot-starter-jaxrs.version>3.1.12</cxf-spring-boot-starter-jaxrs.version> <!-- Corresponds to latest EAP 7.1.0 version productized -->
     <guava.version>23.0</guava.version>
-    <keycloak.version>3.4.0.Final</keycloak.version>
+    <keycloak.version>3.4.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
     <kubernetes-client.version>2.4.1</kubernetes-client.version>
     <openshift-client.version>2.4.1</openshift-client.version>
     <opentracing.version>0.30.0</opentracing.version>
@@ -197,7 +197,7 @@
     <dropwizard-metrics.version>3.2.6</dropwizard-metrics.version>
     <groovy.version>2.4.13</groovy.version>
     <h2.version>1.4.196</h2.version>
-    <hibernate.version>5.2.12.Final</hibernate.version> 
+    <hibernate.version>5.2.12.Final</hibernate.version>
     <hibernate-validator.version>6.0.7.Final</hibernate-validator.version>
     <hsqldb.version>2.4.0</hsqldb.version>
     <httpclient.version>4.5.5</httpclient.version>
