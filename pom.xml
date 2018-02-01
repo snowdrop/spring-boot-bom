@@ -149,8 +149,7 @@
     <!-- Other -->
     <cxf-spring-boot-starter-jaxrs.version>3.1.12</cxf-spring-boot-starter-jaxrs.version> <!-- Corresponds to latest EAP 7.1.0 version productized -->
     <guava.version>23.0</guava.version>
-    <keycloak.version>2.5.5.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.1 -->
-    <keycloak-excluded.version>2.5.5.Final</keycloak-excluded.version> <!-- These artifacts will only be productized in Red Hat SSO 7.2 -->
+    <keycloak.version>3.4.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
     <kubernetes-client.version>2.4.1</kubernetes-client.version>
     <openshift-client.version>2.4.1</openshift-client.version>
     <opentracing.version>0.31.0</opentracing.version>
@@ -914,12 +913,12 @@
       <dependency>
         <groupId>org.keycloak</groupId>
         <artifactId>keycloak-tomcat8-adapter</artifactId>
-        <version>${keycloak-excluded.version}</version>
+        <version>${keycloak.version}</version>
       </dependency>
       <dependency>
         <groupId>org.keycloak</groupId>
         <artifactId>keycloak-spring-boot-adapter</artifactId>
-        <version>${keycloak-excluded.version}</version>
+        <version>${keycloak.version}</version>
       </dependency>
       <dependency>
         <groupId>org.keycloak</groupId>
