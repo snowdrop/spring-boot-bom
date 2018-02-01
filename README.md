@@ -8,10 +8,10 @@ The starters have been aligned against Spring Boot Version : 1.5.8.RELEASE
 This BOM is aligned to : 
 
 Spring
-- Spring Boot 1.5.9.RELEASE
+- Spring Boot 1.5.10.RELEASE
 
 Spring Cloud
-- [Edgware](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes)
+- [Edgware.SR1](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr1)
 - [Spring Cloud Kubernetes - 0.2.0](https://github.com/spring-cloud-incubator/spring-cloud-kubernetes/tree/v0.2.0.RELEASE)
 - Fabric8 Kubernetes/OpenShift Client 2.4.1
 
@@ -19,8 +19,8 @@ Tracing
 - OpenTracing 0.31.0
 
 Integration
-- Apache CXF Spring Boot Starter 3.1.12 (which corresponds to latest EAP 7.1.0 version)
-- Keycloak 2.5.5.Final (which corresponds to latest RH SSO 7.1 version)
+- [Apache CXF Spring Boot Starter 3.1.12](http://cxf.apache.org/docs/springboot.html) (which corresponds to latest EAP 7.1.0 version)
+- Keycloak 3.4.3.Final (which corresponds to latest RH SSO 7.2 version)
 
 ORM
 - Hibernate 5.2.11.Final
