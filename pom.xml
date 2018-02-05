@@ -163,6 +163,7 @@
     <keycloak.version>3.4.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
     <kubernetes-client.version>2.4.1</kubernetes-client.version>
     <openshift-client.version>2.4.1</openshift-client.version>
+    <kotlin.version>1.2.20</kotlin.version>
 
 
     <!-- Opentracing -->
@@ -231,6 +232,43 @@
         <groupId>io.fabric8</groupId>
         <artifactId>openshift-client</artifactId>
         <version>${openshift-client.version}</version>
+      </dependency>
+
+      <!-- Kotlin -->
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-reflect</artifactId>
+        <version>${kotlin.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-runtime</artifactId>
+        <version>${kotlin.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-stdlib</artifactId>
+        <version>${kotlin.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-stdlib-jdk7</artifactId>
+        <version>${kotlin.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-stdlib-jdk8</artifactId>
+        <version>${kotlin.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-stdlib-jre7</artifactId>
+        <version>${kotlin.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-stdlib-jre8</artifactId>
+        <version>${kotlin.version}</version>
       </dependency>
 
       <!-- spring-boot -->
