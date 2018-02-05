@@ -8,10 +8,10 @@ The starters have been aligned against Spring Boot Version : 2.0.0.M6
 This BOM is aligned to : 
 
 Spring
-- Spring Boot 2.0.0.M6
+- Spring Boot 2.0.0.RC1
 
 Spring Cloud
-- [Finchley.M3](https://spring.io/blog/2017/10/31/spring-cloud-finchley-m3-released)
+- [Finchley.M5](https://spring.io/blog/2017/12/05/spring-cloud-finchley-m5-released)
 - [Spring Cloud Kubernetes - 0.2.0](https://github.com/spring-cloud-incubator/spring-cloud-kubernetes/tree/v0.2.0.RELEASE)
 - Fabric8 Kubernetes/OpenShift Client 2.4.1
 
