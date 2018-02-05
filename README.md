@@ -20,7 +20,7 @@ Tracing
 
 Integration
 - Apache CXF Spring Boot Starter 3.1.12 (which corresponds to latest EAP 7.1.0 version)
-- Keycloak 3.4.0.Final
+- Keycloak 3.4.3.Final (aligned with RH SSO 7.2)
 
 ORM
 - Hibernate 5.2.12.Final
