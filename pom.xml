@@ -215,7 +215,7 @@
     <tomcat.version>8.5.27</tomcat.version>
   </properties>
 
-  <!--<dependencyManagement>-->
+  <dependencyManagement>
     <dependencies>
       <!-- fabric8 -->
       <dependency>
@@ -874,5 +874,5 @@
         <scope>test</scope>
       </dependency>
    </dependencies>
-  <!--</dependencyManagement>-->
+  </dependencyManagement>
 </project>
