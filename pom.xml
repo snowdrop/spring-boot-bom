@@ -213,7 +213,6 @@
     <snakeyaml.version>1.19</snakeyaml.version>
     <spring.version>5.0.3.RELEASE</spring.version>
     <tomcat.version>8.5.27</tomcat.version>
-    <undertow.version>1.4.22.Final</undertow.version>
   </properties>
 
   <!--<dependencyManagement>-->
