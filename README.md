@@ -8,15 +8,15 @@ The starters have been aligned against Spring Boot Version : 1.5.8.RELEASE
 This BOM is aligned to : 
 
 Spring
-- Spring Boot 1.5.8.RELEASE
+- Spring Boot 1.5.9.RELEASE
 
 Spring Cloud
-- [Dalton SR2](https://spring.io/blog/2017/07/21/spring-cloud-dalston-sr2-is-available-now)
+- [Edgware](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes)
 - [Spring Cloud Kubernetes - 0.2.0](https://github.com/spring-cloud-incubator/spring-cloud-kubernetes/tree/v0.2.0.RELEASE)
 - Fabric8 Kubernetes/OpenShift Client 2.4.1
 
 Tracing
-- OpenTracing 0.30.0
+- OpenTracing 0.31.0
 
 Integration
 - Apache CXF Spring Boot Starter 3.1.12 (which corresponds to latest EAP 7.1.0 version)

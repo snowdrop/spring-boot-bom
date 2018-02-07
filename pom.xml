@@ -19,7 +19,7 @@
 
   <groupId>me.snowdrop</groupId>
   <artifactId>spring-boot-bom</artifactId>
-  <version>1.5.8.SP1-SNAPSHOT</version>
+  <version>1.5.9-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot BOM</name>
@@ -153,12 +153,12 @@
     <keycloak-excluded.version>2.5.5.Final</keycloak-excluded.version> <!-- These artifacts will only be productized in Red Hat SSO 7.2 -->
     <kubernetes-client.version>2.4.1</kubernetes-client.version>
     <openshift-client.version>2.4.1</openshift-client.version>
-    <opentracing.version>0.30.0</opentracing.version>
-    <opentracing.contrib-java-cloud.version>0.0.4</opentracing.contrib-java-cloud.version>
-    <opentracing.contrib-java-concurrent.version>0.0.2</opentracing.contrib-java-concurrent.version>
-    <opentracing.contrib-java-jdbc.version>0.0.3</opentracing.contrib-java-jdbc.version>
-    <opentracing.contrib-opentracing-spring-web.version>0.0.10</opentracing.contrib-opentracing-spring-web.version>
-    <opentracing.contrib-opentracing-spring-jms.version>0.0.3</opentracing.contrib-opentracing-spring-jms.version>
+    <opentracing.version>0.31.0</opentracing.version>
+    <opentracing.contrib-java-cloud.version>0.1.0</opentracing.contrib-java-cloud.version>
+    <opentracing.contrib-java-concurrent.version>0.1.0</opentracing.contrib-java-concurrent.version>
+    <opentracing.contrib-java-jdbc.version>0.0.6</opentracing.contrib-java-jdbc.version>
+    <opentracing.contrib-opentracing-spring-web.version>0.1.0</opentracing.contrib-opentracing-spring-web.version>
+    <opentracing.contrib-opentracing-spring-jms.version>0.0.5</opentracing.contrib-opentracing-spring-jms.version>
 
     <!-- Hibernate -->
     <byte-buddy.version>1.6.14</byte-buddy.version> <!-- For Hibernate entity-manager -->
@@ -171,27 +171,27 @@
     <jandex.version>2.0.0.Final</jandex.version> <!-- For Hibernate core -->
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>1.5.8.RELEASE</spring-boot.version>
-    <spring-cloud-config.version>1.3.2.RELEASE</spring-cloud-config.version>
-    <spring-cloud-netflix.version>1.3.2.RELEASE</spring-cloud-netflix.version>
-    <spring-cloud-sleuth.version>1.2.2.RELEASE</spring-cloud-sleuth.version>
+    <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
+    <spring-cloud-config.version>1.4.0.RELEASE</spring-cloud-config.version>
+    <spring-cloud-netflix.version>1.4.0.RELEASE</spring-cloud-netflix.version>
+    <spring-cloud-sleuth.version>1.3.0.RELEASE</spring-cloud-sleuth.version>
     <spring-cloud-kubernetes.version>0.2.0.RELEASE</spring-cloud-kubernetes.version>
-    <spring-cloud-starter-feign.version>1.3.4.RELEASE</spring-cloud-starter-feign.version>
-    <spring-cloud-starter-zuul.version>1.3.4.RELEASE</spring-cloud-starter-zuul.version>
-    <spring-cloud-starter-stream-rabbit.version>1.2.1.RELEASE</spring-cloud-starter-stream-rabbit.version>
+    <spring-cloud-starter-openfeign.version>1.4.0.RELEASE</spring-cloud-starter-openfeign.version>
+    <spring-cloud-starter-netflix-zuul.version>1.4.0.RELEASE</spring-cloud-starter-netflix-zuul.version>
+    <spring-cloud-starter-stream-rabbit.version>1.3.0.RELEASE</spring-cloud-starter-stream-rabbit.version>
 
     <!-- Spring Boot defined -->
     <antlr2.version>2.7.7</antlr2.version> <!-- For Hibernate core -->
-    <aspectj.version>1.8.11</aspectj.version>
+    <aspectj.version>1.8.13</aspectj.version>
     <assertj.version>2.6.0</assertj.version>
     <classmate.version>1.3.4</classmate.version>
     <commons-codec.version>1.10</commons-codec.version>
     <dom4j.version>1.6.1</dom4j.version> <!-- For Hibernate core -->
     <dropwizard-metrics.version>3.1.5</dropwizard-metrics.version>
-    <groovy.version>2.4.12</groovy.version>
+    <groovy.version>2.4.13</groovy.version>
     <h2.version>1.4.196</h2.version>
-    <hibernate.version>5.2.11.Final</hibernate.version> <!-- SB 1.5.8 uses 5.0.12.Final -->
-    <hibernate-validator.version>5.3.5.Final</hibernate-validator.version>
+    <hibernate.version>5.2.11.Final</hibernate.version> <!-- SB 1.5.9 uses 5.0.12.Final -->
+    <hibernate-validator.version>5.3.6.Final</hibernate-validator.version>
     <hsqldb.version>2.3.5</hsqldb.version>
     <httpclient.version>4.5.3</httpclient.version>
     <httpcore.version>4.4.8</httpcore.version>
@@ -207,7 +207,7 @@
     <snakeyaml.version>1.17</snakeyaml.version>
     <spock.version>1.0-groovy-2.4</spock.version>
     <tomcat.version>8.5.23</tomcat.version>
-    <spring.version>4.3.12.RELEASE</spring.version>
+    <spring.version>4.3.13.RELEASE</spring.version>
     <spring-amqp.version>1.7.4.RELEASE</spring-amqp.version>
     <spring-security.version>4.2.3.RELEASE</spring-security.version>
     <xml-apis.version>1.4.01</xml-apis.version>
@@ -323,8 +323,8 @@
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-feign</artifactId>
-        <version>${spring-cloud-starter-feign.version}</version>
+        <artifactId>spring-cloud-starter-openfeign</artifactId>
+        <version>${spring-cloud-starter-openfeign.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -748,8 +748,8 @@
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-zuul</artifactId>
-        <version>${spring-cloud-starter-zuul.version}</version>
+        <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+        <version>${spring-cloud-starter-netflix-zuul.version}</version>
       </dependency>
 
       <!-- Spring Cloud Kubernetes -->
