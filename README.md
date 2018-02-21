@@ -3,7 +3,7 @@
 This Bill Of Materials for Spring Boot 1.5 contains starters which are currently used by the 
 [Spring Boot Mission Boosters](https://github.com/snowdrop?q=booster)
 
-The starters have been aligned against Spring Boot Version : 1.5.8.RELEASE
+The starters have been aligned against Spring Boot Version : 1.5.10.RELEASE
 
 This BOM is aligned to : 
 
@@ -11,9 +11,9 @@ Spring
 - Spring Boot 1.5.10.RELEASE
 
 Spring Cloud
-- [Edgware.SR1](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr1)
+- [Edgware.SR2](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr2). 
+- Spring Cloud Starters have been renamed: https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#renamed-starters
 - [Spring Cloud Kubernetes - 0.2.0](https://github.com/spring-cloud-incubator/spring-cloud-kubernetes/tree/v0.2.0.RELEASE)
-- Fabric8 Kubernetes/OpenShift Client 2.4.1
 
 Tracing
 - OpenTracing 0.31.0
