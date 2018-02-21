@@ -23,11 +23,11 @@ Integration
 - Keycloak 2.5.5.Final (which corresponds to latest RH SSO 7.1 version)
 
 ORM
-- Hibernate 5.2.11.Final
+- Hibernate 5.1.10.Final, which is aligned to the version that EAP 7.1.0 uses.
 
 ## Versionning scheme
 
-This BOM is using the following versionning scheme:
+This BOM is using the following versioning scheme:
 
 `me.snowdrop:spring-boot-bom:<targeted spring boot release version>.<qualifier>[1-9]`
 
