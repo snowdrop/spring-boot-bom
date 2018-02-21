@@ -324,11 +324,6 @@
         <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-openfeign</artifactId>
-        <version>${spring-cloud-netflix.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-jdbc</artifactId>
         <version>${spring-boot.version}</version>
@@ -736,6 +731,11 @@
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-hystrix</artifactId>
+        <version>${spring-cloud-netflix.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-openfeign</artifactId>
         <version>${spring-cloud-netflix.version}</version>
       </dependency>
       <dependency>
