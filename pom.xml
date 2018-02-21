@@ -157,9 +157,6 @@
     <guava.version>23.0</guava.version>
     <keycloak.version>2.5.5.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.1 -->
     <keycloak-excluded.version>2.5.5.Final</keycloak-excluded.version> <!-- These artifacts will only be productized in Red Hat SSO 7.2 -->
-    <kubernetes-client.version>2.4.1</kubernetes-client.version>
-    <openshift-client.version>2.4.1</openshift-client.version>
-
 
     <!-- Opentracing -->
     <opentracing.version>0.31.0</opentracing.version>
@@ -223,18 +220,6 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- fabric8 -->
-      <dependency>
-        <groupId>io.fabric8</groupId>
-        <artifactId>kubernetes-client</artifactId>
-        <version>${kubernetes-client.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.fabric8</groupId>
-        <artifactId>openshift-client</artifactId>
-        <version>${openshift-client.version}</version>
-      </dependency>
-
       <!-- spring-boot -->
       <dependency>
         <groupId>org.projectlombok</groupId>
