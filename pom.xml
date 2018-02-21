@@ -68,6 +68,12 @@
       <organization>Red Hat Inc.</organization>
       <organizationUrl>https://www.redhat.com</organizationUrl>
     </developer>
+    <developer>
+      <id>geoand</id>
+      <name>Georgios Andrianakis</name>
+      <organization>Red Hat Inc.</organization>
+      <organizationUrl>https://www.redhat.com</organizationUrl>
+    </developer>
   </developers>
 
   <licenses>
