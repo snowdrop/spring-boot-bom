@@ -196,7 +196,8 @@
     <groovy.version>2.4.13</groovy.version>
     <h2.version>1.4.196</h2.version>
     <hibernate.version>5.1.10.Final</hibernate.version> <!-- Aligning with EAP 7.1, SB 1.5.10 uses 5.0.12.Final -->
-    <hibernate-validator.version>5.3.6.Final</hibernate-validator.version>
+    <hibernate-validator.version>5.3.5.Final
+    </hibernate-validator.version> <!-- Aligning with EAP 7.1, SB 1.5.10 uses 5.3.6.Final -->
     <hsqldb.version>2.3.5</hsqldb.version>
     <httpclient.version>4.5.5</httpclient.version>
     <httpcore.version>4.4.9</httpcore.version>

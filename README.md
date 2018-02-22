@@ -24,6 +24,7 @@ Integration
 
 ORM
 - Hibernate 5.1.10.Final, which is aligned to the version that EAP 7.1.0 uses.
+- Hibernate Validator 5.3.5.Final, which is aligned to the version that EAP 7.1.0 uses.
 
 ## Versionning scheme
 
