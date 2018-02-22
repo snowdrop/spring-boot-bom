@@ -3,9 +3,9 @@
 This Bill Of Materials for Spring Boot 1.5 contains starters which are currently used by the 
 [Spring Boot Mission Boosters](https://github.com/snowdrop?q=booster)
 
-The starters have been aligned against Spring Boot Version : 1.5.10.RELEASE
+The starters have been aligned against Spring Boot Version: 1.5.10.RELEASE
 
-This BOM is aligned to : 
+This BOM is aligned to: 
 
 Spring
 - Spring Boot 1.5.10.RELEASE
