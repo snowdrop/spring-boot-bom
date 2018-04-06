@@ -8,10 +8,10 @@ The starters have been aligned against Spring Boot Version: 1.5.10.RELEASE
 This BOM is aligned to: 
 
 Spring
-- Spring Boot 1.5.10.RELEASE
+- Spring Boot 1.5.11.RELEASE
 
 Spring Cloud
-- [Edgware.SR2](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr2). 
+- [Edgware.SR3](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr3). 
 - Spring Cloud Starters have been renamed: https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#renamed-starters
 - [Spring Cloud Kubernetes - 0.2.0](https://github.com/spring-cloud-incubator/spring-cloud-kubernetes/tree/v0.2.0.RELEASE)
 
@@ -21,7 +21,7 @@ Tracing
 Integration
 - [Apache CXF Spring Boot Starter 3.1.12](http://cxf.apache.org/docs/springboot.html) (which corresponds to latest EAP 7.1.0 version)
 - Keycloak 2.5.5.Final (which corresponds to latest RH SSO 7.1 version)
-- Tomcat 8.5.28
+- Tomcat 8.5.29
 
 ORM
 - Hibernate 5.1.10.Final, which is aligned to the version that EAP 7.1.0 uses.

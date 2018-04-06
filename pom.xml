@@ -14,12 +14,13 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>me.snowdrop</groupId>
   <artifactId>spring-boot-bom</artifactId>
-  <version>1.5.10.SP4-SNAPSHOT</version>
+  <version>1.5.11-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot BOM</name>
@@ -153,10 +154,11 @@
   <properties>
 
     <!-- Other -->
-    <cxf-spring-boot-starter-jaxrs.version>3.1.12</cxf-spring-boot-starter-jaxrs.version> <!-- Corresponds to latest EAP 7.1.0 version productized -->
+    <cxf-spring-boot-starter-jaxrs.version>3.1.12
+    </cxf-spring-boot-starter-jaxrs.version> <!-- Latest EAP 7.1.0 version productized -->
     <guava.version>23.0</guava.version>
     <keycloak.version>2.5.5.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.1 -->
-    <keycloak-excluded.version>2.5.5.Final</keycloak-excluded.version> <!-- These artifacts will only be productized in Red Hat SSO 7.2 -->
+    <keycloak-excluded.version>2.5.5.Final</keycloak-excluded.version> <!-- Only productized in Red Hat SSO 7.2 -->
 
     <!-- Opentracing -->
     <opentracing.version>0.31.0</opentracing.version>
@@ -178,10 +180,10 @@
     <jandex.version>2.0.0.Final</jandex.version> <!-- For Hibernate core -->
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>1.5.10.RELEASE</spring-boot.version>
-    <spring-cloud-config.version>1.4.2.RELEASE</spring-cloud-config.version>
-    <spring-cloud-netflix.version>1.4.3.RELEASE</spring-cloud-netflix.version>
-    <spring-cloud-sleuth.version>1.3.2.RELEASE</spring-cloud-sleuth.version>
+    <spring-boot.version>1.5.11.RELEASE</spring-boot.version>
+    <spring-cloud-config.version>1.4.3.RELEASE</spring-cloud-config.version>
+    <spring-cloud-netflix.version>1.4.4.RELEASE</spring-cloud-netflix.version>
+    <spring-cloud-sleuth.version>1.3.3.RELEASE</spring-cloud-sleuth.version>
     <spring-cloud-kubernetes.version>0.2.0.RELEASE</spring-cloud-kubernetes.version>
     <spring-cloud-starter-stream-rabbit.version>1.3.3.RELEASE</spring-cloud-starter-stream-rabbit.version>
 
@@ -193,18 +195,20 @@
     <commons-codec.version>1.10</commons-codec.version>
     <dom4j.version>1.6.1</dom4j.version> <!-- For Hibernate core -->
     <dropwizard-metrics.version>3.1.5</dropwizard-metrics.version>
-    <groovy.version>2.4.13</groovy.version>
-    <h2.version>1.4.196</h2.version>
-    <hibernate.version>5.1.10.Final</hibernate.version> <!-- Aligning with EAP 7.1, SB 1.5.10 uses 5.0.12.Final -->
+    <groovy.version>2.4.15</groovy.version>
+    <h2.version>1.4.197</h2.version>
+    <hibernate.version>5.1.10.Final</hibernate.version> <!-- Aligned on EAP 7.1, SB 1.5.11 uses 5.0.12.Final -->
     <hibernate-validator.version>5.3.5.Final
-    </hibernate-validator.version> <!-- Aligning with EAP 7.1, SB 1.5.10 uses 5.3.6.Final -->
+    </hibernate-validator.version> <!-- Aligned on EAP 7.1, SB 1.5.11 uses 5.3.6.Final -->
     <hsqldb.version>2.3.5</hsqldb.version>
     <httpclient.version>4.5.5</httpclient.version>
     <httpcore.version>4.4.9</httpcore.version>
-    <jackson.version>2.8.10</jackson.version>
+    <jackson.version>2.8.11</jackson.version> <!-- Spring Boot actually imports Jackson BOM 2.8.11.20180217 -->
+    <jackson.annotations.version>2.8.0</jackson.annotations.version>
+    <jackson.databind.version>2.8.11.1</jackson.databind.version>
     <javassist.version>3.21.0-GA</javassist.version>
     <javax-transaction.version>1.2</javax-transaction.version>
-    <jboss-logging.version>3.3.1.Final</jboss-logging.version>
+    <jboss-logging.version>3.3.2.Final</jboss-logging.version>
     <json.version>20140107</json.version>
     <jstl.version>1.2</jstl.version>
     <logback.version>1.1.11</logback.version>
@@ -212,10 +216,10 @@
     <slf4j.version>1.7.25</slf4j.version>
     <snakeyaml.version>1.17</snakeyaml.version>
     <spock.version>1.0-groovy-2.4</spock.version>
-    <spring.version>4.3.14.RELEASE</spring.version>
-    <spring-amqp.version>1.7.6.RELEASE</spring-amqp.version>
-    <spring-security.version>4.2.4.RELEASE</spring-security.version>
-    <tomcat.version>8.5.28</tomcat.version>
+    <spring.version>4.3.15.RELEASE</spring.version>
+    <spring-amqp.version>1.7.7.RELEASE</spring-amqp.version>
+    <spring-security.version>4.2.5.RELEASE</spring-security.version>
+    <tomcat.version>8.5.29</tomcat.version>
     <xml-apis.version>1.4.01</xml-apis.version>
   </properties>
 
@@ -458,7 +462,7 @@
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-annotations</artifactId>
-        <version>${jackson.version}</version>
+        <version>${jackson.annotations.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -468,7 +472,7 @@
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
-        <version>${jackson.version}</version>
+        <version>${jackson.databind.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.dataformat</groupId>
