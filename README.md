@@ -8,7 +8,7 @@ The starters have been aligned against Spring Boot Version: 1.5.10.RELEASE
 This BOM is aligned to: 
 
 Spring
-- Spring Boot 1.5.11.RELEASE
+- Spring Boot 1.5.12.RELEASE
 
 Spring Cloud
 - [Edgware.SR3](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr3). 

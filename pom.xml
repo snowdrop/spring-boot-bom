@@ -19,7 +19,7 @@
 
   <groupId>me.snowdrop</groupId>
   <artifactId>spring-boot-bom</artifactId>
-  <version>1.5.11-SNAPSHOT</version>
+  <version>1.5.12-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot BOM</name>
@@ -153,8 +153,7 @@
   <properties>
 
     <!-- Other -->
-    <cxf-spring-boot-starter-jaxrs.version>3.1.12
-    </cxf-spring-boot-starter-jaxrs.version> <!-- Latest EAP 7.1.0 version productized -->
+    <cxf-spring-boot-starter-jaxrs.version>3.1.12</cxf-spring-boot-starter-jaxrs.version> <!-- Latest EAP 7.1.0 prod version -->
     <guava.version>23.0</guava.version>
     <keycloak.version>2.5.5.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.1 -->
     <keycloak-excluded.version>2.5.5.Final</keycloak-excluded.version> <!-- Only productized in Red Hat SSO 7.2 -->
@@ -179,7 +178,7 @@
     <jandex.version>2.0.0.Final</jandex.version> <!-- For Hibernate core -->
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>1.5.11.RELEASE</spring-boot.version>
+    <spring-boot.version>1.5.12.RELEASE</spring-boot.version>
     <spring-cloud-config.version>1.4.3.RELEASE</spring-cloud-config.version>
     <spring-cloud-netflix.version>1.4.4.RELEASE</spring-cloud-netflix.version>
     <spring-cloud-sleuth.version>1.3.3.RELEASE</spring-cloud-sleuth.version>
