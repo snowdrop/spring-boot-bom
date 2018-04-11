@@ -160,12 +160,12 @@
 
     <!-- Opentracing -->
     <opentracing.version>0.31.0</opentracing.version>
-    <opentracing.contrib-java-cloud.version>0.1.0</opentracing.contrib-java-cloud.version>
+    <opentracing.contrib-java-cloud.version>0.1.9</opentracing.contrib-java-cloud.version>
     <opentracing.contrib-java-concurrent.version>0.1.0</opentracing.contrib-java-concurrent.version>
     <opentracing.contrib-java-jdbc.version>0.0.6</opentracing.contrib-java-jdbc.version>
-    <opentracing.contrib-opentracing-spring-web.version>0.1.0</opentracing.contrib-opentracing-spring-web.version>
-    <opentracing.contrib-opentracing-spring-jms.version>0.0.5</opentracing.contrib-opentracing-spring-jms.version>
-    <opentracing.contrib-jaxrs2.version>0.1.1</opentracing.contrib-jaxrs2.version>
+    <opentracing.contrib-opentracing-spring-web.version>0.2.1</opentracing.contrib-opentracing-spring-web.version>
+    <opentracing.contrib-opentracing-spring-jms.version>0.0.7</opentracing.contrib-opentracing-spring-jms.version>
+    <opentracing.contrib-jaxrs2.version>0.1.4</opentracing.contrib-jaxrs2.version>
 
     <!-- Hibernate -->
     <byte-buddy.version>1.6.14</byte-buddy.version> <!-- For Hibernate entity-manager -->
