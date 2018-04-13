@@ -3,7 +3,7 @@
 This Bill Of Materials for Spring Boot 1.5 contains starters which are currently used by the 
 [Spring Boot Mission Boosters](https://github.com/snowdrop?q=booster)
 
-The starters have been aligned against Spring Boot Version: 1.5.10.RELEASE
+The starters have been aligned against Spring Boot Version: 1.5.12.RELEASE
 
 This BOM is aligned to: 
 
@@ -16,7 +16,7 @@ Spring Cloud
 - [Spring Cloud Kubernetes - 0.2.0](https://github.com/spring-cloud-incubator/spring-cloud-kubernetes/tree/v0.2.0.RELEASE)
 
 Tracing
-- OpenTracing 0.31.0
+- OpenTracing dependencies have been removed pending alignment with Spring Boot 1.5.12.
 
 Integration
 - [Apache CXF Spring Boot Starter 3.1.12](http://cxf.apache.org/docs/springboot.html) (which corresponds to latest EAP 7.1.0 version)

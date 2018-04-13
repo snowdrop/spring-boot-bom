@@ -158,15 +158,6 @@
     <keycloak.version>2.5.5.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.1 -->
     <keycloak-excluded.version>2.5.5.Final</keycloak-excluded.version> <!-- Only productized in Red Hat SSO 7.2 -->
 
-    <!-- Opentracing -->
-    <opentracing.version>0.31.0</opentracing.version>
-    <opentracing.contrib-java-cloud.version>0.1.9</opentracing.contrib-java-cloud.version>
-    <opentracing.contrib-java-concurrent.version>0.1.0</opentracing.contrib-java-concurrent.version>
-    <opentracing.contrib-java-jdbc.version>0.0.6</opentracing.contrib-java-jdbc.version>
-    <opentracing.contrib-opentracing-spring-web.version>0.2.1</opentracing.contrib-opentracing-spring-web.version>
-    <opentracing.contrib-opentracing-spring-jms.version>0.0.7</opentracing.contrib-opentracing-spring-jms.version>
-    <opentracing.contrib-jaxrs2.version>0.1.4</opentracing.contrib-jaxrs2.version>
-
     <!-- Hibernate -->
     <byte-buddy.version>1.6.14</byte-buddy.version> <!-- For Hibernate entity-manager -->
     <el-api.version>2.2</el-api.version> <!-- For Hibernate core -->
@@ -819,73 +810,6 @@
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-kubernetes-zipkin</artifactId>
         <version>${spring-cloud-kubernetes.version}</version>
-      </dependency>
-
-      <!-- OpenTracing -->
-      <dependency>
-        <groupId>io.opentracing</groupId>
-        <artifactId>opentracing-api</artifactId>
-        <version>${opentracing.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing</groupId>
-        <artifactId>opentracing-noop</artifactId>
-        <version>${opentracing.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing</groupId>
-        <artifactId>opentracing-mock</artifactId>
-        <version>${opentracing.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing</groupId>
-        <artifactId>opentracing-util</artifactId>
-        <version>${opentracing.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing.contrib</groupId>
-        <artifactId>opentracing-spring-cloud</artifactId>
-        <version>${opentracing.contrib-java-cloud.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing.contrib</groupId>
-        <artifactId>opentracing-spring-cloud-starter</artifactId>
-        <version>${opentracing.contrib-java-cloud.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing.contrib</groupId>
-        <artifactId>opentracing-spring-web</artifactId>
-        <version>${opentracing.contrib-opentracing-spring-web.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing.contrib</groupId>
-        <artifactId>opentracing-spring-web-autoconfigure</artifactId>
-        <version>${opentracing.contrib-opentracing-spring-web.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing.contrib</groupId>
-        <artifactId>opentracing-jms-spring</artifactId>
-        <version>${opentracing.contrib-opentracing-spring-jms.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing.contrib</groupId>
-        <artifactId>opentracing-jms-common</artifactId>
-        <version>${opentracing.contrib-opentracing-spring-jms.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing.contrib</groupId>
-        <artifactId>opentracing-jms-1</artifactId>
-        <version>${opentracing.contrib-opentracing-spring-jms.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing.contrib</groupId>
-        <artifactId>opentracing-concurrent</artifactId>
-        <version>${opentracing.contrib-java-concurrent.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.opentracing.contrib</groupId>
-        <artifactId>opentracing-jaxrs2</artifactId>
-        <version>${opentracing.contrib-jaxrs2.version}</version>
       </dependency>
 
       <!-- Tomcat -->
