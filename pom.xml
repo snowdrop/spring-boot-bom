@@ -176,12 +176,12 @@
     <jandex.version>2.0.0.Final</jandex.version> <!-- For Hibernate core -->
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>2.0.0.RC1</spring-boot.version>
-    <spring-cloud-config.version>2.0.0.M5</spring-cloud-config.version>
-    <spring-cloud-netflix.version>2.0.0.M5</spring-cloud-netflix.version>
-    <spring-cloud-sleuth.version>2.0.0.M5</spring-cloud-sleuth.version>
+    <spring-boot.version>2.0.2.RELEASE</spring-boot.version>
+    <spring-cloud-config.version>2.0.0 RC1</spring-cloud-config.version>
+    <spring-cloud-netflix.version>2.0.0 RC1</spring-cloud-netflix.version>
+    <spring-cloud-sleuth.version>2.0.0 RC1</spring-cloud-sleuth.version>
     <spring-cloud-kubernetes.version>0.2.0.RELEASE</spring-cloud-kubernetes.version>
-    <spring-cloud-starter-stream-rabbit.version>2.0.0.M3</spring-cloud-starter-stream-rabbit.version>
+    <spring-cloud-starter-stream-rabbit.version>2.0.0.RELEASE</spring-cloud-starter-stream-rabbit.version>
 
     <!-- Spring Boot defined -->
     <antlr2.version>2.7.7</antlr2.version> <!-- For Hibernate core -->
