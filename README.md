@@ -2,9 +2,9 @@
 
 This project contains different Spring Boot BOMs created to simplify the developement of Microservice Spring application top of the Openshift/Kubenetes Cloud platform. They are used by our opinionated examples called boosters which contains Spring Java code implementing a pattern, use case or capability. Such booster will help you to develop Cloud Native application running on Openshift/Kubernetes.
 
-A branch exists for each version of Spring Boot currently supported; 1.4.x, 1.5.x, 2.x ...
+A branch exists for each version of Spring Boot currently supported; 1.5.x, 2.x ...
 
-To modify a pom, checkout the appropriate branch `git checkout sb-1.4.x`
+To modify a pom, checkout the appropriate branch `git checkout sb-1.5.x`
 
 # Releasing
 
@@ -27,8 +27,7 @@ What is the new development version for "spring-boot-1.4-bom"? \
 where <DIGIT> corresponds to the number without `-SNAPSHOT` and `<NEXT-DIGIT>` is the next digit available
 ```
 
-Before to release, check within your `~/.m2/settings.xml` file that you have a `<service><id>` for `jboss-releases-repository` defined which contains your 
-credentials
+Before to release, check within your `~/.m2/settings.xml` file that you have a `<service><id>` for `jboss-releases-repository` defined which contains your credentials
 
 ```bash
 <server>
@@ -37,7 +36,7 @@ credentials
   <password>passWord</password>
 ```
 
-Then release using maven release plugin
+Then release using the maven release plugin
 
 ```bash
 mvn release:perform
