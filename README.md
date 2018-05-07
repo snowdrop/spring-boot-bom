@@ -27,7 +27,8 @@ What is the new development version for "spring-boot-1.4-bom"? \
 where <DIGIT> corresponds to the number without `-SNAPSHOT` and `<NEXT-DIGIT>` is the next digit available
 ```
 
-Before to release, check within your `~/.m2/settings.xml` file that you have a `<service><id>` for `jboss-releases-repository` defined which contains your credentials
+Before to release, check within your `~/.m2/settings.xml` file that you have a `<service><id>` for `jboss-releases-repository` defined which contains your 
+credentials
 
 ```bash
 <server>
