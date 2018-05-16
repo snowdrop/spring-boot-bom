@@ -8,7 +8,7 @@ The starters have been aligned against Spring Boot Version: 1.5.12.RELEASE
 This BOM is aligned to: 
 
 Spring
-- Spring Boot 1.5.12.RELEASE
+- Spring Boot 1.5.13.RELEASE
 
 Spring Cloud
 - [Edgware.SR3](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr3). 
@@ -21,7 +21,7 @@ Tracing
 Integration
 - [Apache CXF Spring Boot Starter 3.1.12](http://cxf.apache.org/docs/springboot.html) (which corresponds to latest EAP 7.1.0 version)
 - Keycloak 2.5.5.Final (which corresponds to latest RH SSO 7.1 version)
-- Tomcat 8.5.29
+- Tomcat 8.5.31
 
 ORM
 - Hibernate 5.1.10.Final, which is aligned to the version that EAP 7.1.0 uses.
@@ -44,10 +44,10 @@ Qualifiers are numbered and we should try to limit their number to 9 but we shou
 
 Until a version is released, the BOM version will be `<target spring boot version>-SNAPSHOT`. Once it's released, we will switch to `<target spring boot version>.SP<current SP version + 1>-SNAPSHOT`.
 
-So, right now, as we are targeting Spring Boot version 1.5.8.RELEASE, our BOM GAV will be: 
-`me.snowdrop:spring-boot-bom:1.5.8-SNAPSHOT` until released. The released version will be 
-`me.snowdrop:spring-boot-bom:1.5.8.Final` and the new version in the 1.5 branch will 
-be `me.snowdrop:spring-boot-bom:1.5.8.SP1-SNAPSHOT`.
+So, right now, as we are targeting Spring Boot version 1.5.13.RELEASE, our BOM GAV will be:
+`me.snowdrop:spring-boot-bom:1.5.13-SNAPSHOT` until released. The released version will be
+`me.snowdrop:spring-boot-bom:1.5.13.Final` and the new version in the 1.5 branch will
+be `me.snowdrop:spring-boot-bom:1.5.13.SP1-SNAPSHOT`.
 
 See [SB-162](https://issues.jboss.org/browse/SB-162) for a discussion of BOM versionning.
 
