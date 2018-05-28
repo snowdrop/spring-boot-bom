@@ -19,7 +19,7 @@
 
   <groupId>me.snowdrop</groupId>
   <artifactId>spring-boot-bom</artifactId>
-  <version>1.5.13-SNAPSHOT</version>
+  <version>1.5.13.Final</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot BOM</name>
@@ -88,7 +88,7 @@
     <url>https://github.com/snowdrop</url>
     <connection>scm:git:https://github.com/snowdrop/spring-boot-bom.git</connection>
     <developerConnection>scm:git:git@github.com:snowdrop/spring-boot-bom.git</developerConnection>
-    <tag>1.5.13-SNAPSHOT</tag>
+    <tag>1.5.13.Final</tag>
   </scm>
 
 
