@@ -49,7 +49,7 @@ So, right now, as we are targeting Spring Boot version 1.5.13.RELEASE, our BOM G
 `me.snowdrop:spring-boot-bom:1.5.13.Final` and the new version in the 1.5 branch will
 be `me.snowdrop:spring-boot-bom:1.5.13.SP1-SNAPSHOT`.
 
-See [SB-162](https://issues.jboss.org/browse/SB-162) for a discussion of BOM versionning.
+See [SB-162](https://issues.jboss.org/browse/SB-162) for a discussion of BOM versioning.
 
 ## Releasing
 
