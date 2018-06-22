@@ -8,9 +8,10 @@ jobs:
 
     # based on this: https://discuss.circleci.com/t/circle-2-0-caching-is-too-limited-to-be-very-useful/11694/10
     - restore_cache:
-        key: spring-boot-bom-{{ .Branch }}-{{ checksum "pom.xml" }}
-        key: spring-boot-bom-{{ .Branch }}
-        key: spring-boot-bom
+        keys:
+          - spring-boot-bom-{{ .Branch }}-{{ checksum "pom.xml" }}
+          - spring-boot-bom-{{ .Branch }}
+          - spring-boot-bom
 
       # Will download all deps needed into .m2
     - run:
