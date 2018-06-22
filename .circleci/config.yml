@@ -6,6 +6,16 @@ jobs:
     steps:
     - checkout
 
+    - run:
+        name: Check of commit is from Maven Release Plugin
+        command: |
+          commit_message=$(git log -1 --pretty=%B)
+          if [[ ${commit_message} =~ ^\[maven-release-plugin\].* ]]; then
+            echo "Commits from the maven-release-plugin don't trigger a regular CI build"
+            circleci step halt
+          fi
+
+
     # based on this: https://discuss.circleci.com/t/circle-2-0-caching-is-too-limited-to-be-very-useful/11694/10
     - restore_cache:
         keys:
