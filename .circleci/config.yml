@@ -1,0 +1,98 @@
+version: 2
+jobs:
+  OPENSHIFT_3.9.0:
+    machine: true
+
+    steps:
+    - checkout
+
+    # based on this: https://discuss.circleci.com/t/circle-2-0-caching-is-too-limited-to-be-very-useful/11694/10
+    - restore_cache:
+        key: spring-boot-bom-{{ .Branch }}-{{ checksum "pom.xml" }}
+        key: spring-boot-bom-{{ .Branch }}
+        key: spring-boot-bom
+
+      # Will download all deps needed into .m2
+    - run:
+        name: Store all BOM dependencies locally
+        command: mvn dependency:go-offline
+
+    - run:
+        name: Download testsuite
+        command: |
+          pushd /tmp
+          git clone https://github.com/snowdrop/testsuite.git
+          cd testsuite
+
+          # Done in order to cache maven artifacts
+          # Can't use 'mvn dependency:go-offline'. See https://stackoverflow.com/q/14694139/2504224
+          mvn install -DskipTests
+
+          popd
+
+    - save_cache:
+        paths:
+        - ~/.m2
+        key: spring-boot-bom-{{ .Branch }}-{{ checksum "pom.xml" }}
+
+    - run:
+        name: Install BOM locally
+        command: mvn install
+
+    - run:
+        name: Launch Openshift
+        command: |
+          kube_version=$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)
+          curl -LO https://storage.googleapis.com/kubernetes-release/release/${kube_version}/bin/linux/amd64/kubectl && \
+              chmod +x kubectl && sudo mv kubectl /usr/local/bin/
+          echo "Installed kubectl CLI tool"
+
+          oc_tool_version="openshift-origin-server-v3.9.0-191fece-linux-64bit"
+          curl -LO https://github.com/openshift/origin/releases/download/v3.9.0/${oc_tool_version}.tar.gz && \
+              tar -xvzf ${oc_tool_version}.tar.gz && chmod +x $PWD/${oc_tool_version}/oc && sudo mv $PWD/${oc_tool_version}/oc /usr/local/bin/ && \
+              rm -rf ${oc_tool_version}.tar.gz
+          echo "Installed OC CLI tool"
+
+          tmp=`mktemp`
+          echo 'DOCKER_OPTS="$DOCKER_OPTS --insecure-registry 172.30.0.0/16  --insecure-registry registry.access.redhat.com"' > ${tmp}
+          sudo mv ${tmp} /etc/default/docker
+          sudo mount --make-shared /
+          sudo service docker restart
+          echo "Configured Docker daemon with insecure-registry"
+
+          oc cluster up --version=v3.9.0
+          sleep 10
+          oc login -u system:admin
+          echo "Configured OpenShift cluster : v3.9.0"
+
+    - run:
+        name: Launch testsuite
+        command: |
+          bom_version=$(mvn -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
+          versionRE='^([1-9]\.[0-9]\.[0-9]+).*'
+          if [[ "${bom_version}" =~ ${versionRE} ]]; then
+            version_numbers_only=${BASH_REMATCH[1]}
+            spring_boot_release="${version_numbers_only}.RELEASE"
+
+            echo "Launching testsuite using"
+            echo "spring-boot.bom.version=${bom_version}"
+            echo "spring-boot.version=${spring_boot_release}"
+
+            pushd /tmp/testsuite
+            oc policy add-role-to-user view -z default 
+            mvn clean verify -Popenshift -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
+
+          else
+            echo "The BOM version is invalid!"
+            exit 1
+          fi
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+    - OPENSHIFT_3.9.0:
+        filters:
+          branches:
+            ignore:
+            - master
