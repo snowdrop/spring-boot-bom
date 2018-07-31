@@ -45,7 +45,7 @@ jobs:
         name: Download http-booster
         command: |
           pushd /tmp
-          git clone https://snowdrop/spring-boot-http-booster.git
+          git clone https://github.com/snowdrop/spring-boot-http-booster.git
           cd spring-boot-http-booster
 
           # Done in order to cache maven artifacts
