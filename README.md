@@ -3,25 +3,22 @@
 This Bill Of Materials for Spring Boot 1.5 contains starters which are currently used by the 
 [Spring Boot Mission Boosters](https://github.com/snowdrop?q=booster)
 
-The starters have been aligned against Spring Boot Version: 1.5.12.RELEASE
+The starters have been aligned against Spring Boot Version: 1.5.15.RELEASE
 
 This BOM is aligned to: 
 
 Spring
-- Spring Boot 1.5.13.RELEASE
+- Spring Boot 1.5.15.RELEASE
 
 Spring Cloud
 - [Edgware.SR3](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr3). 
 - Spring Cloud Starters have been renamed: https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#renamed-starters
 - [Spring Cloud Kubernetes - 0.2.0](https://github.com/spring-cloud-incubator/spring-cloud-kubernetes/tree/v0.2.0.RELEASE)
 
-Tracing
-- OpenTracing dependencies have been removed pending alignment with Spring Boot 1.5.12.
-
 Integration
 - [Apache CXF Spring Boot Starter 3.1.12](http://cxf.apache.org/docs/springboot.html) (which corresponds to latest EAP 7.1.0 version)
-- Keycloak 2.5.5.Final (which corresponds to latest RH SSO 7.1 version)
-- Tomcat 8.5.31
+- Keycloak 3.4.3.Final (which corresponds to latest RH SSO 7.2 version)
+- Tomcat 8.5.32
 
 ORM
 - Hibernate 5.1.10.Final, which is aligned to the version that EAP 7.1.0 uses.
