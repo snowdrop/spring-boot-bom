@@ -169,7 +169,7 @@
     <jandex.version>2.0.0.Final</jandex.version> <!-- For Hibernate core -->
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>1.5.14.RELEASE</spring-boot.version>
+    <spring-boot.version>1.5.15.RELEASE</spring-boot.version>
     <spring-cloud-config.version>1.4.3.RELEASE</spring-cloud-config.version>
     <spring-cloud-netflix.version>1.4.4.RELEASE</spring-cloud-netflix.version>
     <spring-cloud-sleuth.version>1.3.3.RELEASE</spring-cloud-sleuth.version>
@@ -190,8 +190,8 @@
     <hibernate-validator.version>5.3.5.Final
     </hibernate-validator.version> <!-- Aligned on EAP 7.1, SB 1.5.11 uses 5.3.6.Final -->
     <hsqldb.version>2.3.6</hsqldb.version>
-    <httpclient.version>4.5.5</httpclient.version>
-    <httpcore.version>4.4.9</httpcore.version>
+    <httpclient.version>4.5.6</httpclient.version>
+    <httpcore.version>4.4.10</httpcore.version>
     <jackson.version>2.8.11</jackson.version> <!-- Spring Boot 1.5.12 actually imports Jackson BOM 2.8.11.20180217 -->
     <jackson.annotations.version>2.8.0</jackson.annotations.version>
     <jackson.databind.version>2.8.11.2</jackson.databind.version>
@@ -206,9 +206,9 @@
     <snakeyaml.version>1.17</snakeyaml.version>
     <spock.version>1.0-groovy-2.4</spock.version>
     <spring.version>4.3.18.RELEASE</spring.version>
-    <spring-amqp.version>1.7.8.RELEASE</spring-amqp.version>
+    <spring-amqp.version>1.7.9.RELEASE</spring-amqp.version>
     <spring-security.version>4.2.7.RELEASE</spring-security.version>
-    <tomcat.version>8.5.31</tomcat.version>
+    <tomcat.version>8.5.32</tomcat.version>
     <xml-apis.version>1.4.01</xml-apis.version>
   </properties>
 
