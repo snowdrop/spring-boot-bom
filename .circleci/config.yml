@@ -103,6 +103,7 @@ jobs:
 
             pushd /tmp/spring-boot-http-booster
             ./mvnw clean verify -Popenshift,openshift-it -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
+            popd
 
           else
             echo "The BOM version is invalid!"
@@ -125,6 +126,7 @@ jobs:
             pushd /tmp/testsuite
             oc policy add-role-to-user view -z default 
             mvn clean verify -Popenshift -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
+            popd
 
           else
             echo "The BOM version is invalid!"
