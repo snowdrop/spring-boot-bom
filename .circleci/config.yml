@@ -49,7 +49,7 @@ jobs:
           cd spring-boot-http-booster
 
           # Done in order to cache maven artifacts
-          ./mvn dependency:go-offline
+          ./mvnw dependency:go-offline
 
           popd
 
@@ -102,7 +102,7 @@ jobs:
             echo "spring-boot.version=${spring_boot_release}"
 
             pushd /tmp/spring-boot-http-booster
-            ./mvn clean verify -Popenshift,openshift-it -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
+            ./mvnw clean verify -Popenshift,openshift-it -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
 
           else
             echo "The BOM version is invalid!"
