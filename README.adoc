@@ -1,30 +1,37 @@
+// spring-boot
 :spring-boot.version:   1.5.15.RELEASE
 
 = Spring Boot BOM - 1.5.x
 
 This Bill Of Materials for Spring Boot 1.5 contains starters which are currently used by the 
-[Spring Boot Mission Boosters](https://github.com/snowdrop?q=booster)
-
-The starters have been aligned against Spring Boot Version: `{spring-boot.version}`
+https://github.com/snowdrop?utf8=✓&q=topic%3Abooster[Spring Boot Mission Boosters].
+This document is updated on a "best effort" basis, based on the information contained in the `pom.xml` file. In case of inconsistency between this document and the POM file, the POM information prevails.
 
 This BOM is aligned to: 
 
-Spring
-- Spring Boot {spring-boot.version}
+.Spring
+// spring-boot
+- Spring Boot: 1.5.15.RELEASE
 
-Spring Cloud
-- [Edgware.SR3](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr3). 
+.Spring Cloud
+- https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr3[Edgware.SR3].
 - Spring Cloud Starters have been renamed: https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#renamed-starters
-- [Spring Cloud Kubernetes - 0.2.0](https://github.com/spring-cloud-incubator/spring-cloud-kubernetes/tree/v0.2.0.RELEASE)
+// spring-cloud-kubernetes
+- https://github.com/spring-cloud/spring-cloud-kubernetes[Spring Cloud Kubernetes]: 0.2.0.RELEASE
 
-Integration
-- [Apache CXF Spring Boot Starter 3.1.12](http://cxf.apache.org/docs/springboot.html) (which corresponds to latest EAP 7.1.0 version)
-- Keycloak 3.4.3.Final (which corresponds to latest RH SSO 7.2 version)
-- Tomcat 8.5.32
+.Integration
+// cxf-spring-boot-starter-jaxrs
+- http://cxf.apache.org/docs/springboot.html[Apache CXF Spring Boot Starter]: 3.1.12
+// keycloak
+- Keycloak: 3.4.3.Final
+// tomcat
+- Tomcat: 8.5.32
 
-ORM
-- Hibernate 5.1.10.Final, which is aligned to the version that EAP 7.1.0 uses.
-- Hibernate Validator 5.3.5.Final, which is aligned to the version that EAP 7.1.0 uses.
+.ORM
+// hibernate
+- Hibernate: 5.1.10.Final
+// hibernate-validator
+- Hibernate Validator: 5.3.5.Final
 
 == Versioning scheme
 
@@ -32,7 +39,7 @@ This BOM is using the following versioning scheme:
 
 `me.snowdrop:spring-boot-bom:<targeted spring boot release version>.<qualifier>[1-9]`
 
-Qualifiers will be, in chronological order:
+.Qualifiers, in chronological order:
  - `Alpha` (first semi-stable releases),
  - `Beta` (no more API changes, bugs might still occur),
  - `CR` (Candidate Release, release quality but minor bugs or known postponed issues are possible),
@@ -48,11 +55,11 @@ So, right now, as we are targeting Spring Boot version 1.5.13.RELEASE, our BOM G
 `me.snowdrop:spring-boot-bom:1.5.13.Final` and the new version in the 1.5 branch will
 be `me.snowdrop:spring-boot-bom:1.5.13.SP1-SNAPSHOT`.
 
-See [SB-162](https://issues.jboss.org/browse/SB-162) for a discussion of BOM versionning.
+See https://issues.jboss.org/browse/SB-162[SB-162] for a discussion of BOM versioning.
 
 == Releasing
 
-The artifacts are released on [Sonatype Open Source Software Repository Hosting (OSSRH)](http://central.sonatype.org/), which is
+The artifacts are released on http://central.sonatype.org/[Sonatype Open Source Software Repository Hosting (OSSRH)], which is
 then synchronized to Maven Central. To perform a release, you need to activate the `release` profile.
 
 0. Make sure that your computer is properly set up as explained in http://central.sonatype.org/pages/apache-maven.html. In 
