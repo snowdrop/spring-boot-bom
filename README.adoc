@@ -1,14 +1,16 @@
-# Spring Boot BOM - 1.5 
+:spring-boot.version:   1.5.15.RELEASE
+
+= Spring Boot BOM - 1.5.x
 
 This Bill Of Materials for Spring Boot 1.5 contains starters which are currently used by the 
 [Spring Boot Mission Boosters](https://github.com/snowdrop?q=booster)
 
-The starters have been aligned against Spring Boot Version: 1.5.15.RELEASE
+The starters have been aligned against Spring Boot Version: `{spring-boot.version}`
 
 This BOM is aligned to: 
 
 Spring
-- Spring Boot 1.5.15.RELEASE
+- Spring Boot {spring-boot.version}
 
 Spring Cloud
 - [Edgware.SR3](https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr3). 
@@ -24,7 +26,7 @@ ORM
 - Hibernate 5.1.10.Final, which is aligned to the version that EAP 7.1.0 uses.
 - Hibernate Validator 5.3.5.Final, which is aligned to the version that EAP 7.1.0 uses.
 
-## Versioning scheme
+== Versioning scheme
 
 This BOM is using the following versioning scheme:
 
@@ -48,7 +50,7 @@ be `me.snowdrop:spring-boot-bom:1.5.13.SP1-SNAPSHOT`.
 
 See [SB-162](https://issues.jboss.org/browse/SB-162) for a discussion of BOM versionning.
 
-## Releasing
+== Releasing
 
 The artifacts are released on [Sonatype Open Source Software Repository Hosting (OSSRH)](http://central.sonatype.org/), which is
 then synchronized to Maven Central. To perform a release, you need to activate the `release` profile.
