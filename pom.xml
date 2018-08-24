@@ -19,7 +19,7 @@
 
   <groupId>me.snowdrop</groupId>
   <artifactId>spring-boot-bom</artifactId>
-  <version>1.5.15-SNAPSHOT</version>
+  <version>1.5.16-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot BOM</name>
@@ -154,19 +154,19 @@
 
     <!-- Other -->
     <cxf-spring-boot-starter-jaxrs.version>3.1.12</cxf-spring-boot-starter-jaxrs.version> <!-- Latest EAP 7.1.0 prod version -->
-    <guava.version>23.0</guava.version>
+    <!--<guava.version>23.0</guava.version>-->
     <keycloak.version>3.4.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
     <opentracing-spring-jaeger-web-starter.version>0.2.0</opentracing-spring-jaeger-web-starter.version>
 
     <!-- Hibernate -->
-    <byte-buddy.version>1.6.14</byte-buddy.version> <!-- For Hibernate entity-manager -->
-    <el-api.version>2.2</el-api.version> <!-- For Hibernate core -->
-    <jsr250-api.version>1.0</jsr250-api.version> <!-- For Hibernate core -->
-    <cdi-api.version>1.1</cdi-api.version> <!-- For Hibernate core -->
-    <inject.version>1</inject.version> <!-- For Hibernate core -->
-    <hibernate-commons-annotations.version>5.0.1.Final</hibernate-commons-annotations.version> <!-- For Hibernate core -->
-    <hibernate-jpa-2.1-api.version>1.0.0.Final</hibernate-jpa-2.1-api.version> <!-- For Hibernate core -->
-    <jandex.version>2.0.0.Final</jandex.version> <!-- For Hibernate core -->
+    <!--<byte-buddy.version>1.6.14</byte-buddy.version> &lt;!&ndash; For Hibernate entity-manager &ndash;&gt;
+    <el-api.version>2.2</el-api.version> &lt;!&ndash; For Hibernate core &ndash;&gt;
+    <jsr250-api.version>1.0</jsr250-api.version> &lt;!&ndash; For Hibernate core &ndash;&gt;
+    <cdi-api.version>1.1</cdi-api.version> &lt;!&ndash; For Hibernate core &ndash;&gt;
+    <inject.version>1</inject.version> &lt;!&ndash; For Hibernate core &ndash;&gt;
+    <hibernate-commons-annotations.version>5.0.1.Final</hibernate-commons-annotations.version> &lt;!&ndash; For Hibernate core &ndash;&gt;
+    <hibernate-jpa-2.1-api.version>1.0.0.Final</hibernate-jpa-2.1-api.version> &lt;!&ndash; For Hibernate core &ndash;&gt;
+    <jandex.version>2.0.0.Final</jandex.version> &lt;!&ndash; For Hibernate core &ndash;&gt;-->
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>1.5.15.RELEASE</spring-boot.version>
@@ -177,49 +177,48 @@
     <spring-cloud-starter-stream-rabbit.version>1.3.4.RELEASE</spring-cloud-starter-stream-rabbit.version>
 
     <!-- Spring Boot defined -->
-    <antlr2.version>2.7.7</antlr2.version> <!-- For Hibernate core -->
-    <aspectj.version>1.8.13</aspectj.version>
+    <!--<antlr2.version>2.7.7</antlr2.version> &lt;!&ndash; For Hibernate core &ndash;&gt;
+    <aspectj.version>1.8.13</aspectj.version>-->
     <assertj.version>2.6.0</assertj.version>
-    <classmate.version>1.3.4</classmate.version>
+    <!--<classmate.version>1.3.4</classmate.version>
     <commons-codec.version>1.10</commons-codec.version>
-    <dom4j.version>1.6.1</dom4j.version> <!-- For Hibernate core -->
+    <dom4j.version>1.6.1</dom4j.version> &lt;!&ndash; For Hibernate core &ndash;&gt;
     <dropwizard-metrics.version>3.1.5</dropwizard-metrics.version>
-    <groovy.version>2.4.15</groovy.version>
+    <groovy.version>2.4.15</groovy.version>-->
     <h2.version>1.4.197</h2.version>
-    <hibernate.version>5.1.10.Final</hibernate.version> <!-- Aligned on EAP 7.1, SB 1.5.11 uses 5.0.12.Final -->
-    <hibernate-validator.version>5.3.5.Final
-    </hibernate-validator.version> <!-- Aligned on EAP 7.1, SB 1.5.11 uses 5.3.6.Final -->
+    <hibernate.version>5.1.10.Final</hibernate.version> <!-- Aligned on EAP 7.1, SB uses 5.0.12.Final -->
+    <hibernate-validator.version>5.3.5.Final</hibernate-validator.version> <!-- Aligned on EAP 7.1, SB uses 5.3.6.Final -->
     <hsqldb.version>2.3.6</hsqldb.version>
-    <httpclient.version>4.5.6</httpclient.version>
-    <httpcore.version>4.4.10</httpcore.version>
-    <jackson.version>2.8.11</jackson.version> <!-- Spring Boot 1.5.12 actually imports Jackson BOM 2.8.11.20180217 -->
+    <!--<httpclient.version>4.5.6</httpclient.version>
+    <httpcore.version>4.4.10</httpcore.version>-->
+    <jackson.version>2.8.11</jackson.version> <!-- SB actually imports Jackson -->
     <jackson.annotations.version>2.8.0</jackson.annotations.version>
     <jackson.databind.version>2.8.11.2</jackson.databind.version>
-    <javassist.version>3.21.0-GA</javassist.version>
+    <!--<javassist.version>3.21.0-GA</javassist.version>
     <javax-transaction.version>1.2</javax-transaction.version>
     <jboss-logging.version>3.3.2.Final</jboss-logging.version>
     <json.version>20140107</json.version>
-    <jstl.version>1.2</jstl.version>
+    <jstl.version>1.2</jstl.version>-->
     <logback.version>1.1.11</logback.version>
-    <lombok.version>1.16.22</lombok.version>
+    <!--<lombok.version>1.16.22</lombok.version>
     <slf4j.version>1.7.25</slf4j.version>
     <snakeyaml.version>1.17</snakeyaml.version>
-    <spock.version>1.0-groovy-2.4</spock.version>
+    <spock.version>1.0-groovy-2.4</spock.version>-->
     <spring.version>4.3.18.RELEASE</spring.version>
-    <spring-amqp.version>1.7.9.RELEASE</spring-amqp.version>
+    <!--<spring-amqp.version>1.7.9.RELEASE</spring-amqp.version>-->
     <spring-security.version>4.2.7.RELEASE</spring-security.version>
     <tomcat.version>8.5.32</tomcat.version>
-    <xml-apis.version>1.4.01</xml-apis.version>
+    <!--<xml-apis.version>1.4.01</xml-apis.version>-->
   </properties>
 
   <dependencyManagement>
     <dependencies>
       <!-- Spring Boot -->
-      <dependency>
+      <!--<dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
         <version>${lombok.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot</artifactId>
@@ -351,7 +350,7 @@
       </dependency>
 
       <!-- Spring -->
-      <dependency>
+      <!--<dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjrt</artifactId>
         <version>${aspectj.version}</version>
@@ -365,7 +364,7 @@
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjweaver</artifactId>
         <version>${aspectj.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aspects</artifactId>
@@ -422,12 +421,12 @@
         <artifactId>spring-security-crypto</artifactId>
         <version>${spring-security.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>org.springframework.amqp</groupId>
         <artifactId>spring-amqp</artifactId>
         <version>${spring-amqp.version}</version>
-      </dependency>
-      <dependency>
+      </dependency>-->
+      <!--<dependency>
         <groupId>org.spockframework</groupId>
         <artifactId>spock-core</artifactId>
         <version>${spock.version}</version>
@@ -442,12 +441,12 @@
         <groupId>org.spockframework</groupId>
         <artifactId>spock-spring</artifactId>
         <version>${spock.version}</version>
-      </dependency>
-      <dependency>
+      </dependency>-->
+      <!--<dependency>
         <groupId>com.fasterxml</groupId>
         <artifactId>classmate</artifactId>
         <version>${classmate.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-annotations</artifactId>
@@ -478,21 +477,21 @@
         <artifactId>jackson-module-jaxb-annotations</artifactId>
         <version>${jackson.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
         <version>${commons-codec.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
         <version>${h2.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>jstl</artifactId>
         <version>${jstl.version}</version>
-      </dependency>
+      </dependency> -->
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-core</artifactId>
@@ -508,7 +507,7 @@
         <artifactId>logback-access</artifactId>
         <version>${logback.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
         <version>${httpclient.version}</version>
@@ -533,13 +532,13 @@
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy</artifactId>
         <version>${groovy.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>org.assertj</groupId>
         <artifactId>assertj-core</artifactId>
         <version>${assertj.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-json</artifactId>
         <version>${groovy.version}</version>
@@ -548,7 +547,7 @@
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-xml</artifactId>
         <version>${groovy.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
@@ -564,7 +563,7 @@
         <artifactId>hibernate-entitymanager</artifactId>
         <version>${hibernate.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>net.bytebuddy</groupId>
         <artifactId>byte-buddy</artifactId>
         <version>${byte-buddy.version}</version>
@@ -678,7 +677,7 @@
         <groupId>org.hsqldb</groupId>
         <artifactId>hsqldb</artifactId>
         <version>${hsqldb.version}</version>
-      </dependency>
+      </dependency>-->
 
       <!-- CXF starter -->
       <dependency>
@@ -688,11 +687,11 @@
       </dependency>
 
       <!-- Google Guava -->
-      <dependency>
+      <!--<dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>${guava.version}</version>
-      </dependency>
+      </dependency>-->
 
       <!-- Spring Cloud -->
       <dependency>
