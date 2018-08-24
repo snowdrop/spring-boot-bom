@@ -189,8 +189,8 @@
     <hibernate.version>5.1.10.Final</hibernate.version> <!-- Aligned on EAP 7.1, SB uses 5.0.12.Final -->
     <hibernate-validator.version>5.3.5.Final</hibernate-validator.version> <!-- Aligned on EAP 7.1, SB uses 5.3.6.Final -->
     <hsqldb.version>2.3.6</hsqldb.version>
-    <!--<httpclient.version>4.5.6</httpclient.version>
-    <httpcore.version>4.4.10</httpcore.version>-->
+    <httpclient.version>4.5.6</httpclient.version>
+    <httpcore.version>4.4.10</httpcore.version>
     <jackson.version>2.8.11</jackson.version> <!-- SB actually imports Jackson -->
     <jackson.annotations.version>2.8.0</jackson.annotations.version>
     <jackson.databind.version>2.8.11.2</jackson.databind.version>
@@ -507,7 +507,7 @@
         <artifactId>logback-access</artifactId>
         <version>${logback.version}</version>
       </dependency>
-      <!--<dependency>
+      <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
         <version>${httpclient.version}</version>
@@ -528,7 +528,7 @@
         <artifactId>httpmime</artifactId>
         <version>${httpclient.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy</artifactId>
         <version>${groovy.version}</version>
