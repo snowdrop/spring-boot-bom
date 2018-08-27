@@ -214,12 +214,19 @@
   <dependencyManagement>
     <dependencies>
       <!-- Spring Boot -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <type>pom</type>
+        <scope>import</scope>
+        <version>${spring-boot.version}</version>
+      </dependency>
       <!--<dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
         <version>${lombok.version}</version>
       </dependency>-->
-      <dependency>
+      <!--<dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot</artifactId>
         <version>${spring-boot.version}</version>
@@ -248,7 +255,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-autoconfigure</artifactId>
         <version>${spring-boot.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-configuration-metadata</artifactId>
@@ -264,7 +271,7 @@
         <artifactId>spring-boot-devtools</artifactId>
         <version>${spring-boot.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-loader</artifactId>
         <version>${spring-boot.version}</version>
@@ -273,7 +280,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-loader-tools</artifactId>
         <version>${spring-boot.version}</version>
-      </dependency>
+      </dependency>-->
 
       <!-- Spring Boot Starters -->
       <dependency>
@@ -297,16 +304,17 @@
         <artifactId>spring-boot-starter-data-jpa</artifactId>
         <version>${spring-boot.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-mongodb</artifactId>
         <version>${spring-boot.version}</version>
       </dependency>
-      <dependency>
+      -->
+      <!--<dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-rest</artifactId>
         <version>${spring-boot.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-jdbc</artifactId>
@@ -323,11 +331,11 @@
           </exclusion>
         </exclusions>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-logging</artifactId>
         <version>${spring-boot.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
