@@ -32,7 +32,7 @@ jobs:
         name: Download testsuite
         command: |
           pushd /tmp
-          git clone https://github.com/snowdrop/testsuite.git
+          git clone -b simplified-bom https://github.com/snowdrop/testsuite.git
           cd testsuite
 
           # Done in order to cache maven artifacts
@@ -45,7 +45,7 @@ jobs:
         name: Download http-booster
         command: |
           pushd /tmp
-          git clone https://github.com/snowdrop/spring-boot-http-booster.git
+          git clone -b simplified-bom https://github.com/snowdrop/spring-boot-http-booster.git
           cd spring-boot-http-booster
 
           # Done in order to cache maven artifacts
