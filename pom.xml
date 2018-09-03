@@ -393,12 +393,12 @@
         <artifactId>keycloak-spring-boot-starter</artifactId>
         <version>${keycloak.version}</version>
       </dependency>
-      
-      <!--<dependency>
-        <groupId>com.fasterxml.jackson.jaxrs</groupId>
-        <artifactId>jackson-jaxrs-json-provider</artifactId>
-        <version>${jackson.version}</version>
-      </dependency>
+
+      <!-- <dependency>
+         <groupId>com.fasterxml.jackson.jaxrs</groupId>
+         <artifactId>jackson-jaxrs-json-provider</artifactId>
+         <version>${jackson.version}</version>
+       </dependency>-->
 
       <dependency>
         <groupId>org.hibernate</groupId>
@@ -409,12 +409,24 @@
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
         <version>${hibernate.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-entitymanager</artifactId>
         <version>${hibernate.version}</version>
-      </dependency>-->
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
 
 
       <!-- Spring Cloud -->
@@ -436,7 +448,7 @@
 
 
       <!-- Spring Cloud Kubernetes -->
-      <!--<dependency>
+      <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-kubernetes-core</artifactId>
         <version>${spring-cloud-kubernetes.version}</version>
@@ -470,11 +482,11 @@
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-kubernetes-zipkin</artifactId>
         <version>${spring-cloud-kubernetes.version}</version>
-      </dependency>-->
+      </dependency>
 
 
       <!-- Tomcat -->
-      <!--<dependency>
+      <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-core</artifactId>
         <version>${tomcat.version}</version>
@@ -498,7 +510,7 @@
         <groupId>org.apache.tomcat</groupId>
         <artifactId>tomcat-jdbc</artifactId>
         <version>${tomcat.version}</version>
-      </dependency>-->
+      </dependency>
 
     </dependencies>
   </dependencyManagement>
