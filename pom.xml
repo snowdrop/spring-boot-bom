@@ -155,7 +155,7 @@
     <!-- Other -->
     <cxf-spring-boot-starter-jaxrs.version>3.1.12</cxf-spring-boot-starter-jaxrs.version> <!-- Latest EAP 7.1.0 prod version -->
     <keycloak.version>3.4.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
-    <opentracing-spring-jaeger-web-starter.version>0.2.0</opentracing-spring-jaeger-web-starter.version>
+    <opentracing-spring-jaeger-web-starter.version>0.2.1</opentracing-spring-jaeger-web-starter.version>
     <infinispan-starter.version>2.0.0.Alpha1</infinispan-starter.version>
     <amqp-10-starter.version>1.0.0</amqp-10-starter.version>
     <narayana-starter.version>1.0.1</narayana-starter.version>
