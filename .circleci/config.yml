@@ -32,12 +32,12 @@ jobs:
         name: Download testsuite
         command: |
           pushd /tmp
-          git clone https://github.com/snowdrop/testsuite.git
+          git clone -b simplified-bom https://github.com/snowdrop/testsuite.git
           cd testsuite
 
           # Done in order to cache maven artifacts
           # Can't use 'mvn dependency:go-offline'. See https://stackoverflow.com/q/14694139/2504224
-          mvn install -DskipTests
+          mvn -s ~/project/.circleci/settings.xml install -DskipTests
 
           popd
 
@@ -45,11 +45,11 @@ jobs:
         name: Download http-booster
         command: |
           pushd /tmp
-          git clone https://github.com/snowdrop/spring-boot-http-booster.git
+          git clone -b simplified-bom https://github.com/snowdrop/spring-boot-http-booster.git
           cd spring-boot-http-booster
 
           # Done in order to cache maven artifacts
-          ./mvnw dependency:go-offline
+          ./mvnw -s ~/project/.circleci/settings.xml dependency:go-offline
 
           popd
 
@@ -91,7 +91,7 @@ jobs:
     - run:
         name: Test http booster
         command: |
-          bom_version=$(mvn -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
+          bom_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
           versionRE='^([1-9]\.[0-9]\.[0-9]+).*'
           if [[ "${bom_version}" =~ ${versionRE} ]]; then
             version_numbers_only=${BASH_REMATCH[1]}
@@ -102,7 +102,7 @@ jobs:
             echo "spring-boot.version=${spring_boot_release}"
 
             pushd /tmp/spring-boot-http-booster
-            ./mvnw clean verify -Popenshift,openshift-it -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
+            ./mvnw -s ~/project/.circleci/settings.xml clean verify -Popenshift,openshift-it -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
             popd
 
           else
@@ -113,7 +113,7 @@ jobs:
     - run:
         name: Launch testsuite
         command: |
-          bom_version=$(mvn -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
+          bom_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
           versionRE='^([1-9]\.[0-9]\.[0-9]+).*'
           if [[ "${bom_version}" =~ ${versionRE} ]]; then
             version_numbers_only=${BASH_REMATCH[1]}
@@ -125,7 +125,7 @@ jobs:
 
             pushd /tmp/testsuite
             oc policy add-role-to-user view -z default 
-            mvn clean verify -Popenshift -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
+            mvn -s ~/project/.circleci/settings.xml clean verify -Popenshift -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
             popd
 
           else
