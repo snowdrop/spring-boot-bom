@@ -14,7 +14,8 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>me.snowdrop</groupId>
@@ -195,7 +196,7 @@
         <scope>import</scope>
       </dependency>
 
-      <!-- Only the following Spring Boot Starters are supported -->
+      <!-- ONLY the following Spring Boot Starters are supported -->
 
       <!-- Core -->
       <dependency>
@@ -240,10 +241,19 @@
         <artifactId>spring-boot-starter-web</artifactId>
         <version>${spring-boot.version}</version>
       </dependency>
+
+      <!-- Websocket -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-websocket</artifactId>
         <version>${spring-boot.version}</version>
+      </dependency>
+
+      <!-- JAX-RS -->
+      <dependency>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
+        <version>${cxf-spring-boot-starter-jaxrs.version}</version>
       </dependency>
 
       <!-- Persistence -->
@@ -273,11 +283,6 @@
       </dependency>
 
       <!-- Spring Cloud Kubernetes -->
-      <!--<dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-kubernetes-all</artifactId>
-        <version>${spring-cloud-kubernetes.version}</version>
-      </dependency>-->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-kubernetes</artifactId>
@@ -293,48 +298,6 @@
         <artifactId>spring-cloud-starter-kubernetes-netflix</artifactId>
         <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
-      <!--<dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-kubernetes-zipkin</artifactId>
-        <version>${spring-cloud-kubernetes.version}</version>
-      </dependency>-->
-
-      <!-- Spring Cloud -->
-      <!--<dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-config</artifactId>
-        <version>${spring-cloud-config.version}</version>
-      </dependency>-->
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-        <version>${spring-cloud-netflix.version}</version>
-      </dependency>
-      <!--<dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-openfeign</artifactId>
-        <version>${spring-cloud-netflix.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-        <version>${spring-cloud-netflix.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-sleuth</artifactId>
-        <version>${spring-cloud-sleuth.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
-        <version>${spring-cloud-starter-stream-rabbit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-        <version>${spring-cloud-netflix.version}</version>
-      </dependency>-->
 
       <!-- Cache / Data Grid -->
       <dependency>
@@ -348,13 +311,6 @@
         <version>${infinispan-starter.version}</version>
       </dependency>
 
-      <!-- JAX-RS -->
-      <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
-        <version>${cxf-spring-boot-starter-jaxrs.version}</version>
-      </dependency>
-
       <!-- Messaging -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -366,6 +322,8 @@
         <artifactId>spring-boot-starter-artemis</artifactId>
         <version>${spring-boot.version}</version>
       </dependency>
+
+      <!-- AMQP -->
       <dependency>
         <groupId>org.amqphub.spring</groupId>
         <artifactId>amqp-10-jms-spring-boot-starter</artifactId>
@@ -379,13 +337,6 @@
         <version>${narayana-starter.version}</version>
       </dependency>
 
-      <!-- Validation -->
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-validation</artifactId>
-        <version>${spring-boot.version}</version>
-      </dependency>
-
       <!-- Security -->
       <dependency>
         <groupId>org.keycloak</groupId>
@@ -393,12 +344,19 @@
         <version>${keycloak.version}</version>
       </dependency>
 
-      <!-- <dependency>
-         <groupId>com.fasterxml.jackson.jaxrs</groupId>
-         <artifactId>jackson-jaxrs-json-provider</artifactId>
-         <version>${jackson.version}</version>
-       </dependency>-->
+      <!-- Validation -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-validation</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
 
+      <!-- End of supported starters -->
+
+
+      <!-- Needed dependencies, not directly supported, use starters instead -->
+
+      <!-- Hibernate -->
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
@@ -427,25 +385,6 @@
         </exclusions>
       </dependency>
 
-
-      <!-- Spring Cloud -->
-      <!--<dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-        <version>${spring-cloud-sleuth.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-sleuth-zipkin-stream</artifactId>
-        <version>${spring-cloud-sleuth.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-sleuth-stream</artifactId>
-        <version>${spring-cloud-sleuth.version}</version>
-      </dependency>-->
-
-
       <!-- Spring Cloud Kubernetes -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
@@ -472,17 +411,6 @@
         <artifactId>spring-cloud-kubernetes-ribbon</artifactId>
         <version>${spring-cloud-kubernetes.version}</version>
       </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-hystrix</artifactId>
-        <version>${spring-cloud-kubernetes.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-zipkin</artifactId>
-        <version>${spring-cloud-kubernetes.version}</version>
-      </dependency>
-
 
       <!-- Tomcat -->
       <dependency>
