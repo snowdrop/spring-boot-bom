@@ -20,7 +20,7 @@
 
   <groupId>me.snowdrop</groupId>
   <artifactId>spring-boot-bom</artifactId>
-  <version>1.5.15.Test2-SNAPSHOT</version>
+  <version>1.5.16-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot BOM</name>
@@ -161,7 +161,7 @@
     <narayana-starter.version>1.0.1</narayana-starter.version>
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>1.5.15.RELEASE</spring-boot.version>
+    <spring-boot.version>1.5.16.RELEASE</spring-boot.version>
     <spring-cloud-config.version>1.4.4.RELEASE</spring-cloud-config.version>
     <spring-cloud-netflix.version>1.4.5.RELEASE</spring-cloud-netflix.version>
     <spring-cloud-kubernetes.version>0.2.0.RELEASE</spring-cloud-kubernetes.version>
