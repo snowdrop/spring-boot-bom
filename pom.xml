@@ -373,33 +373,6 @@
         </exclusions>
       </dependency>
 
-      <!-- Spring Cloud Kubernetes -->
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-core</artifactId>
-        <version>${spring-cloud-kubernetes.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-config</artifactId>
-        <version>${spring-cloud-kubernetes.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-discovery</artifactId>
-        <version>${spring-cloud-kubernetes.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-archaius</artifactId>
-        <version>${spring-cloud-kubernetes.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-kubernetes-ribbon</artifactId>
-        <version>${spring-cloud-kubernetes.version}</version>
-      </dependency>
-
       <!-- Tomcat -->
       <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
