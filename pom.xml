@@ -166,6 +166,7 @@
     <hibernate-validator.version>5.3.5.Final</hibernate-validator.version> <!-- Aligned on EAP 7.1, SB uses 5.3.6.Final -->
     <infinispan.version>9.1.0.Final</infinispan.version>  <!-- Aligned on JDG 7.2, SB uses 8.2.11.Final -->
     <tomcat.version>8.5.34</tomcat.version>
+    <undertow.version>1.4.25.Final</undertow.version>
   </properties>
 
   <dependencyManagement>
@@ -397,6 +398,29 @@
         <groupId>org.apache.tomcat</groupId>
         <artifactId>tomcat-jdbc</artifactId>
         <version>${tomcat.version}</version>
+      </dependency>
+
+      <!-- Undertow -->
+      <dependency>
+        <groupId>io.undertow</groupId>
+        <artifactId>undertow-core</artifactId>
+        <version>${undertow.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.undertow</groupId>
+        <artifactId>undertow-servlet</artifactId>
+        <version>${undertow.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.servlet</groupId>
+            <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>io.undertow</groupId>
+        <artifactId>undertow-websockets-jsr</artifactId>
+        <version>${undertow.version}</version>
       </dependency>
 
     </dependencies>
