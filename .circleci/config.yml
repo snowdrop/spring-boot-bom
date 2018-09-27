@@ -124,35 +124,12 @@ jobs:
             echo "spring-boot.version=${spring_boot_release}"
 
             pushd /tmp/testsuite
-            oc policy add-role-to-user view -z default
+            oc policy add-role-to-user view -z default 
             mvn -s ~/project/.circleci/settings.xml clean verify -Popenshift -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
             popd
 
           else
             echo "The BOM version is invalid!"
-            exit 1
-          fi
-  release:
-    docker:
-    - image: circleci/openjdk:8-jdk-browsers
-
-    steps:
-    - checkout
-
-    - run:
-        name: Perform release
-        command: |
-          tagRE='release-(.*)'
-          if [[ "${CIRCLE_TAG}" =~ ${tagRE} ]]; then
-            releaseVersion=${BASH_REMATCH[1]}
-            currentVersion=$(mvn -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
-
-            mvn -s .circleci/settings.xml -B release:prepare -Dtag=${releaseVersion} -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${currentVersion} -Prelease
-            mvn -s .circleci/settings.xml release:perform -Prelease
-
-            .circleci/delete_gh_release.sh ${GITHUB_API_TOKEN} ${releaseVersion}
-          else
-            echo "${CIRCLE_TAG} does NOT match the expected pattern. This is probably a job configuration issue"
             exit 1
           fi
 
@@ -165,11 +142,3 @@ workflows:
           branches:
             ignore:
             - master
-  release:
-    jobs:
-    - release:
-        filters:
-          tags:
-            only: /^release-.*$/
-          branches:
-            ignore: /.*/
