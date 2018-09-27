@@ -147,8 +147,8 @@ jobs:
             releaseVersion=${BASH_REMATCH[1]}
             currentVersion=$(mvn -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
 
-            mvn -s .circleci/setting.xml -B release:prepare -Dtag=${releaseVersion} -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${currentVersion} -Prelease
-            mvn -s .circleci/setting.xml release:perform -Prelease
+            mvn -s .circleci/settings.xml -B release:prepare -Dtag=${releaseVersion} -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${currentVersion} -Prelease
+            mvn -s .circleci/settings.xml release:perform -Prelease
 
             .circleci/delete_gh_release.sh ${GITHUB_API_TOKEN} ${releaseVersion}
           else
