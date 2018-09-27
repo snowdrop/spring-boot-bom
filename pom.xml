@@ -19,7 +19,7 @@
 
   <groupId>me.snowdrop</groupId>
   <artifactId>spring-boot-bom</artifactId>
-  <version>1.5.16.SP1-SNAPSHOT</version>
+  <version>1.5.16.SP1.SP1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot BOM</name>
