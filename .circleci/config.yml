@@ -49,7 +49,7 @@ jobs:
         name: Download health-check-booster
         command: |
           pushd /tmp
-          git clone https://github.com/snowdrop/spring-boot-health-check-booster.git
+          git clone --single-branch -b 2.1.x https://github.com/snowdrop/spring-boot-health-check-booster.git
           cd spring-boot-health-check-booster
 
           # Done in order to cache maven artifacts
