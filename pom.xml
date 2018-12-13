@@ -170,7 +170,7 @@
     <opentracing-spring-jaeger-web-starter.version>0.2.1</opentracing-spring-jaeger-web-starter.version>
     <infinispan-starter.version>2.0.0.Final</infinispan-starter.version>
     <amqp-10-starter.version>1.0.0</amqp-10-starter.version>
-    <narayana-starter.version>1.0.1</narayana-starter.version>
+    <narayana-starter.version>2.1.0</narayana-starter.version>
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>2.1.0.M4</spring-boot.version>
