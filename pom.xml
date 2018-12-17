@@ -174,7 +174,7 @@
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>2.1.0.M4</spring-boot.version>
-    <spring-cloud-kubernetes.version>Greenwich.M1</spring-cloud-kubernetes.version>
+    <spring-cloud-kubernetes.version>1.0.0.RC1</spring-cloud-kubernetes.version>
 
     <!-- Overriden from Spring Boot -->
     <hibernate.version>5.1.10.Final</hibernate.version>
