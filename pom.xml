@@ -165,7 +165,7 @@
 
   <properties>
     <!-- Other -->
-    <cxf-spring-boot-starter-jaxrs.version>3.1.12</cxf-spring-boot-starter-jaxrs.version> <!-- Latest EAP 7.1.0 prod version -->
+    <cxf-spring-boot-starter-jaxrs.version>3.3.0-SNAPSHOT</cxf-spring-boot-starter-jaxrs.version><!-- TODO temporal until 3.3.0 release -->
     <keycloak.version>3.4.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
     <opentracing-spring-jaeger-web-starter.version>1.0.1</opentracing-spring-jaeger-web-starter.version>
     <infinispan-starter.version>2.1.1.Final</infinispan-starter.version>
@@ -173,13 +173,13 @@
     <narayana-starter.version>2.1.0</narayana-starter.version>
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>2.1.0.M4</spring-boot.version>
+    <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
     <spring-cloud-kubernetes.version>1.0.0.RC1</spring-cloud-kubernetes.version>
 
     <!-- Overriden from Spring Boot -->
-    <hibernate.version>5.1.10.Final</hibernate.version>
+    <hibernate.version>5.3.7.Final</hibernate.version>
     <hibernate-validator.version>6.0.13.Final</hibernate-validator.version>
-    <infinispan.version>9.4.0.Final</infinispan.version>
+    <infinispan.version>9.4.3.Final</infinispan.version>
     <tomcat.version>9.0.12</tomcat.version>
     <undertow.version>1.4.25.Final</undertow.version>
   </properties>

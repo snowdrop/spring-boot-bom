@@ -36,7 +36,7 @@ jobs:
         name: Download testsuite
         command: |
           pushd /tmp
-          git clone https://github.com/snowdrop/testsuite.git
+          git clone --single-branch -b 2.1.x https://github.com/snowdrop/testsuite.git
           cd testsuite
 
           # Done in order to cache maven artifacts
@@ -45,17 +45,17 @@ jobs:
 
           popd
 
-    - run:
-        name: Download health-check-booster
-        command: |
-          pushd /tmp
-          git clone --single-branch -b 2.1.x https://github.com/snowdrop/spring-boot-health-check-booster.git
-          cd spring-boot-health-check-booster
-
-          # Done in order to cache maven artifacts
-          ./mvnw -s ~/project/.circleci/settings.xml dependency:go-offline
-
-          popd
+#    - run:
+#        name: Download health-check-booster
+#        command: |
+#          pushd /tmp
+#          git clone --single-branch -b 2.1.x https://github.com/snowdrop/spring-boot-health-check-booster.git
+#          cd spring-boot-health-check-booster
+#
+#          # Done in order to cache maven artifacts
+#          ./mvnw -s ~/project/.circleci/settings.xml dependency:go-offline
+#
+#          popd
 
     - save_cache:
         paths:
