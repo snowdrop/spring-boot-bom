@@ -41,7 +41,7 @@ jobs:
 
           # Done in order to cache maven artifacts
           # Can't use 'mvn dependency:go-offline'. See https://stackoverflow.com/q/14694139/2504224
-          mvn -s ~/project/.circleci/settings.xml install -DskipTests
+#          mvn -s ~/project/.circleci/settings.xml install -DskipTests
 
           popd
 
