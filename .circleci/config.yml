@@ -68,27 +68,27 @@ jobs:
 
     - openshift/launch_openshift_39
 
-    - run:
-        name: Test health check booster
-        command: |
-          bom_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
-          versionRE='^([1-9]\.[0-9]\.[0-9]+).*'
-          if [[ "${bom_version}" =~ ${versionRE} ]]; then
-            version_numbers_only=${BASH_REMATCH[1]}
-            spring_boot_release="${version_numbers_only}.RELEASE"
-
-            echo "Testing health check-booster using"
-            echo "spring-boot.bom.version=${bom_version}"
-            echo "spring-boot.version=${spring_boot_release}"
-
-            pushd /tmp/spring-boot-health-check-booster
-            ./mvnw -s ~/project/.circleci/settings.xml clean verify -Popenshift,openshift-it -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
-            popd
-
-          else
-            echo "The BOM version is invalid!"
-            exit 1
-          fi
+#    - run:
+#        name: Test health check booster
+#        command: |
+#          bom_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
+#          versionRE='^([1-9]\.[0-9]\.[0-9]+).*'
+#          if [[ "${bom_version}" =~ ${versionRE} ]]; then
+#            version_numbers_only=${BASH_REMATCH[1]}
+#            spring_boot_release="${version_numbers_only}.RELEASE"
+#
+#            echo "Testing health check-booster using"
+#            echo "spring-boot.bom.version=${bom_version}"
+#            echo "spring-boot.version=${spring_boot_release}"
+#
+#            pushd /tmp/spring-boot-health-check-booster
+#            ./mvnw -s ~/project/.circleci/settings.xml clean verify -Popenshift,openshift-it -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
+#            popd
+#
+#          else
+#            echo "The BOM version is invalid!"
+#            exit 1
+#          fi
 
     - run:
         name: Launch testsuite
