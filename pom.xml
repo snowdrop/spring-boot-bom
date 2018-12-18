@@ -165,7 +165,7 @@
 
   <properties>
     <!-- Other -->
-    <cxf-spring-boot-starter-jaxrs.version>3.3.0-SNAPSHOT</cxf-spring-boot-starter-jaxrs.version><!-- TODO temporal until 3.3.0 release -->
+    <cxf-spring-boot-starter-jaxrs.version>3.1.12</cxf-spring-boot-starter-jaxrs.version><!-- TODO temporal until 3.3.0 release -->
     <keycloak.version>3.4.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
     <opentracing-spring-jaeger-web-starter.version>1.0.1</opentracing-spring-jaeger-web-starter.version>
     <infinispan-starter.version>2.1.1.Final</infinispan-starter.version>
