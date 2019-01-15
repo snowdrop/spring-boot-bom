@@ -173,7 +173,7 @@
     <narayana-starter.version>2.1.0</narayana-starter.version>
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
+    <spring-boot.version>2.1.2.RELEASE</spring-boot.version>
     <spring-cloud-kubernetes.version>1.0.0.RC1</spring-cloud-kubernetes.version>
 
     <!-- Overriden from Spring Boot -->
