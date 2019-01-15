@@ -165,7 +165,7 @@
 
   <properties>
     <!-- Other -->
-    <cxf-spring-boot-starter-jaxrs.version>3.1.12</cxf-spring-boot-starter-jaxrs.version><!-- TODO temporal until 3.3.0 release -->
+    <resteasy-spring-boot-starter.version>2.0.1.Final</resteasy-spring-boot-starter.version>
     <keycloak.version>3.4.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
     <opentracing-spring-jaeger-web-starter.version>1.0.1</opentracing-spring-jaeger-web-starter.version>
     <infinispan-starter.version>2.1.1.Final</infinispan-starter.version>
@@ -259,9 +259,15 @@
 
       <!-- JAX-RS -->
       <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
-        <version>${cxf-spring-boot-starter-jaxrs.version}</version>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-spring-boot-starter</artifactId>
+        <version>${resteasy-spring-boot-starter.version}</version>
+        <scope>runtime</scope>
+      </dependency>
+      <dependency>
+        <groupId>javax.ws.rs</groupId>
+        <artifactId>javax.ws.rs-api</artifactId>
+        <version>2.1</version>
       </dependency>
 
       <!-- Persistence -->
