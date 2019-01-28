@@ -1,5 +1,5 @@
 // spring-boot
-:spring-boot.version: 1.5.17.RELEASE
+:spring-boot.version: 1.5.19.RELEASE
 
 = Spring Boot BOM - 1.5.x
 
@@ -11,7 +11,7 @@ This BOM is aligned to:
 
 .Spring
 // spring-boot
-- Spring Boot: 1.5.17.RELEASE
+- Spring Boot: 1.5.19.RELEASE
 
 .Spring Cloud
 - https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr3[Edgware.SR3].
@@ -25,7 +25,7 @@ This BOM is aligned to:
 // keycloak
 - Keycloak: 3.4.3.Final
 // tomcat
-- Tomcat: 8.5.34
+- Tomcat: 8.5.37
 
 .ORM
 // hibernate
