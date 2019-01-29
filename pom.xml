@@ -169,7 +169,7 @@
     <resteasy-spring-boot-starter.version>3.0.0.Final</resteasy-spring-boot-starter.version>
     <keycloak.version>4.8.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
     <opentracing-spring-jaeger-web-starter.version>1.0.1</opentracing-spring-jaeger-web-starter.version>
-    <infinispan-starter.version>2.1.1.Final</infinispan-starter.version>
+    <infinispan-starter.version>2.1.2.Final</infinispan-starter.version>
     <amqp-10-starter.version>2.1.0</amqp-10-starter.version>
     <narayana-starter.version>2.1.0</narayana-starter.version>
 
@@ -180,7 +180,7 @@
     <!-- Overriden from Spring Boot -->
     <hibernate.version>5.3.7.Final</hibernate.version>
     <hibernate-validator.version>6.0.13.Final</hibernate-validator.version>
-    <infinispan.version>9.4.3.Final</infinispan.version>
+    <infinispan.version>9.4.5.Final</infinispan.version>
     <tomcat.version>9.0.13</tomcat.version>
     <undertow.version>2.0.16.Final</undertow.version>
   </properties>
