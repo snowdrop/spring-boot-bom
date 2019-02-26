@@ -1,7 +1,7 @@
 // spring-boot
-:spring-boot.version: 1.5.16.RELEASE
+:spring-boot.version: 2.1.2.RELEASE
 
-= Spring Boot BOM - 1.5.x
+= Spring Boot BOM - 2.1.x
 
 This Bill Of Materials for Spring Boot 1.5 contains starters which are currently used by the 
 https://github.com/snowdrop?utf8=✓&q=topic%3Abooster[Spring Boot Mission Boosters].
@@ -11,27 +11,24 @@ This BOM is aligned to:
 
 .Spring
 // spring-boot
-- Spring Boot: 1.5.16.RELEASE
+- Spring Boot: 2.1.2.RELEASE
 
 .Spring Cloud
-- https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#edgwaresr3[Edgware.SR3].
-- Spring Cloud Starters have been renamed: https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes#renamed-starters
 // spring-cloud-kubernetes
-- https://github.com/spring-cloud/spring-cloud-kubernetes[Spring Cloud Kubernetes]: 0.2.0.RELEASE
+- https://github.com/spring-cloud/spring-cloud-kubernetes[Spring Cloud Kubernetes]: 1.0.0.RELEASE
 
 .Integration
-// cxf-spring-boot-starter-jaxrs
-- http://cxf.apache.org/docs/springboot.html[Apache CXF Spring Boot Starter]: 3.1.12
+- RESTEasy: 3.6.2.Final
 // keycloak
-- Keycloak: 3.4.3.Final
+- Keycloak: 4.8.3.Final
 // tomcat
-- Tomcat: 8.5.34
+- Tomcat: 9.0.13
 
 .ORM
 // hibernate
-- Hibernate: 5.1.10.Final
+- Hibernate: 5.3.7.Final
 // hibernate-validator
-- Hibernate Validator: 5.3.5.Final
+- Hibernate Validator: 6.0.13.Final
 
 == Versioning scheme
 
