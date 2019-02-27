@@ -45,17 +45,17 @@ jobs:
 
           popd
 
-#    - run:
-#        name: Download health-check-booster
-#        command: |
-#          pushd /tmp
-#          git clone --single-branch -b 2.1.x https://github.com/snowdrop/spring-boot-health-check-booster.git
-#          cd spring-boot-health-check-booster
-#
-#          # Done in order to cache maven artifacts
-#          ./mvnw -s ~/project/.circleci/settings.xml dependency:go-offline
-#
-#          popd
+    - run:
+        name: Download http-booster
+        command: |
+          pushd /tmp
+          git clone --single-branch -b 2.1.x https://github.com/snowdrop/spring-boot-http-booster.git
+          cd spring-boot-http-booster
+
+          # Done in order to cache maven artifacts
+          ./mvnw -s ~/project/.circleci/settings.xml dependency:go-offline
+
+          popd
 
     - save_cache:
         paths:
@@ -68,27 +68,27 @@ jobs:
 
     - openshift/launch_openshift_39
 
-#    - run:
-#        name: Test health check booster
-#        command: |
-#          bom_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
-#          versionRE='^([1-9]\.[0-9]\.[0-9]+).*'
-#          if [[ "${bom_version}" =~ ${versionRE} ]]; then
-#            version_numbers_only=${BASH_REMATCH[1]}
-#            spring_boot_release="${version_numbers_only}.RELEASE"
-#
-#            echo "Testing health check-booster using"
-#            echo "spring-boot.bom.version=${bom_version}"
-#            echo "spring-boot.version=${spring_boot_release}"
-#
-#            pushd /tmp/spring-boot-health-check-booster
-#            ./mvnw -s ~/project/.circleci/settings.xml clean verify -Popenshift,openshift-it -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
-#            popd
-#
-#          else
-#            echo "The BOM version is invalid!"
-#            exit 1
-#          fi
+    - run:
+        name: Test http booster
+        command: |
+          bom_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
+          versionRE='^([1-9]\.[0-9]\.[0-9]+).*'
+          if [[ "${bom_version}" =~ ${versionRE} ]]; then
+            version_numbers_only=${BASH_REMATCH[1]}
+            spring_boot_release="${version_numbers_only}.RELEASE"
+
+            echo "Testing http-booster using"
+            echo "spring-boot.bom.version=${bom_version}"
+            echo "spring-boot.version=${spring_boot_release}"
+
+            pushd /tmp/spring-boot-http-booster
+            ./mvnw -s ~/project/.circleci/settings.xml clean verify -Popenshift,openshift-it -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
+            popd
+
+          else
+            echo "The BOM version is invalid!"
+            exit 1
+          fi
 
     - run:
         name: Launch testsuite
