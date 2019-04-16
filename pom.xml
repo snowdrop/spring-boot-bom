@@ -150,7 +150,7 @@
 
   <properties>
     <!-- Other -->
-    <cxf-spring-boot-starter-jaxrs.version>3.1.12</cxf-spring-boot-starter-jaxrs.version> <!-- Latest EAP 7.1.0 prod version -->
+    <cxf-spring-boot-starter-jaxrs.version>3.2.7</cxf-spring-boot-starter-jaxrs.version>
     <keycloak.version>3.4.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
     <opentracing-spring-jaeger-web-starter.version>0.2.2</opentracing-spring-jaeger-web-starter.version>
     <infinispan-starter.version>1.0.2.Final</infinispan-starter.version>
