@@ -19,7 +19,7 @@
 
   <groupId>me.snowdrop</groupId>
   <artifactId>spring-boot-bom</artifactId>
-  <version>1.5.19.SP1.SP1-SNAPSHOT</version>
+  <version>1.5.19.SP1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot BOM</name>
@@ -153,7 +153,7 @@
     <cxf-spring-boot-starter-jaxrs.version>3.2.7</cxf-spring-boot-starter-jaxrs.version>
     <keycloak.version>3.4.3.Final</keycloak.version> <!-- Community version aligned on Red Hat SSO 7.2 -->
     <opentracing-spring-jaeger-web-starter.version>0.2.2</opentracing-spring-jaeger-web-starter.version>
-    <infinispan-starter.version>1.0.2.Final</infinispan-starter.version>
+    <infinispan-starter.version>1.0.7.Final</infinispan-starter.version>
     <amqp-10-starter.version>1.0.0</amqp-10-starter.version>
     <narayana-starter.version>1.0.1</narayana-starter.version>
 
@@ -164,7 +164,7 @@
     <!-- Overriden from Spring Boot -->
     <hibernate.version>5.1.10.Final</hibernate.version> <!-- Aligned on EAP 7.1, SB uses 5.0.12.Final -->
     <hibernate-validator.version>5.3.5.Final</hibernate-validator.version> <!-- Aligned on EAP 7.1, SB uses 5.3.6.Final -->
-    <infinispan.version>9.2.5.Final</infinispan.version>  <!-- Aligned on JDG 7.2, SB uses 8.2.11.Final -->
+    <infinispan.version>9.4.11.Final</infinispan.version>
     <tomcat.version>8.5.38</tomcat.version>
     <undertow.version>1.4.26.Final</undertow.version>
   </properties>
