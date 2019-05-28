@@ -171,7 +171,7 @@
     <infinispan-starter.version>2.1.3.Final</infinispan-starter.version>
     <amqp-10-starter.version>2.1.2</amqp-10-starter.version>
     <narayana-starter.version>2.1.1</narayana-starter.version>
-    <cxf-spring-boot-starter-jaxrs.version>3.3.1</cxf-spring-boot-starter-jaxrs.version>
+    <cxf-spring-boot-starter-jaxrs.version>3.3.2</cxf-spring-boot-starter-jaxrs.version>
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>2.1.5.RELEASE</spring-boot.version>
