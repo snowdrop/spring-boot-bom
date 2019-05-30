@@ -172,6 +172,7 @@
     <amqp-10-starter.version>2.1.2</amqp-10-starter.version>
     <narayana-starter.version>2.1.1</narayana-starter.version>
     <cxf-spring-boot-starter-jaxrs.version>3.3.2</cxf-spring-boot-starter-jaxrs.version>
+    <vertx-spring-boot.version>0.0.2</vertx-spring-boot.version>
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>2.1.5.RELEASE</spring-boot.version>
@@ -366,6 +367,33 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-validation</artifactId>
         <version>${spring-boot.version}</version>
+      </dependency>
+
+      <!-- Vert.x -->
+      <dependency>
+        <groupId>dev.snowdrop</groupId>
+        <artifactId>vertx-spring-boot-starter</artifactId>
+        <version>${vertx-spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>dev.snowdrop</groupId>
+        <artifactId>vertx-spring-boot-starter-http</artifactId>
+        <version>${vertx-spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>dev.snowdrop</groupId>
+        <artifactId>vertx-spring-boot-starter-http-test</artifactId>
+        <version>${vertx-spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>dev.snowdrop</groupId>
+        <artifactId>vertx-spring-boot-starter-actuator</artifactId>
+        <version>${vertx-spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>dev.snowdrop</groupId>
+        <artifactId>vertx-spring-boot-starter-mail</artifactId>
+        <version>${vertx-spring-boot.version}</version>
       </dependency>
 
       <!-- End of supported starters -->
