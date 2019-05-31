@@ -29,8 +29,12 @@ jobs:
 
       # Will download all deps needed into .m2
     - run:
-        name: Store all BOM dependencies locally
-        command: mvn install
+        name: Check all dependencies are available and store them locally
+        command: |
+          sed -i.bak -e "s/<dependencyManagement>//g" pom.xml
+          sed -i -e "s/<\/dependencyManagement>//g" pom.xml
+          mvn dependency:tree
+          mv pom.xml.bak pom.xml
 
     - run:
         name: Download testsuite
