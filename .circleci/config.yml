@@ -4,7 +4,7 @@ orbs:
   # needs to have been published before being used here
   openshift: snowdrop/openshift@0.4.0
 jobs:
-  openshift39:
+  openshift311:
     machine: true
 
     steps:
@@ -122,7 +122,7 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-    - openshift39:
+      - openshift311:
         filters:
           branches:
             ignore:
