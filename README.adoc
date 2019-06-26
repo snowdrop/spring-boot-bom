@@ -1,5 +1,5 @@
 // spring-boot
-:spring-boot.version: 2.1.5.RELEASE
+:spring-boot.version: 2.1.6.RELEASE
 
 = Spring Boot BOM - 2.1.x
 
@@ -11,7 +11,7 @@ This BOM is aligned to:
 
 .Spring
 // spring-boot
-- Spring Boot: 2.1.5.RELEASE
+- Spring Boot: 2.1.6.RELEASE
 
 .Spring Cloud
 // spring-cloud-kubernetes
@@ -22,7 +22,7 @@ This BOM is aligned to:
 // keycloak
 - Keycloak: 4.8.3.Final
 // tomcat
-- Tomcat: 9.0.19
+- Tomcat: 9.0.21
 
 .ORM
 // hibernate
