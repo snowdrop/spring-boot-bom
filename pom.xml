@@ -400,60 +400,29 @@
       <!-- dekorate -->
       <dependency>
         <groupId>io.dekorate</groupId>
-        <artifactId>dekorate-core</artifactId>
+        <artifactId>halkyon-spring-starter</artifactId>
         <version>${dekorate.version}</version>
       </dependency>
       <dependency>
         <groupId>io.dekorate</groupId>
-        <artifactId>kubernetes-annotations</artifactId>
+        <artifactId>kubernetes-spring-starter</artifactId>
         <version>${dekorate.version}</version>
       </dependency>
       <dependency>
         <groupId>io.dekorate</groupId>
-        <artifactId>halkyon-annotations</artifactId>
+        <artifactId>kubernetes-junit-starter</artifactId>
         <version>${dekorate.version}</version>
       </dependency>
       <dependency>
         <groupId>io.dekorate</groupId>
-        <artifactId>servicecatalog-annotations</artifactId>
+        <artifactId>openshift-spring-starter</artifactId>
         <version>${dekorate.version}</version>
       </dependency>
       <dependency>
         <groupId>io.dekorate</groupId>
-        <artifactId>dekorate-spring-boot</artifactId>
+        <artifactId>openshift-junit-starter</artifactId>
         <version>${dekorate.version}</version>
       </dependency>
-      <dependency>
-        <groupId>io.dekorate</groupId>
-        <artifactId>option-annotations</artifactId>
-        <version>${dekorate.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.dekorate</groupId>
-        <artifactId>openshift-annotations</artifactId>
-        <version>${dekorate.version}</version>
-      </dependency>
-       <dependency>
-        <groupId>io.dekorate</groupId>
-        <artifactId>prometheus-annotations</artifactId>
-        <version>${dekorate.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.dekorate</groupId>
-        <artifactId>crd-annotations</artifactId>
-        <version>${dekorate.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.dekorate</groupId>
-        <artifactId>application-annotations</artifactId>
-        <version>${dekorate.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.dekorate</groupId>
-        <artifactId>jaeger-annotations</artifactId>
-        <version>${dekorate.version}</version>
-      </dependency>
-
       <!-- End of supported starters -->
 
 
