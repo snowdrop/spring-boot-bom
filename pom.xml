@@ -400,21 +400,6 @@
       <!-- dekorate -->
       <dependency>
         <groupId>io.dekorate</groupId>
-        <artifactId>halkyon-spring-starter</artifactId>
-        <version>${dekorate.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.dekorate</groupId>
-        <artifactId>kubernetes-spring-starter</artifactId>
-        <version>${dekorate.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.dekorate</groupId>
-        <artifactId>openshift-spring-starter</artifactId>
-        <version>${dekorate.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.dekorate</groupId>
         <artifactId>dekorate-bom</artifactId>
         <version>${dekorate.version}</version>
       </dependency>
