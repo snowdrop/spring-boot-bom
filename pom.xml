@@ -207,6 +207,15 @@
         <scope>import</scope>
       </dependency>
 
+      <!--  Dekorate is included as a tech preview only and is not currently supported -->
+      <dependency>
+        <groupId>io.dekorate</groupId>
+        <artifactId>dekorate-spring-bom</artifactId>
+        <version>${dekorate.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
       <!-- ONLY the following Spring Boot Starters are supported -->
 
       <!-- Core -->
@@ -400,12 +409,27 @@
       <!-- dekorate -->
       <dependency>
         <groupId>io.dekorate</groupId>
-        <artifactId>dekorate-bom</artifactId>
+        <artifactId>halkyon-spring-starter</artifactId>
         <version>${dekorate.version}</version>
       </dependency>
       <dependency>
         <groupId>io.dekorate</groupId>
-        <artifactId>dekorate-spring-bom</artifactId>
+        <artifactId>kubernetes-spring-starter</artifactId>
+        <version>${dekorate.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.dekorate</groupId>
+        <artifactId>kubernetes-junit-starter</artifactId>
+        <version>${dekorate.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.dekorate</groupId>
+        <artifactId>openshift-spring-starter</artifactId>
+        <version>${dekorate.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.dekorate</groupId>
+        <artifactId>openshift-junit-starter</artifactId>
         <version>${dekorate.version}</version>
       </dependency>
       <!-- End of supported starters -->
