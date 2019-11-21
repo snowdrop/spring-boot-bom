@@ -17,27 +17,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>me.snowdrop</groupId>
-  <artifactId>spring-boot-bom</artifactId>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-dependencies</artifactId>
+    <version>2.1.10.RELEASE</version>
+  </parent>
+
+  <groupId>dev.snowdrop</groupId>
+  <artifactId>snowdrop-dependencies</artifactId>
   <version>2.1.10-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>Snowdrop Spring Boot BOM</name>
-  <description>Bill Of Materials (BOM) file for Snowdrop project to facilitate usage of Spring Boot on OpenShift.</description>
-  <url>http://www.snowdrop.me</url>
+  <name>Snowdrop Spring Boot Dependencies</name>
+  <description>Dependencies supported by Snowdrop project to facilitate usage of Spring Boot on OpenShift</description>
+  <url>http://www.snowdrop.dev</url>
 
   <issueManagement>
-    <system>JIRA</system>
-    <url>https://issues.jboss.org/projects/SB/summary</url>
+    <system>GitHub</system>
+    <url>https://github.com/snowdrop/spring-boot-bom/issues</url>
   </issueManagement>
 
   <developers>
-    <developer>
-      <id>jboss.org</id>
-      <name>JBoss.org Community</name>
-      <organization>JBoss.org</organization>
-      <organizationUrl>http://www.jboss.org</organizationUrl>
-    </developer>
     <developer>
       <id>cmoulliard</id>
       <name>Charles Moulliard</name>
@@ -63,8 +63,14 @@
       <organizationUrl>https://www.redhat.com</organizationUrl>
     </developer>
     <developer>
-      <id>aureamunoz</id>
-      <name>Aurea Munoz</name>
+      <id>iocanel</id>
+      <name>Ioannis Canellos</name>
+      <organization>Red Hat Inc.</organization>
+      <organizationUrl>https://www.redhat.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>amunozhe</id>
+      <name>Aurea Munoz Hernandez</name>
       <organization>Red Hat Inc.</organization>
       <organizationUrl>https://www.redhat.com</organizationUrl>
     </developer>
@@ -82,91 +88,33 @@
     <url>https://github.com/snowdrop</url>
     <connection>scm:git:https://github.com/snowdrop/spring-boot-bom.git</connection>
     <developerConnection>scm:git:git@github.com:snowdrop/spring-boot-bom.git</developerConnection>
-    <tag>1.5.13-SNAPSHOT</tag>
+    <tag>${project.version}</tag>
   </scm>
 
   <repositories>
     <repository>
-      <id>spring-snapshots</id>
-      <url>https://repo.spring.io/snapshot</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
+      <id>redhat-ga</id>
+      <name>Red Hat GA Repository</name>
+      <url>https://maven.repository.redhat.com/ga/</url>
     </repository>
     <repository>
       <id>spring-milestones</id>
+      <name>Spring Milestones Repository</name>
       <url>https://repo.spring.io/milestone</url>
     </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
-      <id>spring-snapshots</id>
-      <url>https://repo.spring.io/snapshot</url>
+      <id>redhat-ga</id>
+      <name>Red Hat GA Repository</name>
+      <url>https://maven.repository.redhat.com/ga/</url>
     </pluginRepository>
     <pluginRepository>
       <id>spring-milestones</id>
+      <name>Spring Milestones Repository</name>
       <url>https://repo.spring.io/milestone</url>
     </pluginRepository>
   </pluginRepositories>
-
-
-  <profiles>
-    <profile>
-      <id>release</id>
-      <distributionManagement>
-        <snapshotRepository>
-          <id>ossrh</id>
-          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-          <id>ossrh</id>
-          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-      </distributionManagement>
-
-      <build>
-        <plugins>
-          <plugin>
-            <!--See http://central.sonatype.org/pages/apache-maven.html for more information -->
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.8</version>
-            <extensions>true</extensions>
-            <configuration>
-              <serverId>ossrh</serverId>
-              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-              <autoReleaseAfterClose>true</autoReleaseAfterClose>
-            </configuration>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.6</version>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-release-plugin</artifactId>
-            <version>2.5.3</version>
-            <configuration>
-              <autoVersionSubmodules>true</autoVersionSubmodules>
-              <useReleaseProfile>false</useReleaseProfile>
-              <releaseProfiles>release</releaseProfiles>
-              <goals>deploy</goals>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 
   <properties>
     <!-- Other -->
@@ -200,15 +148,6 @@
         <groupId>org.infinispan</groupId>
         <artifactId>infinispan-bom</artifactId>
         <version>${infinispan.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-      <!-- Spring Boot BOM: NOT SUPPORTED, just included to ensure dependencies are properly set -->
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>${spring-boot.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -528,7 +467,98 @@
         <artifactId>undertow-websockets-jsr</artifactId>
         <version>${undertow.version}</version>
       </dependency>
-
     </dependencies>
   </dependencyManagement>
+
+  <profiles>
+    <profile>
+      <id>release</id>
+      <distributionManagement>
+        <snapshotRepository>
+          <id>ossrh</id>
+          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+          <id>ossrh</id>
+          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+      </distributionManagement>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>flatten-maven-plugin</artifactId>
+            <inherited>false</inherited>
+            <executions>
+              <execution>
+                <id>flatten</id>
+                <phase>process-resources</phase>
+                <goals>
+                  <goal>flatten</goal>
+                </goals>
+                <configuration>
+                  <updatePomFile>true</updatePomFile>
+                  <outputDirectory>${project.build.directory}/effective-pom</outputDirectory>
+                  <flattenedPomFilename>snowdrop-dependencies.xml</flattenedPomFilename>
+                  <flattenMode>oss</flattenMode>
+                  <pomElements>
+                    <dependencyManagement>expand</dependencyManagement>
+                    <pluginManagement>expand</pluginManagement>
+                    <properties>remove</properties>
+                    <repositories>keep</repositories>
+                    <pluginRepositories>keep</pluginRepositories>
+                  </pomElements>
+                </configuration>
+              </execution>
+              <execution>
+                <id>flatten.clean</id>
+                <phase>clean</phase>
+                <goals>
+                  <goal>clean</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <!--See http://central.sonatype.org/pages/apache-maven.html for more information -->
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.6.8</version>
+            <extensions>true</extensions>
+            <configuration>
+              <serverId>ossrh</serverId>
+              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+              <autoReleaseAfterClose>true</autoReleaseAfterClose>
+            </configuration>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.6</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>2.5.3</version>
+            <configuration>
+              <autoVersionSubmodules>true</autoVersionSubmodules>
+              <useReleaseProfile>false</useReleaseProfile>
+              <releaseProfiles>release</releaseProfiles>
+              <goals>deploy</goals>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
