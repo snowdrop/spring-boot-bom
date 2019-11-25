@@ -172,7 +172,7 @@
     <amqp-10-starter.version>2.1.2</amqp-10-starter.version>
     <narayana-starter.version>2.1.1</narayana-starter.version>
     <cxf-spring-boot-starter-jaxrs.version>3.3.2</cxf-spring-boot-starter-jaxrs.version>
-    <vertx-spring-boot.version>0.0.3</vertx-spring-boot.version>
+    <vertx-spring-boot.version>0.0.6</vertx-spring-boot.version>
     <dekorate.version>0.8.2</dekorate.version>
 
     <!-- Spring Ecosystem -->
@@ -403,6 +403,11 @@
       <dependency>
         <groupId>dev.snowdrop</groupId>
         <artifactId>vertx-spring-boot-starter-mail</artifactId>
+        <version>${vertx-spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>dev.snowdrop</groupId>
+        <artifactId>vertx-spring-boot-starter-amqp</artifactId>
         <version>${vertx-spring-boot.version}</version>
       </dependency>
 
