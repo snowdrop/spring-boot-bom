@@ -19,7 +19,7 @@
 
   <groupId>me.snowdrop</groupId>
   <artifactId>spring-boot-bom</artifactId>
-  <version>2.1.6.SP4-SNAPSHOT</version>
+  <version>2.1.10-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot BOM</name>
@@ -176,15 +176,15 @@
     <dekorate.version>0.10.0</dekorate.version>
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
+    <spring-boot.version>2.1.10.RELEASE</spring-boot.version>
     <spring-cloud-kubernetes.version>1.0.1.RELEASE</spring-cloud-kubernetes.version>
 
     <!-- Overriden from Spring Boot -->
     <hibernate.version>5.3.7.Final</hibernate.version>
     <hibernate-validator.version>6.0.13.Final</hibernate-validator.version>
     <infinispan.version>9.4.15.Final</infinispan.version>
-    <tomcat.version>9.0.21</tomcat.version>
-    <undertow.version>2.0.21.Final</undertow.version>
+    <tomcat.version>9.0.27</tomcat.version>
+    <undertow.version>2.0.27.Final</undertow.version>
   </properties>
 
   <dependencyManagement>
