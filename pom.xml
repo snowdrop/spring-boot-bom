@@ -471,6 +471,47 @@
   </dependencyManagement>
 
   <profiles>
+    <profile><!-- TODO only for demonstration, remove once POC is finalised -->
+      <id>flatten</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>flatten-maven-plugin</artifactId>
+            <inherited>false</inherited>
+            <executions>
+              <execution>
+                <id>flatten</id>
+                <phase>process-resources</phase>
+                <goals>
+                  <goal>flatten</goal>
+                </goals>
+                <configuration>
+                  <updatePomFile>true</updatePomFile>
+                  <outputDirectory>${project.build.directory}/effective-pom</outputDirectory>
+                  <flattenedPomFilename>snowdrop-dependencies.xml</flattenedPomFilename>
+                  <flattenMode>oss</flattenMode>
+                  <pomElements>
+                    <dependencyManagement>expand</dependencyManagement>
+                    <pluginManagement>expand</pluginManagement>
+                    <properties>remove</properties>
+                    <repositories>keep</repositories>
+                    <pluginRepositories>keep</pluginRepositories>
+                  </pomElements>
+                </configuration>
+              </execution>
+              <execution>
+                <id>flatten.clean</id>
+                <phase>clean</phase>
+                <goals>
+                  <goal>clean</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
     <profile>
       <id>release</id>
       <distributionManagement>
