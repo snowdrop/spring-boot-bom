@@ -172,17 +172,17 @@
     <!-- Other -->
     <resteasy.version>3.9.0.Final</resteasy.version>
     <resteasy-spring-boot-starter.version>3.2.1.Final</resteasy-spring-boot-starter.version>
-    <keycloak.version>4.8.3.Final</keycloak.version>
+    <keycloak.version>8.0.1</keycloak.version>
     <opentracing-spring-jaeger-web-starter.version>2.0.3</opentracing-spring-jaeger-web-starter.version>
     <infinispan-starter.version>2.1.7.Final</infinispan-starter.version>
     <amqp-10-starter.version>2.1.7</amqp-10-starter.version>
     <narayana-starter.version>2.1.1</narayana-starter.version>
     <cxf-spring-boot-starter-jaxrs.version>3.3.4</cxf-spring-boot-starter-jaxrs.version>
     <vertx-spring-boot.version>0.0.8</vertx-spring-boot.version>
-    <dekorate.version>0.10.2</dekorate.version>
+    <dekorate.version>0.10.7</dekorate.version>
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>2.1.10.RELEASE</spring-boot.version>
+    <spring-boot.version>2.1.12.RELEASE</spring-boot.version>
     <spring-cloud-kubernetes.version>1.0.4.RELEASE</spring-cloud-kubernetes.version>
 
     <!-- Overriden from Spring Boot -->
