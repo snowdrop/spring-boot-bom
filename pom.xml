@@ -179,7 +179,7 @@
     <narayana-starter.version>2.1.1</narayana-starter.version>
     <cxf-spring-boot-starter-jaxrs.version>3.3.4</cxf-spring-boot-starter-jaxrs.version>
     <vertx-spring-boot.version>0.0.8</vertx-spring-boot.version>
-    <dekorate.version>0.10.7</dekorate.version>
+    <dekorate.version>0.10.8</dekorate.version>
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>2.1.12.RELEASE</spring-boot.version>
