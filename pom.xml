@@ -179,18 +179,19 @@
     <narayana-starter.version>2.1.1</narayana-starter.version>
     <cxf-spring-boot-starter-jaxrs.version>3.3.4</cxf-spring-boot-starter-jaxrs.version>
     <vertx-spring-boot.version>0.0.8</vertx-spring-boot.version>
-    <dekorate.version>0.10.10</dekorate.version>
+    <dekorate.version>0.11.2</dekorate.version>
+    <netty.version>0.8.16.RELEASE</netty.version>
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>2.1.12.RELEASE</spring-boot.version>
+    <spring-boot.version>2.1.13.RELEASE</spring-boot.version>
     <spring-cloud-kubernetes.version>1.0.4.RELEASE</spring-cloud-kubernetes.version>
 
     <!-- Overriden from Spring Boot -->
-    <hibernate.version>5.3.14.Final</hibernate.version>
-    <hibernate-validator.version>6.0.18.Final</hibernate-validator.version>
+    <hibernate.version>5.3.13.Final</hibernate.version>
+    <hibernate-validator.version>6.0.16.Final</hibernate-validator.version>
     <infinispan.version>9.4.16.Final</infinispan.version>
-    <tomcat.version>9.0.30</tomcat.version>
-    <undertow.version>2.0.29.Final</undertow.version>
+    <tomcat.version>9.0.21</tomcat.version>
+    <undertow.version>2.0.27.Final</undertow.version>
   </properties>
 
   <dependencyManagement>
@@ -532,6 +533,12 @@
         <groupId>io.undertow</groupId>
         <artifactId>undertow-websockets-jsr</artifactId>
         <version>${undertow.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.projectreactor.netty</groupId>
+        <artifactId>reactor-netty</artifactId>
+        <version>${netty.version}</version>
       </dependency>
 
     </dependencies>
