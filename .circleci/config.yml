@@ -37,8 +37,8 @@ jobs:
           mv pom.xml.bak pom.xml
 
     - run:
-      name: Install swnodrop-dependencies locally
-      command: mvn install
+        name: Install snowdrop-dependencies locally
+        command: mvn install
 
     - run:
         name: Download testsuite
