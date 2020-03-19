@@ -43,9 +43,16 @@ jobs:
     - run:
         name: Download testsuite
         command: |
+          parent_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
+
           pushd /tmp
           git clone --single-branch -b 2.2.x https://github.com/snowdrop/testsuite.git
           cd testsuite
+
+          echo "Setting testsuite parent version to ${parent_version}"
+          # Update the first occurance of a version tag (parent)
+          awk "NR==1,/<version>.*<\/version>/{sub(/<version>.*<\/version>/, \"<version>${parent_version}<\/version>\")} 1" pom.xml > pom.xml-tmp
+          mv pom.xml-tmp pom.xml
 
           # Done in order to cache maven artifacts
           # Can't use 'mvn dependency:go-offline'. See https://stackoverflow.com/q/14694139/2504224
@@ -56,9 +63,16 @@ jobs:
     - run:
         name: Download rest-http-example
         command: |
+          parent_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
+
           pushd /tmp
           git clone --single-branch -b sb-2.2.x https://github.com/snowdrop/rest-http-example.git
           cd rest-http-example
+
+          echo "Setting rest-http-example parent version to ${parent_version}"
+          # Update the first occurance of a version tag (parent)
+          awk "NR==1,/<version>.*<\/version>/{sub(/<version>.*<\/version>/, \"<version>${parent_version}<\/version>\")} 1" pom.xml > pom.xml-tmp
+          mv pom.xml-tmp pom.xml
 
           # Done in order to cache maven artifacts
           ./mvnw -s ~/project/.circleci/settings.xml dependency:go-offline
@@ -76,32 +90,15 @@ jobs:
     - run:
         name: Test rest-http-example
         command: |
-          parent_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
-          echo "Testing rest-http-example using snowdrop-dependnecies ${parent_version}"
-
           pushd /tmp/rest-http-example
-
-          # Update the first occurance of a version tag (parent)
-          awk "NR==1,/<version>.*<\/version>/{sub(/<version>.*<\/version>/, \"<version>${parent_version}<\/version>\")} 1" pom.xml > pom.xml-tmp
-          mv pom.xml-tmp pom.xml
-
           ./mvnw -s ~/project/.circleci/settings.xml clean verify -Popenshift,openshift-it
           popd
 
     - run:
         name: Launch testsuite
         command: |
-          parent_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
-
-          echo "Launching testsuite using snowdrop-dependnecies ${parent_version}"
-
           pushd /tmp/testsuite
           oc policy add-role-to-user view -z default
-
-          # Update the first occurance of a version tag (parent)
-          awk "NR==1,/<version>.*<\/version>/{sub(/<version>.*<\/version>/, \"<version>${parent_version}<\/version>\")} 1" pom.xml > pom.xml-tmp
-          mv pom.xml-tmp pom.xml
-
           mvn -s ~/project/.circleci/settings.xml clean verify -Popenshift
           popd
 
