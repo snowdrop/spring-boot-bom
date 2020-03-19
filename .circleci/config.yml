@@ -23,9 +23,9 @@ jobs:
     # based on this: https://discuss.circleci.com/t/circle-2-0-caching-is-too-limited-to-be-very-useful/11694/10
     - restore_cache:
         keys:
-          - spring-boot-bom-{{ .Branch }}-{{ checksum "pom.xml" }}
-          - spring-boot-bom-{{ .Branch }}
-          - spring-boot-bom
+          - snowdrop-dependencies-{{ .Branch }}-{{ checksum "pom.xml" }}
+          - snowdrop-dependencies-{{ .Branch }}
+          - snowdrop-dependencies
 
       # Will download all deps needed into .m2
     - run:
@@ -37,10 +37,14 @@ jobs:
           mv pom.xml.bak pom.xml
 
     - run:
+      name: Install swnodrop-dependencies locally
+      command: mvn install
+
+    - run:
         name: Download testsuite
         command: |
           pushd /tmp
-          git clone --single-branch -b 2.1.x https://github.com/snowdrop/testsuite.git
+          git clone --single-branch -b 2.2.x https://github.com/snowdrop/testsuite.git
           cd testsuite
 
           # Done in order to cache maven artifacts
@@ -50,11 +54,11 @@ jobs:
           popd
 
     - run:
-        name: Download http-booster
+        name: Download rest-http-example
         command: |
           pushd /tmp
-          git clone --single-branch -b sb-2.1.x https://github.com/snowdrop/spring-boot-http-booster.git
-          cd spring-boot-http-booster
+          git clone --single-branch -b sb-2.2.x https://github.com/snowdrop/rest-http-example.git
+          cd rest-http-example
 
           # Done in order to cache maven artifacts
           ./mvnw -s ~/project/.circleci/settings.xml dependency:go-offline
@@ -64,59 +68,42 @@ jobs:
     - save_cache:
         paths:
         - ~/.m2
-        key: spring-boot-bom-{{ .Branch }}-{{ checksum "pom.xml" }}
-
-    - run:
-        name: Install BOM locally
-        command: mvn install
+        key: snowdrop-dependencies-{{ .Branch }}-{{ checksum "pom.xml" }}
 
     - openshift/launch_openshift:
         version: "3.11"
 
     - run:
-        name: Test http booster
+        name: Test rest-http-example
         command: |
-          bom_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
-          versionRE='^([1-9]\.[0-9]\.[0-9]+).*'
-          if [[ "${bom_version}" =~ ${versionRE} ]]; then
-            version_numbers_only=${BASH_REMATCH[1]}
-            spring_boot_release="${version_numbers_only}.RELEASE"
+          parent_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
+          echo "Testing rest-http-example using snowdrop-dependnecies ${parent_version}"
 
-            echo "Testing http-booster using"
-            echo "spring-boot.bom.version=${bom_version}"
-            echo "spring-boot.version=${spring_boot_release}"
+          pushd /tmp/rest-http-example
 
-            pushd /tmp/spring-boot-http-booster
-            ./mvnw -s ~/project/.circleci/settings.xml clean verify -Popenshift,openshift-it -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
-            popd
+          # Update the first occurance of a version tag (parent)
+          awk "NR==1,/<version>.*<\/version>/{sub(/<version>.*<\/version>/, \"<version>${parent_version}<\/version>\")} 1" pom.xml > pom.xml-tmp
+          mv pom.xml-tmp pom.xml
 
-          else
-            echo "The BOM version is invalid!"
-            exit 1
-          fi
+          ./mvnw -s ~/project/.circleci/settings.xml clean verify -Popenshift,openshift-it
+          popd
 
     - run:
         name: Launch testsuite
         command: |
-          bom_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
-          versionRE='^([1-9]\.[0-9]\.[0-9]+).*'
-          if [[ "${bom_version}" =~ ${versionRE} ]]; then
-            version_numbers_only=${BASH_REMATCH[1]}
-            spring_boot_release="${version_numbers_only}.RELEASE"
+          parent_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
 
-            echo "Launching testsuite using"
-            echo "spring-boot.bom.version=${bom_version}"
-            echo "spring-boot.version=${spring_boot_release}"
+          echo "Launching testsuite using snowdrop-dependnecies ${parent_version}"
 
-            pushd /tmp/testsuite
-            oc policy add-role-to-user view -z default
-            mvn -s ~/project/.circleci/settings.xml clean verify -Popenshift -Dspring-boot.bom.version=${bom_version} -Dspring-boot.version=${spring_boot_release}
-            popd
+          pushd /tmp/testsuite
+          oc policy add-role-to-user view -z default
 
-          else
-            echo "The BOM version is invalid!"
-            exit 1
-          fi
+          # Update the first occurance of a version tag (parent)
+          awk "NR==1,/<version>.*<\/version>/{sub(/<version>.*<\/version>/, \"<version>${parent_version}<\/version>\")} 1" pom.xml > pom.xml-tmp
+          mv pom.xml-tmp pom.xml
+
+          mvn -s ~/project/.circleci/settings.xml clean verify -Popenshift
+          popd
 
 workflows:
   version: 2
