@@ -123,17 +123,16 @@
   </pluginRepositories>
 
   <properties>
-    <!-- Other -->
+    <amqp-10-starter.version>2.2.2</amqp-10-starter.version>
+    <cxf-spring-boot-starter-jaxrs.version>3.3.4</cxf-spring-boot-starter-jaxrs.version>
+    <dekorate.version>0.11.2</dekorate.version>
+    <infinispan-starter.version>2.1.8.Final</infinispan-starter.version>
+    <keycloak.version>9.0.0</keycloak.version>
+    <narayana-starter.version>2.3.0</narayana-starter.version>
+    <opentracing-spring-jaeger-web-starter.version>3.1.1</opentracing-spring-jaeger-web-starter.version>
     <resteasy.version>3.9.0.Final</resteasy.version><!-- TODO upgrade before 2.2.5 release -->
     <resteasy-spring-boot-starter.version>3.2.1.Final</resteasy-spring-boot-starter.version><!-- TODO upgrade before 2.2.5 release -->
-    <keycloak.version>9.0.0</keycloak.version>
-    <opentracing-spring-jaeger-web-starter.version>3.1.1</opentracing-spring-jaeger-web-starter.version>
-    <infinispan-starter.version>2.1.8.Final</infinispan-starter.version>
-    <amqp-10-starter.version>2.2.2</amqp-10-starter.version>
-    <narayana-starter.version>2.3.0</narayana-starter.version>
-    <cxf-spring-boot-starter-jaxrs.version>3.3.4</cxf-spring-boot-starter-jaxrs.version>
     <vertx-spring-boot.version>1.0.0</vertx-spring-boot.version>
-    <dekorate.version>0.11.2</dekorate.version>
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
@@ -146,6 +145,9 @@
     <infinispan.version>9.4.17.Final</infinispan.version>
     <tomcat.version>9.0.31</tomcat.version>
     <undertow.version>2.0.29.Final</undertow.version>
+
+    <!-- Plugins -->
+    <fabric8-maven-plugin.version>4.4.1</fabric8-maven-plugin.version>
   </properties>
 
   <dependencyManagement>
@@ -192,7 +194,6 @@
             <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
-        <scope>test</scope>
       </dependency>
 
       <!-- HTTP runtime -->
@@ -231,7 +232,6 @@
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-spring-boot-starter</artifactId>
         <version>${resteasy-spring-boot-starter.version}</version>
-        <scope>runtime</scope>
       </dependency>
 
       <!-- JAX-RS with Apache CXF (UNSUPPORTED) -->
@@ -482,6 +482,18 @@
     </dependencies>
   </dependencyManagement>
 
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>io.fabric8</groupId>
+          <artifactId>fabric8-maven-plugin</artifactId>
+          <version>${fabric8-maven-plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
   <profiles>
     <profile>
       <id>release</id>
@@ -560,7 +572,6 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-release-plugin</artifactId>
-            <version>2.5.3</version>
             <configuration>
               <autoVersionSubmodules>true</autoVersionSubmodules>
               <useReleaseProfile>false</useReleaseProfile>
