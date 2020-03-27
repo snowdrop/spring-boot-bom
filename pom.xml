@@ -149,7 +149,7 @@
     <fabric8-maven-plugin.version>4.4.1</fabric8-maven-plugin.version>
   </properties>
 
-  <dependencyManagement>
+<!--  <dependencyManagement>-->
     <dependencies>
       <!-- Infinispan BOM to ensure Infinispan versions are properly set. NEEDS TO BE SET BEFORE SPRING BOM. -->
       <dependency>
@@ -299,7 +299,7 @@
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-artemis</artifactId>
-        <version>${artemis.version}</version>
+        <version>${spring-boot.version}</version>
       </dependency>
 
       <!-- AMQP -->
@@ -479,7 +479,7 @@
         <version>${undertow.version}</version>
       </dependency>
     </dependencies>
-  </dependencyManagement>
+<!--  </dependencyManagement>-->
 
   <build>
     <pluginManagement>
