@@ -20,12 +20,12 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-dependencies</artifactId>
-    <version>2.2.5.RELEASE</version>
+    <version>2.2.6.RELEASE</version>
   </parent>
 
   <groupId>dev.snowdrop</groupId>
   <artifactId>snowdrop-dependencies</artifactId>
-  <version>2.2.5-SNAPSHOT</version>
+  <version>2.2.6-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot Dependencies</name>
@@ -123,23 +123,22 @@
   </pluginRepositories>
 
   <properties>
-    <amqp-10-starter.version>2.2.2</amqp-10-starter.version>
+    <amqp-10-starter.version>2.2.5</amqp-10-starter.version>
     <cxf-spring-boot-starter-jaxrs.version>3.3.4</cxf-spring-boot-starter-jaxrs.version>
-    <dekorate.version>0.11.2</dekorate.version>
+    <dekorate.version>0.11.4</dekorate.version>
     <infinispan-starter.version>2.1.8.Final</infinispan-starter.version>
-    <keycloak.version>9.0.0</keycloak.version>
+    <keycloak.version>9.0.2</keycloak.version>
     <narayana-starter.version>2.3.0</narayana-starter.version>
     <opentracing-spring-jaeger-web-starter.version>3.1.1</opentracing-spring-jaeger-web-starter.version>
-    <resteasy.version>3.9.0.Final</resteasy.version><!-- TODO upgrade before 2.2.5 release -->
-    <resteasy-spring-boot-starter.version>3.2.1.Final</resteasy-spring-boot-starter.version><!-- TODO upgrade before 2.2.5 release -->
+    <resteasy.version>3.9.3.SP1</resteasy.version>
+    <resteasy-spring-boot-starter.version>3.3.2.Final</resteasy-spring-boot-starter.version>
     <vertx-spring-boot.version>1.0.0</vertx-spring-boot.version>
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
-    <spring-cloud-kubernetes.version>1.1.1.RELEASE</spring-cloud-kubernetes.version>
+    <spring-boot.version>2.2.6.RELEASE</spring-boot.version>
+    <spring-cloud-kubernetes.version>1.1.2.RELEASE</spring-cloud-kubernetes.version>
 
     <!-- Overriden from Spring Boot -->
-    <artemis.version>2.10.1</artemis.version>
     <hibernate.version>5.4.12.Final</hibernate.version>
     <hibernate-validator.version>6.0.18.Final</hibernate-validator.version>
     <infinispan.version>9.4.17.Final</infinispan.version>
