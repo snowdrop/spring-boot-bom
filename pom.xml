@@ -149,7 +149,7 @@
     <fabric8-maven-plugin.version>4.4.1</fabric8-maven-plugin.version>
   </properties>
 
-<!--  <dependencyManagement>-->
+  <dependencyManagement>
     <dependencies>
       <!-- Infinispan BOM to ensure Infinispan versions are properly set. NEEDS TO BE SET BEFORE SPRING BOM. -->
       <dependency>
@@ -479,7 +479,7 @@
         <version>${undertow.version}</version>
       </dependency>
     </dependencies>
-<!--  </dependencyManagement>-->
+  </dependencyManagement>
 
   <build>
     <pluginManagement>
