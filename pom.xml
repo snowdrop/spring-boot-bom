@@ -146,7 +146,7 @@
     <undertow.version>2.0.30.Final</undertow.version>
 
     <!-- Plugins -->
-    <fabric8-maven-plugin.version>4.4.1</fabric8-maven-plugin.version>
+    <fabric8-maven-plugin.version>4.1.0</fabric8-maven-plugin.version>
   </properties>
 
   <dependencyManagement>
