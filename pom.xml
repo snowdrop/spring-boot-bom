@@ -124,14 +124,13 @@
 
   <properties>
     <amqp-10-starter.version>2.2.2</amqp-10-starter.version>
-    <cxf-spring-boot-starter-jaxrs.version>3.3.4</cxf-spring-boot-starter-jaxrs.version>
     <dekorate.version>0.11.4</dekorate.version>
     <infinispan-starter.version>2.2.3.Final</infinispan-starter.version>
-    <keycloak.version>9.0.2</keycloak.version>
+    <keycloak.version>9.0.3</keycloak.version>
     <narayana-starter.version>2.3.0</narayana-starter.version>
     <opentracing-spring-jaeger-web-starter.version>3.1.1</opentracing-spring-jaeger-web-starter.version>
-    <resteasy.version>3.9.3.SP1</resteasy.version>
-    <resteasy-spring-boot-starter.version>3.3.2.Final</resteasy-spring-boot-starter.version>
+    <resteasy.version>3.11.2.Final</resteasy.version>
+    <resteasy-spring-boot-starter.version>3.4.0.Final</resteasy-spring-boot-starter.version>
     <vertx-spring-boot.version>1.0.0</vertx-spring-boot.version>
 
     <!-- Spring Ecosystem -->
@@ -231,13 +230,6 @@
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-spring-boot-starter</artifactId>
         <version>${resteasy-spring-boot-starter.version}</version>
-      </dependency>
-
-      <!-- JAX-RS with Apache CXF (UNSUPPORTED) -->
-      <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
-        <version>${cxf-spring-boot-starter-jaxrs.version}</version>
       </dependency>
 
       <!-- Persistence -->
