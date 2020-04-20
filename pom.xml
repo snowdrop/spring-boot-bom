@@ -124,7 +124,6 @@
 
   <properties>
     <amqp-10-starter.version>2.2.2</amqp-10-starter.version>
-    <cxf-spring-boot-starter-jaxrs.version>3.3.4</cxf-spring-boot-starter-jaxrs.version>
     <dekorate.version>0.11.4</dekorate.version>
     <infinispan-starter.version>2.2.3.Final</infinispan-starter.version>
     <keycloak.version>9.0.3</keycloak.version>
@@ -231,13 +230,6 @@
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-spring-boot-starter</artifactId>
         <version>${resteasy-spring-boot-starter.version}</version>
-      </dependency>
-
-      <!-- JAX-RS with Apache CXF (UNSUPPORTED) -->
-      <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
-        <version>${cxf-spring-boot-starter-jaxrs.version}</version>
       </dependency>
 
       <!-- Persistence -->
