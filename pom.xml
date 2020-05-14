@@ -124,7 +124,7 @@
 
   <properties>
     <amqp-10-starter.version>2.2.2</amqp-10-starter.version>
-    <dekorate.version>0.11.9</dekorate.version>
+    <dekorate.version>1.0.0</dekorate.version>
     <infinispan-starter.version>2.2.3.Final</infinispan-starter.version>
     <keycloak.version>9.0.3</keycloak.version>
     <narayana-starter.version>2.3.0</narayana-starter.version>
