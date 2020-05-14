@@ -1,7 +1,7 @@
 // spring-boot
 :spring-boot.version: 2.2.6.RELEASE
 
-= Spring Boot BOM - 2.1.x
+= Spring Boot BOM - 2.2.x
 
 This Bill Of Materials for Spring Boot 1.5 contains starters which are currently used by the 
 https://github.com/snowdrop?utf8=✓&q=topic%3Abooster[Spring Boot Mission Boosters].
