@@ -141,7 +141,7 @@
     <hibernate.version>5.4.14.Final</hibernate.version>
     <hibernate-validator.version>6.0.18.Final</hibernate-validator.version>
     <infinispan.version>10.1.5.Final</infinispan.version>
-    <tomcat.version>9.0.33</tomcat.version>
+    <tomcat.version>9.0.35</tomcat.version>
     <undertow.version>2.0.30.Final</undertow.version>
 
     <!-- Plugins -->
