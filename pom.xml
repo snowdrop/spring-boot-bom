@@ -182,7 +182,7 @@
     <dekorate.version>0.11.2</dekorate.version>
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>2.1.13.RELEASE</spring-boot.version>
+    <spring-boot.version>2.1.15.RELEASE</spring-boot.version>
     <spring-cloud-kubernetes.version>1.0.4.RELEASE</spring-cloud-kubernetes.version>
 
     <!-- Overriden from Spring Boot -->
