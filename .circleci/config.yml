@@ -46,7 +46,7 @@ jobs:
           parent_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
 
           pushd /tmp
-          git clone --single-branch -b 2.2.x https://github.com/snowdrop/testsuite.git
+          git clone --single-branch -b 2.3.x https://github.com/snowdrop/testsuite.git
           cd testsuite
 
           echo "Setting testsuite parent version to ${parent_version}"
