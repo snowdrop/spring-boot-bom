@@ -1,0 +1,123 @@
+# JIRA Project code where the release issue should be created
+jiraProject:     SB
+
+# If already created, provide the issue number of the Release, otherwise keep it empty.
+# It will be used by the command create-component to link the stakeholder issues
+jiraKey:         # SB-1484
+
+# Version to be released. This version will be used to populate the description to be created for each Jira stakeholder: component or starter owner
+version:         2.3.0.RELEASE
+
+# Long version name used to create the title of the release issue
+longVersionName: "[Spring Boot 2.3.0] Release steps CR [Q3-2020]"
+
+# Release date scheduled. It will also be used to populate the description to be created for each Jira stakeholder: component or starter owner
+releaseDate:     September 14th 2020
+
+# Due date for the component/starter owner to release their new components, QE signoff it
+dueDate:         2020-08-21
+
+# EOL of the Snowdrop release
+eol:             September 2021
+
+components:
+  # List of JIRA Projects contributing to a Snowdrop release
+  # They will be used to create a component or starter
+  #
+  # https://issues.redhat.com/projects/KEYCLOAK/issues/
+  # https://issues.redhat.com/projects/JWS/issues
+  # https://issues.redhat.com/projects/JDG/issues
+  # https://issues.redhat.com/projects/RESTEASY/issues
+  # https://issues.redhat.com/projects/TRACING/issues
+  # https://issues.redhat.com/projects/EAPSUP/issues
+  # https://issues.redhat.com/projects/ENTMQCL/issues
+  #
+  - jiraProject: SB
+    jiraTitle: "Hibernate version to use for SB 2.3"
+    name: Hibernate
+    version: 5.4.15
+
+  - jiraProject: SB
+    jiraTitle: "Tomcat embedded version to use for SB 2.3"
+    name: Tomcat
+    version: 9.0.35
+
+  - jiraProject: SB
+    jiraTitle: "Keycloak version to use for SB 2.3"
+    name: KEYCLOAK
+    version:
+
+  - jiraProject: SB
+    jiraTitle: "Artemis version to use for SB 2.3"
+    name: Artemis
+    version: 2.12.0
+
+  - jiraProject: SB
+    jiraTitle: "Hibernate Validator version to use for SB 2.3"
+    name: Validator
+    version: 6.1.5
+
+  - jiraProject: SB
+    jiraTitle: "New RESTEasy starter for SB 2.3"
+    skipCreation: false
+    name: RESTEasy
+    isStarter: true
+    version:
+
+  - jiraProject: SB
+    jiraTitle: "OpenTracing starter to use for SB 2.3"
+    skipCreation: false
+    name: Jaeger
+    isStarter: true
+    version:
+
+  - jiraProject: SB
+    jiraTitle: "Infinispan starter to use for SB 2.3"
+    skipCreation: false
+    name: DataGrid
+    isStarter: true
+    version: 10.1.8
+
+  - jiraProject: SB
+    jiraTitle: "AMQP starter to use for SB 2.3"
+    skipCreation: false
+    name: AMQ
+    isStarter: true
+    version: 5.9.0
+
+  - jiraProject: SB
+    jiraTitle: "Narayana starter to use for SB 2.3"
+    skipCreation: false
+    name: Narayana
+    isStarter: true
+    version:
+
+  - jiraProject: SB
+    jiraTitle: "Vert.x starter to use for SB 2.3"
+    skipCreation: false
+    name: VertX
+    isStarter: true
+    version:
+  # TO BE CONTINUED TO INCLUDE ALL THE COMPONENTS/STARTERS
+
+cves:
+  # Include here the CVEs tickets to be link to this JIRA ticket release
+  - jiraProject: SB
+    issue: 1433
+
+
+#2.3.0.RELEASE, tomcat, 9.0.35
+#2.3.0.RELEASE, undertow, 2.1.0.Final
+#2.3.0.RELEASE, hibernate, 5.4.15.Final
+#2.3.0.RELEASE, artemis, 2.12.0
+#2.3.0.RELEASE, hibernate-validator, 6.1.5.Final
+
+#To do -> get the versions of the following starters
+
+#resteasy-spring-boot-starter
+#opentracing-spring-jaeger-web-starter
+#infinispan-spring-boot-starter-remote
+#amqp-10-jms-spring-boot-starter
+#narayana-spring-boot-core
+#vertx-spring-boot-starter
+# https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-dependencies/2.3.0.RELEASE/spring-boot-dependencies-2.3.0.RELEASE.pom
