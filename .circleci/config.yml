@@ -66,7 +66,7 @@ jobs:
           parent_version=$(mvn -s .circleci/settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
 
           pushd /tmp
-          git clone --single-branch -b sb-2.2.x https://github.com/snowdrop/rest-http-example.git
+          git clone --single-branch -b sb-2.3.x https://github.com/snowdrop/rest-http-example.git
           cd rest-http-example
 
           echo "Setting rest-http-example parent version to ${parent_version}"
