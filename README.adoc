@@ -1,7 +1,7 @@
 // spring-boot
-:spring-boot.version: 2.2.6.RELEASE
+:spring-boot.version: 2.3.2.RELEASE
 
-= Spring Boot BOM - 2.2.x
+= Spring Boot BOM - 2.3.x
 
 This Bill Of Materials for Spring Boot 1.5 contains starters which are currently used by the 
 https://github.com/snowdrop?utf8=✓&q=topic%3Abooster[Spring Boot Mission Boosters].
@@ -11,7 +11,7 @@ This BOM is aligned to:
 
 .Spring
 // spring-boot
-- Spring Boot: 2.2.6.RELEASE
+- Spring Boot: 2.3.2.RELEASE
 
 .Spring Cloud
 // spring-cloud-kubernetes
@@ -34,7 +34,7 @@ This BOM is aligned to:
 
 This BOM is using the following versioning scheme:
 
-`me.snowdrop:spring-boot-bom:<targeted spring boot release version>.<qualifier>[1-9]`
+`dev.snowdrop:snowdrop-dependencies:<targeted spring boot release version>.<qualifier>[1-9]`
 
 .Qualifiers, in chronological order:
  - `Alpha` (first semi-stable releases),
@@ -47,10 +47,10 @@ Qualifiers are numbered and we should try to limit their number to 9 but we shou
 
 Until a version is released, the BOM version will be `<target spring boot version>-SNAPSHOT`. Once it's released, we will switch to `<target spring boot version>.SP<current SP version + 1>-SNAPSHOT`.
 
-So, right now, as we are targeting Spring Boot version 1.5.13.RELEASE, our BOM GAV will be:
-`me.snowdrop:spring-boot-bom:1.5.13-SNAPSHOT` until released. The released version will be
-`me.snowdrop:spring-boot-bom:1.5.13.Final` and the new version in the 1.5 branch will
-be `me.snowdrop:spring-boot-bom:1.5.13.SP1-SNAPSHOT`.
+So, right now, as we are targeting Spring Boot version 2.3.2.RELEASE, our BOM GAV will be:
+`dev.snowdrop:snowdrop-dependencies:2.3.2-SNAPSHOT` until released. The released version will be
+`dev.snowdrop:snowdrop-dependencies:2.3.2.Final` and the new version in the 2.3 branch will
+be `dev.snowdrop:snowdrop-dependencies:2.3.2.SP1-SNAPSHOT`.
 
 See https://issues.jboss.org/browse/SB-162[SB-162] for a discussion of BOM versioning.
 
