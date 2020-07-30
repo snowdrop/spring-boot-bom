@@ -1,0 +1,90 @@
+# JIRA Project where the release issue should be created
+issue:
+  project: ENTSBT
+
+
+# If already created, provide the issue number of the Release, otherwise keep it empty.
+# It will be used by the command create-component to link the stakeholder issues
+#key:         # SB-1484
+
+schedule:
+  # Release date scheduled. It will also be used to populate the description to be created for each Jira stakeholder: component or starter owner
+  release: 2020-09-14
+  # Due date for the component/starter owner to release their new components, QE signoff it
+  due: 2020-08-18
+  # EOL of the Snowdrop release
+  eol: 2021-09-30
+
+components:
+  # List of JIRA Projects contributing to a Snowdrop release
+  # They will be used to create a component or starter
+  - name: Hibernate / Hibernate Validator
+    issue:
+      project: EAPSUP
+    properties:
+      - hibernate
+      - hibernate-validator
+      - undertow
+
+  - name: Tomcat
+    issue:
+      project: JWS
+    properties:
+      - tomcat
+
+  - name: Keycloak
+    issue:
+      project: KEYCLOAK
+    properties:
+      - keycloak
+
+  - name: AMQP
+    issue:
+      project: ENTMQCL
+    properties:
+      - amqp-10-starter
+
+  - name: RESTEasy
+    issue:
+      project: RESTEASY
+    properties:
+      - resteasy
+      - resteasy-spring-boot-starter
+
+  - name: OpenTracing / Jaeger
+    issue:
+      project: TRACING
+    properties:
+      - opentracing-spring-jaeger-web-starter
+
+  - name: Infinispan / DataGrid
+    issue:
+      project: JDG
+    properties:
+      - infinispan
+      - infinispan-starter
+
+  - name: Narayana
+    issue:
+      project: ENTSBT
+    properties:
+      - narayana-starter
+
+  - name: Vert.X
+    issue:
+      project: ENTSBT
+    properties:
+      - vertx-spring-boot
+
+  - name: Dekorate
+    issue:
+      project: ENTSBT
+    properties:
+      - dekorate
+
+cves:
+  # Include here the CVEs tickets to be link to this JIRA ticket release
+  - key: 360
+  - key: 316
+  - key: 566
+  - key: 567
