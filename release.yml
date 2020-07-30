@@ -1,3 +1,5 @@
+version: 2.3.2
+
 # JIRA Project where the release issue should be created
 issue:
   project: ENTSBT
