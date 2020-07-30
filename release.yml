@@ -20,7 +20,7 @@ schedule:
 components:
   # List of JIRA Projects contributing to a Snowdrop release
   # They will be used to create a component or starter
-  - name: Hibernate / Hibernate Validator
+  - name: Hibernate / Hibernate Validator / Undertow
     issue:
       project: EAPSUP
     properties:
