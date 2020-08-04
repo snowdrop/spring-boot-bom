@@ -65,7 +65,7 @@ components:
     properties:
       - narayana-starter
 
-  - name: Vert.X starter
+  - name: Vert.x starter
     jira: ENTSBT
     product: ENTVTX
     properties:
