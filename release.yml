@@ -61,11 +61,13 @@ components:
 
   - name: Narayana starter
     jira: ENTSBT
+    product: JBTM
     properties:
       - narayana-starter
 
   - name: Vert.X starter
     jira: ENTSBT
+    product: ENTVTX
     properties:
       - vertx-spring-boot
 
