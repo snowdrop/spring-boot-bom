@@ -21,66 +21,56 @@ components:
   # List of JIRA Projects contributing to a Snowdrop release
   # They will be used to create a component or starter
   - name: Hibernate / Hibernate Validator / Undertow
-    issue:
-      project: EAPSUP
+    jira: EAPSUP
     properties:
       - hibernate
       - hibernate-validator
       - undertow
 
   - name: Tomcat
-    issue:
-      project: JWS
+    jira: JWS
     properties:
       - tomcat
 
   - name: Keycloak
-    issue:
-      project: KEYCLOAK
+    jira: KEYCLOAK
     properties:
       - keycloak
 
   - name: AMQP
-    issue:
-      project: ENTMQCL
+    jira: ENTMQCL
     properties:
       - amqp-10-starter
 
   - name: RESTEasy
-    issue:
-      project: RESTEASY
+    jira: RESTEASY
     properties:
       - resteasy
       - resteasy-spring-boot-starter
 
   - name: OpenTracing / Jaeger
-    issue:
-      project: TRACING
+    jira: TRACING
     properties:
       - opentracing-spring-jaeger-web-starter
 
   - name: Infinispan / DataGrid
-    issue:
-      project: JDG
+    jira: JDG
     properties:
       - infinispan
       - infinispan-starter
 
-  - name: Narayana
-    issue:
-      project: ENTSBT
+  - name: Narayana starter
+    jira: ENTSBT
     properties:
       - narayana-starter
 
-  - name: Vert.X
-    issue:
-      project: ENTSBT
+  - name: Vert.X starter
+    jira: ENTSBT
     properties:
       - vertx-spring-boot
 
   - name: Dekorate
-    issue:
-      project: ENTSBT
+    jira: ENTSBT
     properties:
       - dekorate
 
