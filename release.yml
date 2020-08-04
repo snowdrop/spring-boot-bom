@@ -69,6 +69,11 @@ components:
     properties:
       - vertx-spring-boot
 
+  - name: Spring Cloud Kubernetes
+    jira: ENTSBT
+    properties:
+      - spring-cloud-kubernetes
+
   - name: Dekorate
     jira: ENTSBT
     properties:
