@@ -13,7 +13,7 @@ schedule:
   # Release date scheduled. It will also be used to populate the description to be created for each Jira stakeholder: component or starter owner
   release: 2020-09-14
   # Due date for the component/starter owner to release their new components, QE signoff it
-  due: 2020-08-18
+  due: 2020-08-21
   # EOL of the Snowdrop release
   eol: 2021-09-30
 
