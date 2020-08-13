@@ -126,7 +126,6 @@
     <amqp-10-starter.version>2.2.2</amqp-10-starter.version>
     <dekorate.version>1.0.0</dekorate.version>
     <infinispan-starter.version>2.2.3.Final</infinispan-starter.version>
-    <keycloak.version>9.0.3</keycloak.version>
     <!-- https://github.com/snowdrop/narayana-spring-boot -->
     <narayana-starter.version>2.3.0</narayana-starter.version>
     <opentracing-spring-jaeger-web-starter.version>3.1.1</opentracing-spring-jaeger-web-starter.version>
@@ -312,9 +311,14 @@
 
       <!-- Security -->
       <dependency>
-        <groupId>org.keycloak</groupId>
-        <artifactId>keycloak-spring-boot-starter</artifactId>
-        <version>${keycloak.version}</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-oauth2-client</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+        <version>${spring-boot.version}</version>
       </dependency>
 
       <!-- Validation -->

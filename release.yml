@@ -35,12 +35,6 @@ components:
     properties:
       - tomcat
 
-  - name: Keycloak
-    jira:
-      project: KEYCLOAK
-    properties:
-      - keycloak
-
   - name: AMQP
     jira:
       project: ENTMQCL
