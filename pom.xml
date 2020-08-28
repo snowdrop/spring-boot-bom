@@ -130,8 +130,8 @@
     <!-- https://github.com/snowdrop/narayana-spring-boot -->
     <narayana-starter.version>2.3.0</narayana-starter.version>
     <opentracing-spring-jaeger-web-starter.version>3.1.1</opentracing-spring-jaeger-web-starter.version>
-    <resteasy.version>3.9.3.SP1</resteasy.version>
-    <resteasy-spring-boot-starter.version>3.3.3.Final</resteasy-spring-boot-starter.version>
+    <resteasy.version>3.11.2.Final</resteasy.version>
+    <resteasy-spring-boot-starter.version>3.4.1.Final</resteasy-spring-boot-starter.version>
     <!-- https://github.com/snowdrop/vertx-spring-boot   -->
     <vertx-spring-boot.version>1.0.0</vertx-spring-boot.version>
 
