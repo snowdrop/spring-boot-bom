@@ -123,12 +123,12 @@
   </pluginRepositories>
 
   <properties>
-    <amqp-10-starter.version>2.2.2</amqp-10-starter.version>
-    <dekorate.version>1.0.0</dekorate.version>
-    <infinispan-starter.version>2.2.3.Final</infinispan-starter.version>
+    <amqp-10-starter.version>2.3.3</amqp-10-starter.version>
+    <dekorate.version>1.0.3</dekorate.version>
+    <infinispan-starter.version>2.3.3.Final</infinispan-starter.version>
     <!-- https://github.com/snowdrop/narayana-spring-boot -->
     <narayana-starter.version>2.4.1</narayana-starter.version>
-    <opentracing-spring-jaeger-web-starter.version>3.1.1</opentracing-spring-jaeger-web-starter.version>
+    <opentracing-spring-jaeger-web-starter.version>3.2.1</opentracing-spring-jaeger-web-starter.version>
     <resteasy.version>3.11.2.Final</resteasy.version>
     <resteasy-spring-boot-starter.version>3.4.1.Final</resteasy-spring-boot-starter.version>
     <!-- https://github.com/snowdrop/vertx-spring-boot   -->
@@ -136,12 +136,12 @@
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
-    <spring-cloud-kubernetes.version>1.1.2.RELEASE</spring-cloud-kubernetes.version>
+    <spring-cloud-kubernetes.version>1.1.6.RELEASE</spring-cloud-kubernetes.version>
 
     <!-- Overriden from Spring Boot -->
     <hibernate.version>5.4.21.Final</hibernate.version>
     <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
-    <infinispan.version>10.1.8.Final</infinispan.version>
+    <infinispan.version>11.0.3.Final</infinispan.version>
     <tomcat.version>9.0.38</tomcat.version>
     <undertow.version>2.1.4.Final</undertow.version>
 
