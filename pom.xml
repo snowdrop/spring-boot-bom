@@ -128,7 +128,7 @@
     <infinispan-starter.version>2.3.3.Final</infinispan-starter.version>
     <!-- https://github.com/snowdrop/narayana-spring-boot -->
     <narayana-starter.version>2.4.1</narayana-starter.version>
-    <opentracing-spring-jaeger-web-starter.version>3.2.1</opentracing-spring-jaeger-web-starter.version>
+    <opentracing-spring-jaeger-web-starter.version>3.2.2</opentracing-spring-jaeger-web-starter.version>
     <resteasy.version>3.11.2.Final</resteasy.version>
     <resteasy-spring-boot-starter.version>3.4.1.Final</resteasy-spring-boot-starter.version>
     <!-- https://github.com/snowdrop/vertx-spring-boot   -->
