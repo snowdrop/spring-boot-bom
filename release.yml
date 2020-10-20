@@ -1,8 +1,9 @@
-version: 2.3.2
+version: 2.3.4
 
 # JIRA Project where the release issue should be created
 issue:
   project: ENTSBT
+  key: ENTSBT-752
 
 
 # If already created, provide the issue number of the Release, otherwise keep it empty.
@@ -88,10 +89,3 @@ components:
       project: ENTSBT
     properties:
       - dekorate
-
-cves:
-  # Include here the CVEs tickets to be link to this JIRA ticket release
-  - key: 360
-  - key: 316
-  - key: 566
-  - key: 567
