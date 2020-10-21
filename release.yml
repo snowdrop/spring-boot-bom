@@ -1,9 +1,8 @@
 version: 2.3.4
 
 # JIRA Project where the release issue should be created
-issue:
-  project: ENTSBT
-  key: ENTSBT-752
+project: ENTSBT
+key: ENTSBT-752
 
 
 # If already created, provide the issue number of the Release, otherwise keep it empty.
