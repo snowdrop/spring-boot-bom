@@ -1,8 +1,7 @@
 version: 2.2.11
 
 # JIRA Project where the release issue should be created
-issue:
-  project: ENTSBT
+project: ENTSBT
 
 
 # If already created, provide the issue number of the Release, otherwise keep it empty.
@@ -110,7 +109,3 @@ components:
       assignee: iocanel
     properties:
       - dekorate
-
-cves:
-  # Include here the CVEs tickets to be link to this JIRA ticket release
-  - key: 815
