@@ -124,25 +124,25 @@
 
   <properties>
     <amqp-10-starter.version>2.2.2</amqp-10-starter.version>
-    <dekorate.version>1.0.0</dekorate.version>
+    <dekorate.version>1.0.2</dekorate.version>
     <infinispan-starter.version>2.2.3.Final</infinispan-starter.version>
-    <keycloak.version>9.0.3</keycloak.version>
-    <narayana-starter.version>2.3.2</narayana-starter.version>
+    <keycloak.version>9.0.9</keycloak.version>
+    <narayana-starter.version>2.3.3</narayana-starter.version>
     <opentracing-spring-jaeger-web-starter.version>3.1.1</opentracing-spring-jaeger-web-starter.version>
     <resteasy.version>3.9.3.SP1</resteasy.version>
-    <resteasy-spring-boot-starter.version>3.3.2.Final</resteasy-spring-boot-starter.version>
-    <vertx-spring-boot.version>1.0.0</vertx-spring-boot.version>
+    <resteasy-spring-boot-starter.version>3.3.2.SP1</resteasy-spring-boot-starter.version>
+    <vertx-spring-boot.version>1.0.1</vertx-spring-boot.version>
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>2.2.11.RELEASE</spring-boot.version>
-    <spring-cloud-kubernetes.version>1.1.2.RELEASE</spring-cloud-kubernetes.version>
+    <spring-boot.version>2.2.11.RELEASE</spring-boot.version>    
+    <spring-cloud-kubernetes.version>1.1.7.RELEASE</spring-cloud-kubernetes.version>
 
     <!-- Overriden from Spring Boot -->
-    <hibernate.version>5.4.22.Final</hibernate.version>
+    <hibernate.version>5.3.20.Final</hibernate.version>
     <hibernate-validator.version>6.0.21.Final</hibernate-validator.version>
-    <infinispan.version>9.4.20.Final</infinispan.version>
-    <tomcat.version>9.0.39</tomcat.version>
-    <undertow.version>2.0.32.Final</undertow.version>
+    <infinispan.version>9.4.21.Final</infinispan.version>
+    <tomcat.version>9.0.36</tomcat.version>
+    <undertow.version>2.2.2.Final</undertow.version>
 
     <!-- Plugins -->
     <fabric8-maven-plugin.version>4.1.0</fabric8-maven-plugin.version>
