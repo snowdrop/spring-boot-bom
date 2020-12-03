@@ -126,7 +126,7 @@
     <amqp-10-starter.version>2.2.2</amqp-10-starter.version>
     <dekorate.version>1.0.2</dekorate.version>
     <infinispan-starter.version>2.2.3.Final</infinispan-starter.version>
-    <keycloak.version>9.0.9</keycloak.version>
+    <keycloak.version>9.0.3</keycloak.version>
     <narayana-starter.version>2.3.3</narayana-starter.version>
     <opentracing-spring-jaeger-web-starter.version>3.1.1</opentracing-spring-jaeger-web-starter.version>
     <resteasy.version>3.9.3.SP1</resteasy.version>
