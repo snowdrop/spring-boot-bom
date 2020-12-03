@@ -20,12 +20,12 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-dependencies</artifactId>
-    <version>2.3.4.RELEASE</version>
+    <version>2.3.6.RELEASE</version>
   </parent>
 
   <groupId>dev.snowdrop</groupId>
   <artifactId>snowdrop-dependencies</artifactId>
-  <version>2.3.4.SP1-SNAPSHOT</version>
+  <version>2.3.6-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot Dependencies</name>
@@ -137,14 +137,14 @@
     <vertx-spring-boot.version>1.1.0</vertx-spring-boot.version>
 
     <!-- Spring Ecosystem -->
-    <spring-boot.version>2.3.4.RELEASE</spring-boot.version>
+    <spring-boot.version>2.3.6.RELEASE</spring-boot.version>
     <spring-cloud-kubernetes.version>1.1.6.RELEASE</spring-cloud-kubernetes.version>
 
     <!-- Overriden from Spring Boot -->
-    <hibernate.version>5.4.21.Final</hibernate.version>
-    <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
-    <infinispan.version>11.0.3.Final</infinispan.version>
-    <tomcat.version>9.0.38</tomcat.version>
+    <hibernate.version>5.4.23.Final</hibernate.version>
+    <hibernate-validator.version>6.1.6.Final</hibernate-validator.version>
+    <infinispan.version>10.1.8.Final</infinispan.version>
+    <tomcat.version>9.0.39</tomcat.version>
     <undertow.version>2.1.4.Final</undertow.version>
 
     <!-- Plugins -->
