@@ -1,21 +1,15 @@
-version: 2.3.4
+version: 2.3.6
 
 # JIRA Project where the release issue should be created
 project: ENTSBT
-key: ENTSBT-752
-
-
-# If already created, provide the issue number of the Release, otherwise keep it empty.
-# It will be used by the command create-component to link the stakeholder issues
-#key:         # SB-1484
 
 schedule:
   # Release date scheduled. It will also be used to populate the description to be created for each Jira stakeholder: component or starter owner
-  release: 2020-09-14
+  release: 2021-01-13
   # Due date for the component/starter owner to release their new components, QE signoff it
-  due: 2020-08-21
+  due: 2020-12-17
   # EOL of the Snowdrop release
-  eol: 2021-09-30
+  eol: 2021-11-13
 
 components:
   # List of JIRA Projects contributing to a Snowdrop release
