@@ -5,11 +5,11 @@ project: ENTSBT
 
 schedule:
   # Release date scheduled. It will also be used to populate the description to be created for each Jira stakeholder: component or starter owner
-  release: 2020-12-??
+  release: 2021-01-13
   # Due date for the component/starter owner to release their new components, QE signoff it
   due: 2020-12-17
   # EOL of the Snowdrop release
-  eol: 2021-12-??
+  eol: 2021-11-13
 
 components:
   # List of JIRA Projects contributing to a Snowdrop release
