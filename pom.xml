@@ -131,7 +131,7 @@
     <opentracing-spring-jaeger-web-starter.version>3.1.1</opentracing-spring-jaeger-web-starter.version>
     <resteasy.version>3.9.3.SP1</resteasy.version>
     <resteasy-spring-boot-starter.version>3.3.2.SP1</resteasy-spring-boot-starter.version>
-    <vertx-spring-boot.version>1.0.1</vertx-spring-boot.version>
+    <vertx-spring-boot.version>1.0.2</vertx-spring-boot.version>
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>2.2.11.RELEASE</spring-boot.version>    
