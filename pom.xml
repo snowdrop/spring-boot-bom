@@ -25,7 +25,7 @@
 
   <groupId>dev.snowdrop</groupId>
   <artifactId>snowdrop-dependencies</artifactId>
-  <version>2.3.6.SP1.SP1.SP1-SNAPSHOT</version>
+  <version>2.3.6.Alpha3</version>
   <packaging>pom</packaging>
 
   <name>Snowdrop Spring Boot Dependencies</name>
@@ -94,7 +94,7 @@
     <url>https://github.com/snowdrop/spring-boot-bom</url>
     <connection>scm:git:https://github.com/snowdrop/spring-boot-bom.git</connection>
     <developerConnection>scm:git:git@github.com:snowdrop/spring-boot-bom.git</developerConnection>
-    <tag>${project.version}</tag>
+    <tag>2.3.6.Alpha3</tag>
   </scm>
 
   <repositories>
