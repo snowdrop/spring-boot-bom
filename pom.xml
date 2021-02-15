@@ -558,6 +558,18 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
             <version>1.6</version>
+          <!-- 
+            Needed to bypass the encoding of the passphrase when task is executed by a job and not a human 
+            Syntax could change with future releases of the plugin (after 3.0.0)
+          -->
+          <configuration>
+              <useAgent>true</useAgent>
+              <passphrase>${env.GPG_PASSPHRASE}</passphrase>
+              <gpgArguments>
+                <arg>--pinentry-mode</arg>
+                <arg>loopback</arg>
+              </gpgArguments>
+            </configuration>
             <executions>
               <execution>
                 <id>sign-artifacts</id>
