@@ -1,15 +1,15 @@
-version: 2.4.3
+version: x.y.z
 
 # JIRA Project where the release issue should be created
 project: ENTSBT
 
 schedule:
   # Release date scheduled. It will also be used to populate the description to be created for each Jira stakeholder: component or starter owner
-  release: 2021-06-30
+  release: yyyy-mm-dd
   # Due date for the component/starter owner to release their new components, QE signoff it, release -1M
-  due: 2021-05-30
+  due: yyyy-mm-dd
   # EOL of the Snowdrop release
-  eol: 2022-08-31
+  eol: yyyy-mm-dd
 
 components:
   # List of JIRA Projects contributing to a Snowdrop release
