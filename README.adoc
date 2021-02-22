@@ -1,5 +1,5 @@
 // spring-boot
-:spring-boot.version: 2.3.6.RELEASE
+:spring-boot.version: 2.4.3
 
 = Spring Boot BOM - 2.3.x
 
@@ -11,7 +11,7 @@ This BOM is aligned to:
 
 .Spring
 // spring-boot
-- Spring Boot: 2.3.6.RELEASE
+- Spring Boot: 2.4.3
 
 .Spring Cloud
 // spring-cloud-kubernetes
@@ -20,13 +20,13 @@ This BOM is aligned to:
 .Integration
 - RESTEasy: 3.6.2.Final
 // tomcat
-- Tomcat: 9.0.39
+- Tomcat: 9.0.43
 
 .ORM
 // hibernate
-- Hibernate: 5.4.23.Final
+- Hibernate: 5.4.28.Final
 // hibernate-validator
-- Hibernate Validator: 6.1.6.Final
+- Hibernate Validator: 6.1.7.Final
 
 == Versioning scheme
 
