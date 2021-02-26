@@ -1,5 +1,3 @@
-version: x.y.z
-
 # JIRA Project where the release issue should be created
 project: ENTSBT
 
