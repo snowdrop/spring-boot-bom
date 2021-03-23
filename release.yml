@@ -46,7 +46,7 @@ components:
   product:
     project: TRACING
     key: TRACING-1832
-    assignee: objectiser
+    assignee: kearls
   properties:
   - opentracing-spring-jaeger-web-starter
 - name: Infinispan / DataGrid
