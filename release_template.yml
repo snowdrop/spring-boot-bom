@@ -44,7 +44,7 @@ components:
     assignee: gandrian
   product:
     project: TRACING
-    assignee: objectiser
+    assignee: kearls
   properties:
   - opentracing-spring-jaeger-web-starter
 - name: Infinispan / DataGrid
