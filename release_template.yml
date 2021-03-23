@@ -1,0 +1,93 @@
+version: x.y.z
+
+# JIRA Project where the release issue should be created
+project: ENTSBT
+
+schedule:
+  # Release date scheduled. It will also be used to populate the description to be created for each Jira stakeholder: component or starter owner
+  release: yyyy-mm-dd
+  # Due date for the component/starter owner to release their new components, QE signoff it, release -1M
+  due: yyyy-mm-dd
+  # EOL of the Snowdrop release
+  eol: yyyy-mm-dd
+components:
+- name: Hibernate / Hibernate Validator / Undertow / RESTEasy
+  jira:
+    project: EAPSUP
+    issueTypeId: 10600
+    assignee: ivassile
+  properties:
+  - hibernate
+  - hibernate-validator
+  - undertow
+  - resteasy
+- name: Tomcat
+  jira:
+    project: JWS
+    assignee: csutherl
+  properties:
+  - tomcat
+- name: Keycloak
+  jira:
+    project: KEYCLOAK
+    assignee: bdaw
+  properties:
+  - keycloak
+- name: AMQP
+  jira:
+    project: ENTMQCL
+    assignee: justi9
+  properties:
+  - amqp-10-starter
+- name: RESTEasy
+  jira:
+    project: RESTEASY
+    assignee: weinanli
+  properties:
+  - resteasy-spring-boot-starter
+- name: OpenTracing / Jaeger
+  jira:
+    project: ENTSBT
+    assignee: gandrian
+  product:
+    project: TRACING
+    assignee: kearls
+  properties:
+  - opentracing-spring-jaeger-web-starter
+- name: Infinispan / DataGrid
+  jira:
+    project: JDG
+    assignee: nadirx
+  properties:
+  - infinispan
+  - infinispan-starter
+- name: Narayana starter
+  jira:
+    project: ENTSBT
+    assignee: gytis
+  product:
+    project: JBTM
+    assignee: mmusgrov
+  properties:
+  - narayana-starter
+- name: Vert.X starter
+  jira:
+    project: ENTSBT
+    assignee: gytis
+  product:
+    project: ENTVTX
+    assignee: rruss
+  properties:
+  - vertx-spring-boot
+- name: Spring Cloud Kubernetes
+  jira:
+    project: ENTSBT
+    assignee: iocanel
+  properties:
+  - spring-cloud-kubernetes
+- name: Dekorate
+  jira:
+    project: ENTSBT
+    assignee: iocanel
+  properties:
+  - dekorate
