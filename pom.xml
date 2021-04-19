@@ -127,6 +127,7 @@
     <dekorate.version>1.0.3</dekorate.version>
     <infinispan-starter.version>2.3.3.Final</infinispan-starter.version>
     <!-- https://github.com/snowdrop/narayana-spring-boot -->
+    <narayana.version>5.10.6.Final</narayana.version>
     <narayana-starter.version>2.5.0</narayana-starter.version>
     <!-- https://github.com/opentracing-contrib/java-spring-jaeger -->
     <opentracing-spring-jaeger-web-starter.version>3.2.2</opentracing-spring-jaeger-web-starter.version>
@@ -305,6 +306,16 @@
       </dependency>
 
       <!-- Transactions -->
+      <dependency>
+        <groupId>org.jboss.narayana.jta</groupId>
+        <artifactId>narayana-jta</artifactId>
+        <version>${narayana.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.narayana.jts</groupId>
+        <artifactId>narayana-jts-integration</artifactId>
+        <version>${narayana.version}</version>
+      </dependency>
       <dependency>
         <groupId>me.snowdrop</groupId>
         <artifactId>narayana-spring-boot-starter</artifactId>
