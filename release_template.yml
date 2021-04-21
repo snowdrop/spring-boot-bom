@@ -11,6 +11,9 @@ schedule:
 
 components:
 - name: Hibernate / Hibernate Validator / Undertow / RESTEasy
+  starter: false
+  release: true
+  inProduct: true
   jira:
     project: EAPSUP
     issueTypeId: 10600
@@ -22,24 +25,36 @@ components:
   - resteasy
   - narayana
 - name: Tomcat
+  starter: false
+  release: true
+  inProduct: true
   jira:
     project: JWS
     assignee: csutherl
   properties:
   - tomcat
 - name: AMQP
+  starter: true
+  release: true
+  inProduct: false
   jira:
     project: ENTMQCL
     assignee: justi9
   properties:
   - amqp-10-starter
 - name: RESTEasy
+  starter: true
+  release: false
+  inProduct: false
   jira:
     project: RESTEASY
     assignee: weinanli
   properties:
   - resteasy-spring-boot-starter
 - name: OpenTracing / Jaeger
+  starter: true
+  release: false
+  inProduct: false
   jira:
     project: ENTSBT
     assignee: gandrian
@@ -49,6 +64,9 @@ components:
   properties:
   - opentracing-spring-jaeger-web-starter
 - name: Infinispan / DataGrid
+  starter: true
+  release: true
+  inProduct: true
   jira:
     project: JDG
     assignee: nadirx
@@ -56,12 +74,18 @@ components:
   - infinispan
   - infinispan-starter
 - name: Narayana starter
+  starter: true
+  release: false
+  inProduct: false
   jira:
     project: ENTSBT
     assignee: gytis
   properties:
   - narayana-starter
 - name: Vert.X starter
+  starter: true
+  release: false
+  inProduct: false
   jira:
     project: ENTSBT
     assignee: gytis
@@ -71,12 +95,18 @@ components:
   properties:
   - vertx-spring-boot
 - name: Spring Cloud Kubernetes
+  starter: true
+  release: false
+  inProduct: false
   jira:
     project: ENTSBT
     assignee: iocanel
   properties:
   - spring-cloud-kubernetes
 - name: Dekorate
+  starter: false
+  release: false
+  inProduct: false
   jira:
     project: ENTSBT
     assignee: iocanel
