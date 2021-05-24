@@ -1,5 +1,5 @@
 version: x.y.z
-
+previousVersion: a.b.c
 # JIRA Project where the release issue should be created
 project: ENTSBT
 
@@ -10,6 +10,11 @@ schedule:
   due: yyyy-mm-dd
   # EOL of the Snowdrop release
   eol: yyyy-mm-dd
+
+cpaas:
+    releaseFile: release.yml
+    productFile: product.yml
+    advisoryFile: advisory_map.yml
 
 components:
   # List of JIRA Projects contributing to a Snowdrop release

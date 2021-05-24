@@ -1,10 +1,15 @@
 project: ENTSBT
 key: ENTSBT-945
 version: 2.4.3
+previousVersion: 2.3.6
 schedule:
   release: 2021-06-30
   due: 2021-05-30
   eol: 2022-08-31
+cpaas:
+    releaseFile: release.yml
+    productFile: product.yml
+    advisoryFile: advisory_map.yml  
 components:
 - name: Hibernate / Hibernate Validator / Undertow / RESTEasy
   jira:
