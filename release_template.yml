@@ -1,6 +1,8 @@
 project: ENTSBT
 
 version: x.y.z
+previousVersion: a.b.c
+
 schedule:
   # Release date scheduled. It will also be used to populate the description to be created for each Jira stakeholder: component or starter owner
   release: yyyy-mm-dd
@@ -8,6 +10,10 @@ schedule:
   due: yyyy-mm-dd
   # EOL of the Snowdrop release
   eol: yyyy-mm-dd
+cpaas:
+    releaseFile: release.yml
+    productFile: product.yml
+    advisoryFile: advisory_map.yml
 
 components:
 - name: Hibernate / Hibernate Validator / Undertow / RESTEasy
