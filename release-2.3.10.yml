@@ -1,6 +1,7 @@
 project: ENTSBT
 key: ENTSBT-1060
 version: 2.3.10
+previousVersion: 2.3.6
 schedule:
   # Release date scheduled. It will also be used to populate the description to be created for each Jira stakeholder: component or starter owner
   release: 2021-05-31
@@ -8,6 +9,10 @@ schedule:
   due: 2021-04-30
   # EOL of the Snowdrop release
   eol: 2022-02-28
+cpaas:
+    releaseFile: release.yml
+    productFile: product.yml
+    advisoryFile: advisory_map.yml
 
 components:
 - name: Hibernate / Hibernate Validator / Undertow / RESTEasy
