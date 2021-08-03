@@ -135,7 +135,7 @@
     <!-- https://github.com/resteasy/resteasy-spring-boot -->
     <resteasy-spring-boot-starter.version>3.6.4.Final</resteasy-spring-boot-starter.version>
     <!-- https://github.com/snowdrop/vertx-spring-boot   -->
-    <vertx-spring-boot.version>1.1.4</vertx-spring-boot.version>
+    <vertx-spring-boot.version>1.1.6</vertx-spring-boot.version>
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>2.3.10.RELEASE</spring-boot.version>
