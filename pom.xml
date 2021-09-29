@@ -306,6 +306,16 @@
 
       <!-- Transactions -->
       <dependency>
+        <groupId>org.jboss.narayana.jta</groupId>
+        <artifactId>narayana-jta</artifactId>
+        <version>${narayana.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.narayana.jts</groupId>
+        <artifactId>narayana-jts-integration</artifactId>
+        <version>${narayana.version}</version>
+      </dependency>
+      <dependency>
         <groupId>me.snowdrop</groupId>
         <artifactId>narayana-spring-boot-starter</artifactId>
         <version>${narayana-starter.version}</version>
