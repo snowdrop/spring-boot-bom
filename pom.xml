@@ -123,7 +123,7 @@
   </pluginRepositories>
 
   <properties>
-    <amqp-10-starter.version>2.3.6</amqp-10-starter.version>
+    <amqp-10-starter.version>2.5.4</amqp-10-starter.version>
     <dekorate.version>2.7.0</dekorate.version>
     <infinispan-starter.version>13.0.2.Final</infinispan-starter.version>
     <!-- https://github.com/snowdrop/narayana-spring-boot -->
