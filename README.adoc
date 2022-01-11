@@ -1,9 +1,9 @@
 // spring-boot
 :spring-boot.version: 2.5.8
 
-= Spring Boot BOM - 2.3.x
+= Spring Boot BOM - 2.5.x
 
-This Bill Of Materials for Spring Boot 1.5 contains starters which are currently used by the
+This Bill Of Materials for Spring Boot 2.5.8 contains starters which are currently used by the
 https://github.com/snowdrop?utf8=✓&q=topic%3Abooster[Spring Boot Mission Boosters].
 This document is updated on a "best effort" basis, based on the information contained in the `pom.xml` file. In case of inconsistency between this document and the POM file, the POM information prevails.
 
@@ -15,10 +15,10 @@ This BOM is aligned to:
 
 .Spring Cloud
 // spring-cloud-kubernetes
-- https://github.com/spring-cloud/spring-cloud-kubernetes[Spring Cloud Kubernetes]: 1.0.0.RELEASE
+- https://github.com/spring-cloud/spring-cloud-kubernetes[Spring Cloud Kubernetes]: 2.0.4
 
 .Integration
-- RESTEasy: 3.6.2.Final
+- RESTEasy: 3.15.3.Final
 // tomcat
 - Tomcat: 9.0.56
 
