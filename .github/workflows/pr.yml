@@ -1,0 +1,84 @@
+name: "Pull Request Build"
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [ sb-2.5.x ]
+jobs:
+  linux-build:
+    name: PR - Linux - JVM ${{ matrix.java }} - Local
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ 8 ]
+        openshift: [ v3.11.0 ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: Setup Java
+        uses: actions/setup-java@v2.3.1
+        with:
+          java-version: ${{ matrix.java }}
+          distribution: 'adopt'
+          cache: 'maven'
+      - name: Check all dependencies are available and store them locally
+        run: |
+          sed -i.bak -e "s/<dependencyManagement>//g" pom.xml
+          sed -i -e "s/<\/dependencyManagement>//g" pom.xml
+          mvn -s .github/mvn-settings.xml dependency:tree
+          mv pom.xml.bak pom.xml
+      - name: Install snowdrop-dependencies locally
+        run: mvn -s .github/mvn-settings.xml clean install
+      - name: Download testsuite
+        run: |
+          parent_version=$(mvn -s .github/mvn-settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
+
+          pushd /tmp
+          git clone --single-branch -b 2.5.x https://github.com/snowdrop/testsuite.git
+          cd testsuite
+
+          echo "Setting testsuite parent version to ${parent_version}"
+          # Update the first occurance of a version tag (parent)
+          awk "NR==1,/<version>.*<\/version>/{sub(/<version>.*<\/version>/, \"<version>${parent_version}<\/version>\")} 1" pom.xml > pom.xml-tmp
+          mv pom.xml-tmp pom.xml
+
+          # Done in order to cache maven artifacts
+          # Can't use 'mvn dependency:go-offline'. See https://stackoverflow.com/q/14694139/2504224
+          mvn -s ${{ github.workspace }}/.github/mvn-settings.xml install -DskipTests
+
+          popd
+      - name: Download rest-http-example
+        run: |
+          parent_version=$(mvn -s .github/mvn-settings.xml -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
+
+          pushd /tmp
+          git clone --single-branch -b sb-2.5.x https://github.com/snowdrop/rest-http-example.git
+          cd rest-http-example
+
+          echo "Setting rest-http-example parent version to ${parent_version}"
+          # Update the first occurance of a version tag (parent)
+          awk "NR==1,/<version>.*<\/version>/{sub(/<version>.*<\/version>/, \"<version>${parent_version}<\/version>\")} 1" pom.xml > pom.xml-tmp
+          mv pom.xml-tmp pom.xml
+
+          # Done in order to cache maven artifacts
+          ./mvnw -s ${{ github.workspace }}/.github/mvn-settings.xml dependency:go-offline
+
+          popd
+      - name: Setup OpenShift
+        uses: manusa/actions-setup-openshift@v1.1.3
+        with:
+          oc version: ${{ matrix.openshift }}
+          dns ip: 1.1.1.1
+          github token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Test rest-http-example
+        run: |
+          pushd /tmp/rest-http-example
+          oc new-project dekorate
+          ./run_tests_with_dekorate.sh
+          popd
+      - name: Launch testsuite
+        run: |
+          pushd /tmp/testsuite
+          oc policy add-role-to-user view -z default
+          mvn -s ${{ github.workspace }}/.github/mvn-settings.xml clean verify -Popenshift
+          popd
