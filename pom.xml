@@ -80,6 +80,12 @@
       <organization>Red Hat Inc.</organization>
       <organizationUrl>https://www.redhat.com</organizationUrl>
     </developer>
+    <developer>
+      <id>Sgitario</id>
+      <name>Jose Carvajal</name>
+      <organization>Red Hat Inc.</organization>
+      <organizationUrl>https://www.redhat.com</organizationUrl>
+    </developer>
   </developers>
 
   <licenses>
@@ -99,6 +105,11 @@
 
   <repositories>
     <repository>
+      <id>central</id>
+      <name>Maven Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2/</url>
+    </repository>
+    <repository>
       <id>redhat-ga</id>
       <name>Red Hat GA Repository</name>
       <url>https://maven.repository.redhat.com/ga/</url>
@@ -110,6 +121,11 @@
     </repository>
   </repositories>
   <pluginRepositories>
+    <pluginRepository>
+      <id>central</id>
+      <name>Maven Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2/</url>
+    </pluginRepository>
     <pluginRepository>
       <id>redhat-ga</id>
       <name>Red Hat GA Repository</name>
@@ -531,9 +547,9 @@
                   <flattenedPomFilename>snowdrop-dependencies.xml</flattenedPomFilename>
                   <flattenMode>oss</flattenMode>
                   <pomElements>
-                    <dependencyManagement>expand</dependencyManagement>
+                    <dependencyManagement>keep</dependencyManagement>
                     <pluginManagement>expand</pluginManagement>
-                    <properties>remove</properties>
+                    <properties>keep</properties>
                     <repositories>keep</repositories>
                     <pluginRepositories>keep</pluginRepositories>
                   </pomElements>
