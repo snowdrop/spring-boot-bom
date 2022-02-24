@@ -1,5 +1,5 @@
 // spring-boot
-:spring-boot.version: 2.5.8
+:spring-boot.version: 2.5.9
 
 = Spring Boot BOM - 2.5.x
 
@@ -11,7 +11,7 @@ This BOM is aligned to:
 
 .Spring
 // spring-boot
-- Spring Boot: 2.5.8
+- Spring Boot: 2.5.9
 
 .Spring Cloud
 // spring-cloud-kubernetes
