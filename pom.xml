@@ -160,7 +160,7 @@
     <!-- Overriden from Spring Boot -->
     <hibernate.version>5.4.33</hibernate.version>
     <hibernate-validator.version>6.2.2.Final</hibernate-validator.version>
-    <infinispan.version>12.1.11.Final</infinispan.version>
+    <infinispan.version>13.0.2.Final</infinispan.version>
     <tomcat.version>9.0.58</tomcat.version>
     <undertow.version>2.2.16.Final</undertow.version>
 
