@@ -547,7 +547,7 @@
                   <flattenedPomFilename>snowdrop-dependencies.xml</flattenedPomFilename>
                   <flattenMode>oss</flattenMode>
                   <pomElements>
-                    <dependencyManagement>keep</dependencyManagement>
+                    <dependencyManagement>expand</dependencyManagement>
                     <pluginManagement>expand</pluginManagement>
                     <properties>keep</properties>
                     <repositories>keep</repositories>
