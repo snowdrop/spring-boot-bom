@@ -169,7 +169,6 @@
   </properties>
 
   <dependencyManagement>
-
     <dependencies>
       <!-- Infinispan BOM to ensure Infinispan versions are properly set. NEEDS TO BE SET BEFORE SPRING BOM. -->
       <dependency>
@@ -190,13 +189,6 @@
       </dependency>
 
       <!-- ONLY the following Spring Boot Starters are supported -->
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>${spring-boot.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
 
       <!-- Core -->
       <dependency>
@@ -509,6 +501,14 @@
         <version>${undertow.version}</version>
       </dependency>
     </dependencies>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-dependencies</artifactId>
+      <version>${spring-boot.version}</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
   </dependencyManagement>
 
   <build>
