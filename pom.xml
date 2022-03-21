@@ -144,14 +144,14 @@
     <infinispan-starter.version>13.0.2.Final</infinispan-starter.version>
     <!-- https://github.com/snowdrop/narayana-spring-boot -->
     <narayana.version>5.11.3.Final</narayana.version>
-    <narayana-starter.version>2.6.3.Beta1</narayana-starter.version>
+    <narayana-starter.version>2.6.3</narayana-starter.version>
     <!-- https://github.com/opentracing-contrib/java-spring-jaeger -->
     <opentracing-spring-jaeger-web-starter.version>3.2.2</opentracing-spring-jaeger-web-starter.version>
     <!-- https://github.com/resteasy/resteasy-spring-boot -->
     <resteasy.version>3.15.3.Final</resteasy.version>
     <resteasy-spring-boot-starter.version>3.9.2.Final</resteasy-spring-boot-starter.version>
     <!-- https://github.com/snowdrop/vertx-spring-boot   -->
-    <vertx-spring-boot.version>1.4.0.Beta2</vertx-spring-boot.version>
+    <vertx-spring-boot.version>1.4.0</vertx-spring-boot.version>
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>2.5.10</spring-boot.version>
