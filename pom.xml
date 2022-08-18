@@ -162,7 +162,7 @@
     <hibernate-validator.version>6.2.3.Final</hibernate-validator.version>
     <infinispan.version>12.1.11.Final</infinispan.version>
     <tomcat.version>9.0.60</tomcat.version>
-    <undertow.version>2.2.16.Final</undertow.version>
+    <undertow.version>2.2.19.Final</undertow.version>
 
     <!-- Plugins -->
     <fabric8-maven-plugin.version>4.1.0</fabric8-maven-plugin.version>
