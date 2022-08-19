@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   pull_request:
   push:
-    branches: [ sb-2.5.x ]
+    branches: [ sb-2.7.x ]
 jobs:
   linux-build:
     name: PR - Linux - JVM ${{ matrix.java }} - Local

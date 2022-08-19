@@ -1,9 +1,9 @@
 // spring-boot
-:spring-boot.version: 2.5.12
+:spring-boot.version: 2.7.3
 
-= Spring Boot BOM - 2.5.x
+= Spring Boot BOM - 2.7.x
 
-This Bill Of Materials for Spring Boot 2.5.8 contains starters which are currently used by the
+This Bill Of Materials for Spring Boot 2.7 contains starters which are currently used by the
 https://github.com/snowdrop?utf8=✓&q=topic%3Abooster[Spring Boot Mission Boosters].
 This document is updated on a "best effort" basis, based on the information contained in the `pom.xml` file. In case of inconsistency between this document and the POM file, the POM information prevails.
 
@@ -11,22 +11,22 @@ This BOM is aligned to:
 
 .Spring
 // spring-boot
-- Spring Boot: 2.5.12
+- Spring Boot: 2.7.3
 
 .Spring Cloud
 // spring-cloud-kubernetes
-- https://github.com/spring-cloud/spring-cloud-kubernetes[Spring Cloud Kubernetes]: 2.0.4
+- https://github.com/spring-cloud/spring-cloud-kubernetes[Spring Cloud Kubernetes]: 2.1.3
 
 .Integration
 - RESTEasy: 3.15.3.Final
 // tomcat
-- Tomcat: 9.0.60
+- Tomcat: 10.0.23
 
 .ORM
 // hibernate
-- Hibernate: 5.4.33
+- Hibernate: 6.1.2.Final
 // hibernate-validator
-- Hibernate Validator: 6.2.3.Final
+- Hibernate Validator: 7.0.5.Final
 
 == Versioning scheme
 
@@ -45,10 +45,10 @@ Qualifiers are numbered and we should try to limit their number to 9 but we shou
 
 Until a version is released, the BOM version will be `<target spring boot version>-SNAPSHOT`. Once it's released, we will switch to `<target spring boot version>.SP<current SP version + 1>-SNAPSHOT`.
 
-So, right now, as we are targeting Spring Boot version 2.3.2.RELEASE, our BOM GAV will be:
-`dev.snowdrop:snowdrop-dependencies:2.3.2-SNAPSHOT` until released. The released version will be
-`dev.snowdrop:snowdrop-dependencies:2.3.2.Final` and the new version in the 2.3 branch will
-be `dev.snowdrop:snowdrop-dependencies:2.3.2.SP1-SNAPSHOT`.
+So, right now, as we are targeting Spring Boot version 2.7.3.RELEASE, our BOM GAV will be:
+`dev.snowdrop:snowdrop-dependencies:2.7.3-SNAPSHOT` until released. The released version will be
+`dev.snowdrop:snowdrop-dependencies:2.7.3.Final` and the new version in the 2.3 branch will
+be `dev.snowdrop:snowdrop-dependencies:2.7.3.SP1-SNAPSHOT`.
 
 See https://issues.jboss.org/browse/SB-162[SB-162] for a discussion of BOM versioning.
 
