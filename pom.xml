@@ -148,7 +148,7 @@
     <resteasy.version>3.15.3.Final</resteasy.version>
     <resteasy-spring-boot-starter.version>5.0.0.Final</resteasy-spring-boot-starter.version>
     <!-- https://github.com/snowdrop/vertx-spring-boot   -->
-    <vertx-spring-boot.version>1.4.0</vertx-spring-boot.version>
+    <vertx-spring-boot.version>1.4.1</vertx-spring-boot.version>
 
     <!-- Spring Ecosystem -->
     <spring-boot.version>2.7.2</spring-boot.version>
